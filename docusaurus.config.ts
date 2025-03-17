@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Wavbor",
+  title: "Wavbor Docs",
   tagline: "Dinosaurs are cool",
   favicon: "img/logo.svg",
 
@@ -55,8 +55,8 @@ const config: Config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           api: {
-            specPath: "02-api-docs/openapi.json",
-            outputDir: "02-api-docs/endpoints",
+            specPath: "api-docs/openapi.json",
+            outputDir: "api-docs/endpoints",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
@@ -72,7 +72,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Wavbor",
+      title: "Wavbor Docs",
       logo: {
         alt: "Wavbor Logo",
         src: "img/logo.svg",
@@ -97,38 +97,6 @@ const config: Config = {
         },
       ],
     },
-    // footer: {
-    //   style: "dark",
-    //   links: [
-    //     {
-    //       title: "Docs",
-    //       items: [
-    //         {
-    //           label: "Tutorial",
-    //           to: "/docs/intro",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Community",
-    //       items: [
-    //         {
-    //           label: "Stack Overflow",
-    //           href: "https://stackoverflow.com/questions/tagged/docusaurus",
-    //         },
-    //         {
-    //           label: "Discord",
-    //           href: "https://discordapp.com/invite/docusaurus",
-    //         },
-    //         {
-    //           label: "X",
-    //           href: "https://x.com/docusaurus",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    // },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
