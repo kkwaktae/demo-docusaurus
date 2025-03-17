@@ -1,0 +1,71 @@
+---
+id: topic-retrieve
+title: "Topic 상세 조회"
+description: "Topic 상세 조회"
+sidebar_label: "Topic 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tvG0UU/iur89RWG18SEtEVQjKOAYsqqWLnyVjNeHdsT7O3zs6amNVKaWN4gccEVZEjuUICgYoU1BT1IfyheP0f0Jld2+sblxKQkHix13vOmfOd73wzcxyA41JOBHPssgEaCMdl+iNOBWe0Q0EFl3BiUUG5B1otAGaDBi4RbVDBJhYFDZgBKnh6m1oEtABE15VvbUFblEOogkE9nTMXc4AGBcW32ROfKomH0iEm/jKoLVizy+yWItrMU6Jvr6NBPxud9aKLq+HpafTNVQZU4PSJzzg1QBPcp2FdBUFaiC2GDnUVPKr7nImuBPwBJZxy0Gp19OXUcx3box4iXc/l8Et3bEFtgY/EdU2mSzayjz2EGyxW5jQeU10gNRy5EyxejRlLqseMxNi1zW6CVwWT2YcVKlLOhHPSBRWYoJZ3e4l8bqYcPcGZ3QIVmg63iAANfM5ABYscPaB2S7RB29rc3NgMwzTHtbi7uBQyzYSJa1WR6QfMPgT09j3kNwBimrtNyfnt4I/ltViA7ZsmaSAQdJyiQpl815staSMXyvRNZi5da46MlUv3B9HgWBmd9oYv+qOzHixhaZ6ffY/yh0nmWHpz9Um9ViWgAKjtW7jQdrlS3K9Uyrs7oEKpWgQVytulAn7tfLj7qPJxYa8EKuzsVsvFksw5V9HsZrunHMSuB8qacvPqdfT98af2PeVgmgYNwy+uo4vn0bOXo7OfpHmaC83R4Gz46gqj+4PYvF0qSENqb0pDqVqUid5cjk6OQYWjNc+l+hoWt4Zthy2job97fyO/nt9sbt03UFtj0kZfDkanvyo3r18Of+nJWAzbIRaVuzuNEVSYpEhjwJ8prOgmS4Z6OMmzqIFJkwf94Y8/zOpnHfWTOiBWxQ6fXUXnc7H5XC6OtqzZ6H9ov/95mP9v2rfetDqnRFCjsJTmCTCDCLommEUXKErBO7mIej9HF9fRV/0FaONephOqyVmMnZvHXUxEFi7VhbQVHX9GHH9wRf0F93+Nk7jGuYrU3yNrWsn04h2nW0Hl3nj2CcOF2QX5fSeXv8WpwaCCsCX39HzxiV8KLLbcsUucO3w11I3/BtSFV7ITSnTyNOq9UaIXl6Pzr/GMoKLt4DXSkm2UY6gG2U4+K+/SbMCMMAvTAbCClcXgx2Pg9BB22SdUnsKYr02JIcWdzLQFX7Qdzj6XTEl8zG46Mjyp6TPSaThcKTwsgwodyr0YeD6Ty+QWruGby/7wsq8pNeKyjEE7mTg6oztW/U5bCNfTstlF2933Gjz7fnR+FT1/mgSvCkwFYeddxxMWke1NKlrO6AzMCTeCHomsaxJmw3SOjNmuQScPyewCKmhyl2Gv244n0BwEDeLRfW6GIb5+4lOOg3hdhQ7hLD6nawEYzMNnA7QmMT26gGSiWbizl2jrrvI3/zosrW4sBxu1INdDRapwSLvxf5sQh4dEH4g8NhR0nboiFbKws/D6mAj2o1IVVCA+UpiW4KGUYPKQuoVn4cyqcYwNP0N1RUgQxAIPw4l/bFoZMdkCSeVYQRiGvwELlBlZ
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Topic 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/topic/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Topic 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 주제/아이디어.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"url":{"type":"string","format":"uri","maxLength":65535}},"required":["id","url"],"title":"TopicLink"}},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"유저 프로필"}},"required":["id"],"title":"TopicUserProfile"}],"readOnly":true},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","title":"제목","maxLength":20},"content":{"type":"string","title":"내용","maxLength":1000},"comment":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"content":{"type":"string","title":"내용"},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"유저 프로필"}},"required":["id"],"title":"TopicUserProfile"}],"readOnly":true},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["content","createdAt","id","user"],"title":"TopicComment"},"readOnly":true},"commentCount":{"type":"integer","readOnly":true},"linkCount":{"type":"integer","readOnly":true},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["comment","commentCount","content","createdAt","id","linkCount","linkSet","title","user"],"title":"TopicRetrieve"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

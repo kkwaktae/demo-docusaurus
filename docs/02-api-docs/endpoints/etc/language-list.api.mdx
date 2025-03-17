@@ -1,0 +1,71 @@
+---
+id: language-list
+title: "아티스트 언어 조회"
+description: "아티스트 언어 조회"
+sidebar_label: "아티스트 언어 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v00AQ/SvWnECykhQ4WQipIIQqKkACTlGENvbE3tbeNbPj0BD5gMQJuIIQggMS4txDD/wmSP8DGn/FbVoKiAuXxPZ8vX3zZnYJNkdSrK3ZiSCAVJm4UDE+SbVj8CFXpDJkJAfBeAlGZSheOtNiJXxaaMIIgplKHfqgDQTwtEBagA8RupB0LrkhgHtFNkXy7MwjdEXKzmPrEXJBxsuRvFzFOAAfXJhgpiBYAi9yKaYNY4wEZel3AOxs5vBPETxK0NNGs1app02EB96MbOY9S3SY9MBwgi3EC/BMfGAVCzMdbzDxwWFYkOZFxdhNVIQEwXgi7oQut8ahk3xXRiP5C61hNCyPKs9THVbdGO45Ab3crG+nexhWvSHpHes6W2iLOslpmD5odw8P+raptSkqI7bmpD2jIlJCnmbM3MV1dXRGUcmrovsmXUDAVGDpN53rPB2TNjH4wJpT+bB692317shbfTr68fUl+JCpg100MScQXBmVZb/VYynaZJysM2wTa8e7bSdKCWptD1SsjWKMTjrtisorx5NSEWaujbb+YXsiZKXTTQJOn6zx6x3rls0ya24TWTof6tX/A+rGp9Xbl8evD1evvhy/+ua1Evh8ePzhjUgAObGylWKsd5GIAYbzrWE7bkNYj9tDOV59gnbo1prO9V2sRC1FE1RRJdJmm2wXnFjSzyu6KpDazGwV3hzsmZpPLXnbD3bAhzmSq9FvDUaD0cae+X748cfhx8Abq1wPIpwP6uhBaLPJpYQ5d8FwuGm7fH1KwxurD0er9y+a4PMCe0HS/tw6zlTV4+ZEv6T1BNqOIsYDHuap0tVaKKgSQE35GOZb4K93nA/S9MQ6FttyOVUOH1NalvK53r2y+iLt1DTt7eZThTu5/vbdcCbUfVz0rqS5Sgusx+JPEPzd3fALPN0NtQY0kRfSgqi6D/xWiEJWHbUdhpj3ozbmWLJ0c3Hn9iPwQRXSpL7W9yutNw+SvTWZRS/3Sdm3wOVXuDszZLmsJ6ksO//adG5EN2u1t1A0KcvyJ6hg/Xk=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"아티스트 언어 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/language/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+아티스트 언어 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"limit","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}},{"name":"offset","required":false,"in":"query","description":"The initial index from which to return the results.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"count":{"type":"integer"},"isNext":{"type":"boolean"},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","title":"언어 이름","maxLength":20}},"required":["id","name"],"title":"ArtistLanguage"}}},"title":"PaginatedArtistLanguageList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

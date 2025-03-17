@@ -1,0 +1,71 @@
+---
+id: user-destroy
+title: "user_destroy"
+description: "user_destroy"
+sidebar_label: "user_destroy"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM1u00AQfpVoxKGVVnECnFYIqUAOFQghfk5RQBvvtN7W9m5nx4Zg7YG3QKgP0QNPBX0INHaSNk37AFzs9e58O98384078AHJsPP1sQUNTUT6YjEy+RUoCIZMhYwUQc87cDVoCIYLUFCbCkGDs6Ag5gVWBnQHvAqyG5lcfdpfwIwksM8VPoKkgPCicYQWNFODaaGAzalc3+eGhYKIeUOOV33KF2gICfR8IaGEMfg6YpRcjydP5WUx5uSCSAANb/1oEzRaeruSlE8nUwnMfc1YsyxNCKXLe9nZWRRgty/CL88wZxFBUiR2Q1qLbFy5LzbtiJtv4kSg41ICX/qq8vWMyBMkCd+lPlB98n9Q3du645wKufDiKIslMg5WKEBD1k4zic06Z1MGN+3+IKIG3pumb3mb4F6jXNs7sEBjkW48eNRw4cl974vUU3P1ie/hazlfTbv0NDp6dwwKWqQ4cJ6OJ+MJ3FXy5+ry79WlHs1NcGOL7XhAj3NfLQ4K5hB1lu2fHT5bUvb8+tfv658/1uCHgLdA0vTgI1em7+xakRRodFPMHX7bojB+4yyUxtVySUN9o4cqz6GdghomSoHuh1TaW/jIctp1SxPxE5UpyfZFgyTjtlDQGnJmKUWbd2BdlLUFfWLKiHtEtjaFg/drOx2OQN1PcNPKWhS1pmzkCxSc42r4j6RFUpveSvbh4CjPMfAtyN5AyI9ha7dXszezjzNQYBopxG0HnfcOWi8kwb2Mds20oSfPpB6AdN3gz5S28cPRg4itg9fiRURK6R8mFORf
+sidebar_class_name: "delete api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"user_destroy"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/user/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+user_destroy
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"string","pattern":"^me$"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"No response body"},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

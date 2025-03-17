@@ -1,0 +1,143 @@
+---
+id: artist-switch-request-check-national-create
+title: "ArtistSwitchRequestCheckNationalCreate"
+description: "아티스트 실명 인증"
+sidebar_label: "ArtistSwitchRequestCheckNationalCreate"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tPG0cU/iuj85RIawylT1YUiaBUinpJFMiTY6HxeoI3eC+ZHdu41komhQphpIa2Vgy1kVFQaSqquthBfqB/yDv7H6qzu8a7XASovLTixRrPnMt3vjnn7JkqmBbjVGim8SQHKaBcaLZYsMuaUPMLnL0pMlssqHmmLi0YvhgtLKicUcFAgRyzVa5ZuA0peCAbq169Kzf2vY0BkZ1Vb7tJZL0jj/54+NJIEPew737YJN7OpvzlnWyduHstMuzW5O6a12gR+fZQ7nyUu++G3RqJWfK2W+4P27K9SrxGczjoEtla9Rr9mBDainkMxDvEbWyGpr3GR7e+7tb3JxCMoalLBtWZbMe9uQcoQtxeX7Y66K/XIXJ33d34mQx7HdnqDLs/yt210BK5J/e33N4n4h6vD7u1+2h52Psk33eHx5vErf8mj/pJ2anJ3S3ckOtNebBFvOaWt7NJ3J/+cvfaRL4/dI9rGPU8LzLZHpDh0d9yp/vSICRBLG4uIM5h7yRYF/Us4wjHa6zK9WYMDrqXqwOf1YMacQ9WvJVDIve3kDn3bZPIdl9+tyLbzfDM53qvL3cPvUZfNk7ImCRQQNBFG1Lpi5MCMgqEy0dmrgKpKqimIZghcEktq6CpfsIkX9uYHlWw1TzTKa5ExWKQAjP7mqkCFLA4ZqHQmI2nGG5EyhZcMxZBgTLXBHtqFCqQErzIFNA14ytmLIo8pKYUEJoooLys77u/r4ECOl0eHU9POgpwbvwbsx9O3D9Pgjtzj9a95iDuYmracQJGNM5ySJsfR+A2M7Yz45M553P5POBvFsvrm7C6wj1Aa1EWlxPlcjnxyuR6osgLzFDNHLq5o/XmtOrFgtAsykXSpzNHBb0j8uZExswhNEcBm6lFrokKpNJVeMQoZxxS6YzjNwvbMg074PCzyclb7RgBtnlziV3IIWc0F6UwfheyPZC/ton3fcdb6cJ5mqLGb8BUQFH8GwmOAp/fauw6s226yK5Bkml8obFCLiJJOacVUEATTLfP84bwzyT7NTTiaXylgnN9Qh9zbvKvw3gdBRj+nzVzF1Tj2UsciyqnjN3gKn3Pl9/n1C3eZ44JqhWujiiUiwQxa+q6aVwBdfq/ARW7NBN5E2dSy7R93xTbGCRLU8kLB5JkfEpNwrgbzWFAAeZRTxonqKV9yfwMRc95RnOMwyjvYaYo8ibXvvWN+rCQpOfjuefxMtWtAht/FyJNBwvhlBN08Mr0HYcklGkpa3Iy8+wJKFBi3A6Cn5qYnJg8N1wPuy2320qRNLW0iRwrTQTaE6qpZ+7lhbDsVDJ5/uz+gyxPPpQ7fdlcCZUvU4woIVpkXadGJLCgWXrbDdkenMUXyam7d8D/7h0QVIpgyyJpFahmYH4UuV/5QVWmoTQFyiUPBQXilQkKYC/IY1mn0lCtZqnNXvCC4+D2myLjOD5kFChRrtEs1ko64yij2sTJYolV/C7ip1xiHvGheKEYVPRVU7OjjEzMqCqzxCXKfj/E0eW0FT17OjcPCmTDB4/uf3sgYlmJ/glg0yIyFO03S36/CRcYzujIqESQxFuPEgLGX4R/oUq1GnQzxzmVD44u1Tjtd4E0Xm3GcZx/AFEqsbE=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistSwitchRequestCheckNationalCreate"}></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/artist_switch_request/check_national/"}
+  context={"endpoint"}></MethodEndpoint>
+
+아티스트 실명 인증
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            name: { type: "string", writeOnly: true, minLength: 1, title: "실명", maxLength: 30 },
+            rrn: { type: "string", writeOnly: true, minLength: 1, title: "주민등록번호", maxLength: 13 },
+          },
+          required: ["name", "rrn"],
+          title: "ArtistSwitchRequestCheckNationalRequest",
+        },
+      },
+      "application/x-www-form-urlencoded": {
+        schema: {
+          type: "object",
+          properties: {
+            name: { type: "string", writeOnly: true, minLength: 1, title: "실명", maxLength: 30 },
+            rrn: { type: "string", writeOnly: true, minLength: 1, title: "주민등록번호", maxLength: 13 },
+          },
+          required: ["name", "rrn"],
+          title: "ArtistSwitchRequestCheckNationalRequest",
+        },
+      },
+      "multipart/form-data": {
+        schema: {
+          type: "object",
+          properties: {
+            name: { type: "string", writeOnly: true, minLength: 1, title: "실명", maxLength: 30 },
+            rrn: { type: "string", writeOnly: true, minLength: 1, title: "주민등록번호", maxLength: 13 },
+          },
+          required: ["name", "rrn"],
+          title: "ArtistSwitchRequestCheckNationalRequest",
+        },
+      },
+    },
+    required: true,
+  }}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { nationalToken: { type: "string", readOnly: true, title: "실명인증 토큰" } },
+            required: ["nationalToken"],
+            title: "ArtistSwitchRequestCheckNational",
+          },
+        },
+      },
+      description: "",
+    },
+    "400": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "object",
+                properties: {
+                  nonField: { type: "array", items: { type: "string" } },
+                  name: { type: "array", items: { type: "string" } },
+                  rrn: { type: "array", items: { type: "string" } },
+                },
+                title: "ArtistSwitchRequestCheckNationalErrorMessage",
+              },
+              errorCode: { type: "string" },
+            },
+            required: ["errorCode", "message"],
+            title: "ArtistSwitchRequestCheckNationalError",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

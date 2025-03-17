@@ -1,0 +1,71 @@
+---
+id: contact-feedback-retrieve
+title: "피드백 상세 조회"
+description: "피드백 상세 조회"
+sidebar_label: "피드백 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVTtvE0EQ/iunqRJp8TlAdUJIBgUUUYB4VJYVre/G9ia+R3bnDOZ0BSQFEnSAFEWJBCVdIqWgyC8il/+A5l4+x7aQojQ09t7uzOz3zcw3m0AYoZakwmDLAwfcMCDp0vYA0etLd3dbI2mFEwQBkdTSR0JtwOkmoAJwIJI0AgGB9LHhrTwQYNwR+hKcBGga8akKCIeoIRWgcS9WGj1wSMeYiqXRagz/DOehcbWKmAU40LHiQO3FaJUW1kSO+cvDgNRgqoKhRSNlrKtvF5dfjy9Pz1qwgKgngOSQiVakoCfAoBtrRdOc/yOUGjU43R5bazRRGBg0jPBuu81/7IkB8VJG0Vi5eZ7tHcMwk0VGYX8HXeJMa64KqSKa8paw5hul9zwYT6scgock1bhha0irYAgCSNGYNy4/nmdHvzhjrkZJ6HVomfkg1L4kcMCThHdI+bhw3Sxmtn+SHZxlJxfZ52OOHEfebUX+dJj9+F5FnuuaboNATVxA3igzAL1ZrCdlL0GaLvQLo77f3rjFiq2qxHUSpV0D5+PQ98NgU+tQr4Z67/+AurBVC87K9j9kB7+t7Ofp1dEXEOAjjUKeP0PMIfIccMCebNil+uxkNltSu5oMdtKYEakNM4W+YvoFw0qnNUMZqWc45XZhUCOUXq6ncup0YhqFWr3P05mTUMEgzN1L4m/lpB9qq/NiCwRMUJuC3Uar3WrDdc5/To8vT48dqysj1fJw0iq8W27o99ZGRJFxbHvxbP1BX9sPs6Pz7PBD6bzKseHE7RGFhnyZ90DJaHXa56DW+SF8R3Y0lirI9azz7ihK0oXJBoh6JApw5kZ+VQ0+mJ/e3Dij0BCHSJK+NPhGj9OUt/di1DxRewImUivZ5yR3E/CU4bUHzkCODS6grQUAay/LRl23eNgtY1GVPuC65+8Bt6iAXZzOv1v8Ft3o5hu9OjfA2sxr2ktF1cCcssKi47oYUcN3YT7wg1VL7unmaxAgY65vUyO7uUbKBUdfimteLhVI/uVMLnVJkkKBaVrbF0crPWqNFtacpl6apn8BVwgcyA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"피드백 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contact/{contact_id}/feedback/{feedback_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+피드백 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true},{"in":"path","name":"feedback_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 피드백.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"detail":{"type":"string","title":"내용"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["createdAt","detail","id","updatedAt"],"title":"Feedback"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

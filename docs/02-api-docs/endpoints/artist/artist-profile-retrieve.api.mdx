@@ -1,0 +1,384 @@
+---
+id: artist-profile-retrieve
+title: "ArtistProfileRetrieve"
+description: "아티스트 프로필 정보 조회"
+sidebar_label: "ArtistProfileRetrieve"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistProfileRetrieve"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/artist/profile/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 프로필 정보 조회
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              profile: { type: "string", title: "프로필 이미지" },
+              name: { type: "string", title: "이름", maxLength: 30 },
+              rrn: { type: "string", title: "주민등록번호", maxLength: 13 },
+              nickname: { type: "string", title: "아티스트 닉네임", maxLength: 30 },
+              country: {
+                enum: [
+                  "AUSTRAILIA",
+                  "CANADA",
+                  "CHINA",
+                  "FRANCE",
+                  "GERMANY",
+                  "INDONESIA",
+                  "ITALY",
+                  "JAPAN",
+                  "ROK",
+                  "RUSSIA",
+                  "SPAIN",
+                  "THAILNAD",
+                  "UK",
+                  "USA",
+                  "VIETNAM",
+                ],
+                type: "string",
+                description:
+                  "* `ROK` - Republic of Korea\n* `USA` - USA\n* `UK` - UK\n* `AUSTRAILIA` - Australia\n* `CANADA` - Canada\n* `SPAIN` - Spain\n* `JAPAN` - Japan\n* `CHINA` - China\n* `VIETNAM` - Vietnam\n* `THAILNAD` - Thailand\n* `FRANCE` - France\n* `INDONESIA` - Indonesia\n* `RUSSIA` - Russia\n* `GERMANY` - Germany\n* `ITALY` - Italy",
+                "x-spec-enum-id": "7e3833a14afadc3b",
+                title: "국가",
+                "x-enumNames": [
+                  "Australia",
+                  "Canada",
+                  "China",
+                  "France",
+                  "Germany",
+                  "Indonesia",
+                  "Italy",
+                  "Japan",
+                  "Republic of Korea",
+                  "Russia",
+                  "Spain",
+                  "Thailand",
+                  "UK",
+                  "USA",
+                  "Vietnam",
+                ],
+              },
+              languageSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", title: "아티스트 언어 id" },
+                    name: { type: "string", readOnly: true, title: "언어 이름" },
+                  },
+                  required: ["id", "name"],
+                  title: "ArtistArtistLanguage",
+                },
+                title: "언어",
+              },
+              introduction: { type: "string", title: "소개글", maxLength: 1000 },
+              averageContactTimeStart: { type: "integer", maximum: 23, minimum: 0, title: "평균연락가능시간 (시작)" },
+              averageContactTimeEnd: { type: "integer", maximum: 23, minimum: 0, title: "평균연락가능시간 (끝)" },
+              instrumentsPriceSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    instruments: {
+                      type: "object",
+                      properties: {
+                        id: { type: "integer" },
+                        nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                        nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                        parent: {
+                          allOf: [
+                            {
+                              type: "object",
+                              properties: {
+                                id: { type: "integer", readOnly: true },
+                                nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                                nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                              },
+                              required: ["id", "nameEn", "nameKr"],
+                              title: "ArtistParentInstruments",
+                            },
+                          ],
+                          readOnly: true,
+                        },
+                      },
+                      required: ["id", "nameEn", "nameKr", "parent"],
+                      title: "ArtistInstruments",
+                    },
+                    unitPrice: { type: "integer", maximum: 2147483647, minimum: 0, nullable: true, title: "단가" },
+                    workDay: {
+                      enum: [
+                        "EIGHT_TEN",
+                        "EXPRESS",
+                        "FOUR_FIVE",
+                        "OVER_ONE_MONTH",
+                        "SIX_SEVEN",
+                        "TWO_THREE",
+                        "UNDER_ONE_MONTH",
+                        "UNDER_TWO_WEEKS",
+                      ],
+                      type: "string",
+                      description:
+                        "* `EXPRESS` - 24시간\n* `TWO_THREE` - 2~3일\n* `FOUR_FIVE` - 4~5일\n* `SIX_SEVEN` - 6~7일\n* `EIGHT_TEN` - 8~10일\n* `UNDER_TWO_WEEKS` - 2주 이하\n* `UNDER_ONE_MONTH` - 1달 이하\n* `OVER_ONE_MONTH` - 1달 초과",
+                      "x-spec-enum-id": "9c31f184711414a7",
+                      nullable: true,
+                      title: "작업기간",
+                      "x-enumNames": [
+                        "8~10일",
+                        "24시간",
+                        "4~5일",
+                        "1달 초과",
+                        "6~7일",
+                        "2~3일",
+                        "1달 이하",
+                        "2주 이하",
+                      ],
+                    },
+                    freeRevisionNum: {
+                      type: "integer",
+                      maximum: 2147483647,
+                      minimum: 0,
+                      nullable: true,
+                      title: "무료 수정횟수",
+                    },
+                    paidEditCost: {
+                      type: "integer",
+                      maximum: 2147483647,
+                      minimum: 0,
+                      nullable: true,
+                      title: "유료 수정비용",
+                    },
+                  },
+                  required: ["id", "instruments"],
+                  title: "ArtistInstrumentsPrice",
+                },
+                title: "작업분야 가격",
+              },
+              genreSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistGenre",
+                },
+                title: "genre",
+              },
+              moodSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistMood",
+                },
+                title: "mood",
+              },
+              styleSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistStyle",
+                },
+                title: "style",
+              },
+              proSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", nullable: true },
+                    name: { type: "string", nullable: true, title: "공연권 단체/저작권 수집 협회 이름", maxLength: 30 },
+                    number: {
+                      type: "string",
+                      nullable: true,
+                      title: "공연권 단체/저작권 수집 협회 등록번호",
+                      maxLength: 50,
+                    },
+                  },
+                  required: ["id"],
+                  title: "ArtistPro",
+                },
+                title: "프로",
+              },
+              discographySet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", nullable: true },
+                    kind: {
+                      enum: ["ALBUM", "AUDIO", "VIDEO"],
+                      type: "string",
+                      description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                      "x-spec-enum-id": "451e9e7ea9bd467a",
+                      title: "유형",
+                      "x-enumNames": ["참여작품", "음원", "영상"],
+                    },
+                    link: { type: "string", title: "링크", maxLength: 500 },
+                    description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                    instrumentsSet: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          id: { type: "integer" },
+                          nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                          nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                          parent: {
+                            allOf: [
+                              {
+                                type: "object",
+                                properties: {
+                                  id: { type: "integer", readOnly: true },
+                                  nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                                  nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                                },
+                                required: ["id", "nameEn", "nameKr"],
+                                title: "ArtistParentInstruments",
+                              },
+                            ],
+                            readOnly: true,
+                          },
+                        },
+                        required: ["id", "nameEn", "nameKr", "parent"],
+                        title: "ArtistInstruments",
+                      },
+                    },
+                  },
+                  required: ["id", "instrumentsSet", "kind", "link"],
+                  title: "ArtistDiscography",
+                },
+                title: "디스코그라피",
+              },
+              answerSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    question: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", title: "아티스트 질문 id" },
+                            query: { type: "string", readOnly: true, title: "질문" },
+                            placeholder: { type: "string", readOnly: true, title: "플레이스홀더" },
+                            order: { type: "integer", readOnly: true, title: "질문 나열 순서" },
+                          },
+                          required: ["id", "order", "placeholder", "query"],
+                          title: "ArtistAnswerQuestion",
+                        },
+                      ],
+                      title: "아티스트 질문",
+                    },
+                    answer: { type: "string", title: "답변" },
+                  },
+                  required: ["id", "question"],
+                  title: "ArtistAnswer",
+                },
+                title: "아티스트 질문 답변",
+              },
+              status: {
+                enum: ["OFFLINE", "ONLINE", "VACATION"],
+                type: "string",
+                description: "* `ONLINE` - Online\n* `OFFLINE` - Offline\n* `VACATION` - 휴가중",
+                "x-spec-enum-id": "de0d4d4e19985b7f",
+                title: "활동 상태",
+                "x-enumNames": ["Offline", "Online", "휴가중"],
+              },
+              isArtist: { type: "boolean", readOnly: true },
+              isPriceVisible: { type: "boolean", title: "단가 노출 여부" },
+            },
+            required: [
+              "averageContactTimeEnd",
+              "averageContactTimeStart",
+              "country",
+              "discographySet",
+              "genreSet",
+              "id",
+              "instrumentsPriceSet",
+              "introduction",
+              "isArtist",
+              "languageSet",
+              "moodSet",
+              "nickname",
+              "proSet",
+              "profile",
+              "styleSet",
+            ],
+            title: "ArtistProfile",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

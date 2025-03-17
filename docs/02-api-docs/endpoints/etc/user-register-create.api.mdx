@@ -1,0 +1,71 @@
+---
+id: user-register-create
+title: "유저 회원가입"
+description: "소셜 유저인 경우 `socialToken`을 전달해야합니다."
+sidebar_label: "유저 회원가입"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWO9LI0cY/leW91MLa6JtPy2l4IkFuZY71PsUwt1k9zWZc3dnb2YSTcOCUk/uULh+qMWz8ciBtAj9IG2gV7D/kDv5H8rMbn4YEw2aL4WAyO7s++OZd57nnck0gEXIiaQsXPHAgapA/pxjmQqJ/LnLkUgEGzwULqeRNgMH1P6het20VLOlWjvq9JN19ee/6uTCeiGYS4m/zjYxfKFO9yzV2ksO/ugctdXRZefoPDl4kxyc5cAGScoCnIJJB0UbOL6qopCPmFcHpwEuCyWGUj+SKPKpawDmXwqdvgHCrWBA9JOsRwgOsNJLdCXYEHE9HUlRGLs+nAFjITkNy2DDFqcSn4R+HRzJq2hDQMPvMCzLCjgLY+acfGxe/f1Jz7mz3+rsXkBsQ0gCvEd8SaWv7ZODt8nemfqwp2NhQKj/gGDqtJ2c/6xOL3WwqMLChyDrNNvJ4U7nnZklFY/JJmEr4QZbLHMcjFtizEcSjgrcw/VPW/8dn3X2P1qqdZT81bbUm2N10LKSd+/V6XGaYi0Q90wgAnFL3GVd1ntGNktyS2xTliUWSuLKh1bGTcNY6ve9zi9vLfXjbuf9uaWODpPfLiGOU6FQjp4WT8qVjH/d1bavsb7Yz/NMIF/NhL2ays1EHBTY9tzW1tbcBuPBXJX7GLrM06lmipspbqa4qSkuqPqSRoTLvFGaRySZaWymsZnGpqaxayE1sNgGgW6VU1kHp9CAR0g4cnAKxdicPkXEQpHK64v5+SkeQYnrohCj2MqReP3KGcQbHEVlAtuhimU5+hHG1CctzPUGoBf7q6nOOEAhSBnvNgxZ+C1F3xuwJJyTOthAJQYjiqbhj+5+EzgO9bMJPIa71gQuw71pApdbOtBE3mOay0S+YxvI5LjHtIg7A8SjObrMOePfZxTSa6Dfl5g3ouHfaBw9U7tHwjFKMFnGy2FhinLwUI7c+4bRZ3YDgJdYELDwDqhf/j+g6lMPygrTVwwREyY30fsy5GsLeX0LkO9eOuSh36vXNPIUXLdj9xkW0cdoKKZTVJB4yLvbhgOLVVlhnP5gKmHy62qs9q8ZlrdJEPl440DVb7pZpN571g76A5nY+wM3pZxuisMi7Y4Oy687PkJY2R5Bww1mapAVfovUSoxbi09XwIYacpEWfCE3n5u/cW1zddFMLpqOVSARzXlYy6XeOZcFxc8qUkbCyedvfvv86xLPf6NO2up4N3Me5zjgZE5qTMiAGA5mxUyvjKzOyaH69aerix314fUwzAE6T+OiKSWLxG2Zj3xCQ42ryg3LUwYWoLYAdnoTpXme7ZU2aIJXNFedAjQaJSLwGffjWA+/qiLXB4miDTXCKSnpxSgUY7vLQ33G2MS6kYaZzNy6BqLN/WrK3rt+dcd2N8Si62IkxzgbketDTE9fT5+srYMNpewuLTDNEwYi24MvKWxSlZXr2to02soe9HS6n8L6AJLrMrMzwPq/hj/SpdFIlRvHPfv001iPnrZTa72GxTiO/wOEMOAG
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"유저 회원가입"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/user/register/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+소셜 유저인 경우 `socialToken`을 전달해야합니다.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"socialToken":{"type":"string","writeOnly":true,"minLength":1,"description":"소셜 로그인 토큰"},"name":{"type":"string","writeOnly":true,"minLength":1,"title":"닉네임"},"email":{"type":"string","writeOnly":true,"minLength":1,"title":"이메일"},"phone":{"type":"string","writeOnly":true,"minLength":1,"title":"휴대폰"},"isKakaoInfoAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 정보 수신 동의"},"isSmsInfoAgree":{"type":"boolean","writeOnly":true,"title":"sms 정보 수신 동의"},"isEmailInfoAgree":{"type":"boolean","writeOnly":true,"title":"email 정보 수신 동의"},"isKakaoContactAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 contact 진행 상황 알림"}},"required":["email","name","phone","socialToken"],"title":"UserRegisterRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"socialToken":{"type":"string","writeOnly":true,"minLength":1,"description":"소셜 로그인 토큰"},"name":{"type":"string","writeOnly":true,"minLength":1,"title":"닉네임"},"email":{"type":"string","writeOnly":true,"minLength":1,"title":"이메일"},"phone":{"type":"string","writeOnly":true,"minLength":1,"title":"휴대폰"},"isKakaoInfoAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 정보 수신 동의"},"isSmsInfoAgree":{"type":"boolean","writeOnly":true,"title":"sms 정보 수신 동의"},"isEmailInfoAgree":{"type":"boolean","writeOnly":true,"title":"email 정보 수신 동의"},"isKakaoContactAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 contact 진행 상황 알림"}},"required":["email","name","phone","socialToken"],"title":"UserRegisterRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"socialToken":{"type":"string","writeOnly":true,"minLength":1,"description":"소셜 로그인 토큰"},"name":{"type":"string","writeOnly":true,"minLength":1,"title":"닉네임"},"email":{"type":"string","writeOnly":true,"minLength":1,"title":"이메일"},"phone":{"type":"string","writeOnly":true,"minLength":1,"title":"휴대폰"},"isKakaoInfoAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 정보 수신 동의"},"isSmsInfoAgree":{"type":"boolean","writeOnly":true,"title":"sms 정보 수신 동의"},"isEmailInfoAgree":{"type":"boolean","writeOnly":true,"title":"email 정보 수신 동의"},"isKakaoContactAgree":{"type":"boolean","writeOnly":true,"title":"카카오톡 contact 진행 상황 알림"}},"required":["email","name","phone","socialToken"],"title":"UserRegisterRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"access":{"type":"string","readOnly":true},"refresh":{"type":"string","readOnly":true}},"required":["access","refresh"],"title":"UserRegister"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"socialToken":{"type":"array","items":{"type":"string"}},"name":{"type":"array","items":{"type":"string"}},"email":{"type":"array","items":{"type":"string"}},"phone":{"type":"array","items":{"type":"string"}},"isKakaoInfoAgree":{"type":"array","items":{"type":"string"}},"isSmsInfoAgree":{"type":"array","items":{"type":"string"}},"isEmailInfoAgree":{"type":"array","items":{"type":"string"}},"isKakaoContactAgree":{"type":"array","items":{"type":"string"}}},"title":"UserRegisterErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"UserRegisterError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: user-refresh-create
+title: "유저 리프레시"
+description: "유저 리프레시"
+sidebar_label: "유저 리프레시"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v00AQ/SvVnEDaxAlwshBSWxWpAtSqLacoqjb2NN7W3nV310lDtBJIHJC4ckAoh544ceiBX0XDf0CzdhKnTZRLD+US2Tsf++bNy4zHoHLU3Aol92MIoTCoTzWeaTTJaaSRWwQGlvcNhB1vhS4DjZcFGruj4hGEY4iUtCgtPfI8T0Xk8wXnRkk6M1GCGacnO8oRQlC9c4wsMMg13W4FGrJW19YcjdVC9oFBJuRblH2bQNh2rgQgNMYEahbWZWCFTSnuRF2gPCrPj0qsQGF1dFeN4XDYOFM6axQ6RRmpmPI9JrhZkVqRc20DDzPmlj8mgEtxVhfoGBiMCi3sCMLOGHaQa9QQdrrOi8bkSpoS27NW6wGVw6MIjVlVqEYeH8h0NAe4lpS7NFQ52SY+SiJiNJEWOaGHEMAxePGgFWZoDO/jZkep5GuBaVzz5FrzETAQFrMVJLmVrGwMcqvp2NNa6XcVWscA6X1XxbiZ8YUrm9e7hnR/y3rm2w/IfIyWi3Qz+sqvBnhXZZmSG6A+/z+g3juaTq6n1x+3bn/++vvt8+31l+nXiW+bTRTtkVwZj4/TiIFg0A5odwSVzgJYTIpjKq7EP5sXCxHm4g16FdKVCfIYNTCQPCPrdmETpcUHT5aHSIQdLXbT3hXP8hSXZuGcE0p6pvxlFQlDPugpvbV9uA8MBqhNWWm72Wq24G79f24mtzeTcKvDc9GMcdAso5uRyrpPEmtzEwbBfdvTlz0dvJr++D39/qkKXhdYCyK0xGjGvR6q+le3YAnmnEmLVzbIUy4k5Sq0V0nZnQ4M2sDK3b6YBAxIHwm1MezAeNzjBt/r1Dk6vixQ04jvMhhwLXiP+Ot0HZv1iKb/BY68sry0GyeEg9zTouzspk3s2CzFdhRhbtcE+/8IrZe59A4Pjk+AQa/6OMn87IFaZlZ/KWHzwibLurvwuqseqJyZSY5qSJYlyCrA9EvwV4aMx6WqnZv7l6a1EXPdl97Uwq5z7h+r0Gzh
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"유저 리프레시"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/user/refresh/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+유저 리프레시
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"refresh":{"type":"string","minLength":1}},"required":["refresh"],"title":"TokenRefreshRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"refresh":{"type":"string","minLength":1}},"required":["refresh"],"title":"TokenRefreshRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"refresh":{"type":"string","minLength":1}},"required":["refresh"],"title":"TokenRefreshRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"access":{"type":"string","readOnly":true},"refresh":{"type":"string"}},"required":["access","refresh"],"title":"TokenRefresh"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"refresh":{"type":"array","items":{"type":"string"}}},"title":"TokenRefreshErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"TokenRefreshError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: mood-list
+title: "Mood 목록 조회"
+description: "Mood 목록 조회"
+sidebar_label: "Mood 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVUFr1EAU/ivLOykMm13rKYhQS5FSRaF6WoLMJs/NtMlMOjOJXcOABY+9KqW0h14EPfXQg7+pu/0P8pJsmm67HgRBL7vDm/e++d73vZmUoDLU3AoltyLwIVUqepcIY4GB5RMD/qiKQcDAYJhrYafgj0p4hlyjBn8UuICBRpMpadCAX8KjwYD+QiUtSktLnmWJCKtTvF2jJMVMGGPKaWWnGYIPXGs+BQbCYmo6cTXexZD4ZJq4WlGfIqJOjpAWJ6iBmPDolUym4Fudo2MgeYqbspNrrBZyQv0Jm1Bgfnw4/3rZm59dzr59BgYpP3iBcmJj8NcGDcK2/h3C9ZfTq5+fViOEsUiiHbR/v1vLJ1v3pf4TQjgivJ8LjRHNlYigZdWCL1oIbkBfKhVtkIK0ALcM04rL7kdcQiIAxyBCE2qR0UiCD6TP48HwT8Z2hWERWi6Su1ots2/yOiQ3VJoquam10rCS6tr/QfVOiBzozX58n52f9ebnF9cnRzQlaGNFr8+kcjHjNC/gFUOPnh4Pbp6eHWqpZr14gG5uVCa2sbpSdFCMPKquCE0B+LCe21hp8bGSqCIm5HtVlTfNfODFWOne+ustYFCgNjXjYX/QH8ByH1cXp7OLU7834pnoR1j06+p+qNLgQWxtZnzPu7v38MlYe0/nJ5fz48OmeFVhp4gsz5SxKa98bTq6V8pbLFtpLB5YL0u4kASV68rsWuYRFEOygG4GAzI3VsZSvCzH3OBbnThH4f0cNT39AYOCa8HHJNoocGwhNX0V9nBKWochZuRkwZO8tmZpOumb0br+fPMNMOA50em6uVe52SwIfbElpx3s28ayhgL9OraipCzrWXGuza+3Vla001Rnk46Bc+4XjziK+A==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Mood 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/mood/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Mood 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30},"childSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"tagId":{"type":"integer"},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30}},"required":["id","nameEn","nameKr","tagId"],"title":"MoodChildMood"}}},"required":["childSet","id","nameEn","nameKr"],"title":"Mood"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

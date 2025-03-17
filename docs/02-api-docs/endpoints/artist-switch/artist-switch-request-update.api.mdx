@@ -1,0 +1,673 @@
+---
+id: artist-switch-request-update
+title: "ArtistSwitchREquestUpdate"
+description: "아티스트 전환 신청서 수정"
+sidebar_label: "ArtistSwitchREquestUpdate"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistSwitchREquestUpdate"}></Heading>
+
+<MethodEndpoint method={"put"} path={"/v1/artist_switch_request/{id}/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 전환 신청서 수정
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "path", name: "id", schema: { type: "string", pattern: "^me$" }, required: true },
+  ]}></ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            profile: { type: "string", minLength: 1, title: "프로필 이미지" },
+            nickname: { type: "string", minLength: 1, title: "활동 이름", maxLength: 30 },
+            instrumentsSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "integer" },
+                  nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                  nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                },
+                required: ["id", "nameEn", "nameKr"],
+                title: "AristSwitchRequestInstrumentsRequest",
+              },
+              title: "작업분야",
+            },
+            country: {
+              enum: [
+                "AUSTRAILIA",
+                "CANADA",
+                "CHINA",
+                "FRANCE",
+                "GERMANY",
+                "INDONESIA",
+                "ITALY",
+                "JAPAN",
+                "ROK",
+                "RUSSIA",
+                "SPAIN",
+                "THAILNAD",
+                "UK",
+                "USA",
+                "VIETNAM",
+              ],
+              type: "string",
+              description:
+                "* `ROK` - Republic of Korea\n* `USA` - USA\n* `UK` - UK\n* `AUSTRAILIA` - Australia\n* `CANADA` - Canada\n* `SPAIN` - Spain\n* `JAPAN` - Japan\n* `CHINA` - China\n* `VIETNAM` - Vietnam\n* `THAILNAD` - Thailand\n* `FRANCE` - France\n* `INDONESIA` - Indonesia\n* `RUSSIA` - Russia\n* `GERMANY` - Germany\n* `ITALY` - Italy",
+              "x-spec-enum-id": "7e3833a14afadc3b",
+              title: "국가",
+              "x-enumNames": [
+                "Australia",
+                "Canada",
+                "China",
+                "France",
+                "Germany",
+                "Indonesia",
+                "Italy",
+                "Japan",
+                "Republic of Korea",
+                "Russia",
+                "Spain",
+                "Thailand",
+                "UK",
+                "USA",
+                "Vietnam",
+              ],
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer" } },
+                required: ["id"],
+                title: "AristSwitchRequestArtistLanguageRequest",
+              },
+              title: "언어",
+            },
+            introduction: { type: "string", minLength: 1, title: "소개글", maxLength: 1000 },
+            discographySet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  kind: {
+                    enum: ["ALBUM", "AUDIO", "VIDEO"],
+                    type: "string",
+                    description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                    "x-spec-enum-id": "451e9e7ea9bd467a",
+                    title: "유형",
+                    "x-enumNames": ["참여작품", "음원", "영상"],
+                  },
+                  link: { type: "string", minLength: 1, title: "링크", maxLength: 500 },
+                  instrumentsSet: {
+                    type: "array",
+                    items: {
+                      type: "object",
+                      properties: {
+                        id: { type: "integer" },
+                        nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                        nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                      },
+                      required: ["id", "nameEn", "nameKr"],
+                      title: "AristSwitchRequestInstrumentsRequest",
+                    },
+                    title: "작업분야",
+                  },
+                  description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                },
+                required: ["instrumentsSet", "kind", "link"],
+                title: "AristSwitchRequestDiscographyRequest",
+              },
+              title: "디스코그라피",
+            },
+            isPro: { type: "boolean", title: "공연권 단체/저작권 수집 협회 등록 여부" },
+            proSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  name: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 이름" },
+                  number: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 등록번호" },
+                },
+                required: ["name", "number"],
+                title: "AristSwitchRequestProRequest",
+              },
+              nullable: true,
+              title: "아티스트 공연권 단체/저작권 수집 협회 등록정보",
+            },
+          },
+          required: [
+            "country",
+            "discographySet",
+            "instrumentsSet",
+            "introduction",
+            "isPro",
+            "languageSet",
+            "nickname",
+            "proSet",
+            "profile",
+          ],
+          title: "ArtistSwitchRequestUpdateRequest",
+        },
+      },
+      "application/x-www-form-urlencoded": {
+        schema: {
+          type: "object",
+          properties: {
+            profile: { type: "string", minLength: 1, title: "프로필 이미지" },
+            nickname: { type: "string", minLength: 1, title: "활동 이름", maxLength: 30 },
+            instrumentsSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "integer" },
+                  nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                  nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                },
+                required: ["id", "nameEn", "nameKr"],
+                title: "AristSwitchRequestInstrumentsRequest",
+              },
+              title: "작업분야",
+            },
+            country: {
+              enum: [
+                "AUSTRAILIA",
+                "CANADA",
+                "CHINA",
+                "FRANCE",
+                "GERMANY",
+                "INDONESIA",
+                "ITALY",
+                "JAPAN",
+                "ROK",
+                "RUSSIA",
+                "SPAIN",
+                "THAILNAD",
+                "UK",
+                "USA",
+                "VIETNAM",
+              ],
+              type: "string",
+              description:
+                "* `ROK` - Republic of Korea\n* `USA` - USA\n* `UK` - UK\n* `AUSTRAILIA` - Australia\n* `CANADA` - Canada\n* `SPAIN` - Spain\n* `JAPAN` - Japan\n* `CHINA` - China\n* `VIETNAM` - Vietnam\n* `THAILNAD` - Thailand\n* `FRANCE` - France\n* `INDONESIA` - Indonesia\n* `RUSSIA` - Russia\n* `GERMANY` - Germany\n* `ITALY` - Italy",
+              "x-spec-enum-id": "7e3833a14afadc3b",
+              title: "국가",
+              "x-enumNames": [
+                "Australia",
+                "Canada",
+                "China",
+                "France",
+                "Germany",
+                "Indonesia",
+                "Italy",
+                "Japan",
+                "Republic of Korea",
+                "Russia",
+                "Spain",
+                "Thailand",
+                "UK",
+                "USA",
+                "Vietnam",
+              ],
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer" } },
+                required: ["id"],
+                title: "AristSwitchRequestArtistLanguageRequest",
+              },
+              title: "언어",
+            },
+            introduction: { type: "string", minLength: 1, title: "소개글", maxLength: 1000 },
+            discographySet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  kind: {
+                    enum: ["ALBUM", "AUDIO", "VIDEO"],
+                    type: "string",
+                    description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                    "x-spec-enum-id": "451e9e7ea9bd467a",
+                    title: "유형",
+                    "x-enumNames": ["참여작품", "음원", "영상"],
+                  },
+                  link: { type: "string", minLength: 1, title: "링크", maxLength: 500 },
+                  instrumentsSet: {
+                    type: "array",
+                    items: {
+                      type: "object",
+                      properties: {
+                        id: { type: "integer" },
+                        nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                        nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                      },
+                      required: ["id", "nameEn", "nameKr"],
+                      title: "AristSwitchRequestInstrumentsRequest",
+                    },
+                    title: "작업분야",
+                  },
+                  description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                },
+                required: ["instrumentsSet", "kind", "link"],
+                title: "AristSwitchRequestDiscographyRequest",
+              },
+              title: "디스코그라피",
+            },
+            isPro: { type: "boolean", title: "공연권 단체/저작권 수집 협회 등록 여부" },
+            proSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  name: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 이름" },
+                  number: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 등록번호" },
+                },
+                required: ["name", "number"],
+                title: "AristSwitchRequestProRequest",
+              },
+              nullable: true,
+              title: "아티스트 공연권 단체/저작권 수집 협회 등록정보",
+            },
+          },
+          required: [
+            "country",
+            "discographySet",
+            "instrumentsSet",
+            "introduction",
+            "isPro",
+            "languageSet",
+            "nickname",
+            "proSet",
+            "profile",
+          ],
+          title: "ArtistSwitchRequestUpdateRequest",
+        },
+      },
+      "multipart/form-data": {
+        schema: {
+          type: "object",
+          properties: {
+            profile: { type: "string", minLength: 1, title: "프로필 이미지" },
+            nickname: { type: "string", minLength: 1, title: "활동 이름", maxLength: 30 },
+            instrumentsSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "integer" },
+                  nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                  nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                },
+                required: ["id", "nameEn", "nameKr"],
+                title: "AristSwitchRequestInstrumentsRequest",
+              },
+              title: "작업분야",
+            },
+            country: {
+              enum: [
+                "AUSTRAILIA",
+                "CANADA",
+                "CHINA",
+                "FRANCE",
+                "GERMANY",
+                "INDONESIA",
+                "ITALY",
+                "JAPAN",
+                "ROK",
+                "RUSSIA",
+                "SPAIN",
+                "THAILNAD",
+                "UK",
+                "USA",
+                "VIETNAM",
+              ],
+              type: "string",
+              description:
+                "* `ROK` - Republic of Korea\n* `USA` - USA\n* `UK` - UK\n* `AUSTRAILIA` - Australia\n* `CANADA` - Canada\n* `SPAIN` - Spain\n* `JAPAN` - Japan\n* `CHINA` - China\n* `VIETNAM` - Vietnam\n* `THAILNAD` - Thailand\n* `FRANCE` - France\n* `INDONESIA` - Indonesia\n* `RUSSIA` - Russia\n* `GERMANY` - Germany\n* `ITALY` - Italy",
+              "x-spec-enum-id": "7e3833a14afadc3b",
+              title: "국가",
+              "x-enumNames": [
+                "Australia",
+                "Canada",
+                "China",
+                "France",
+                "Germany",
+                "Indonesia",
+                "Italy",
+                "Japan",
+                "Republic of Korea",
+                "Russia",
+                "Spain",
+                "Thailand",
+                "UK",
+                "USA",
+                "Vietnam",
+              ],
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer" } },
+                required: ["id"],
+                title: "AristSwitchRequestArtistLanguageRequest",
+              },
+              title: "언어",
+            },
+            introduction: { type: "string", minLength: 1, title: "소개글", maxLength: 1000 },
+            discographySet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  kind: {
+                    enum: ["ALBUM", "AUDIO", "VIDEO"],
+                    type: "string",
+                    description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                    "x-spec-enum-id": "451e9e7ea9bd467a",
+                    title: "유형",
+                    "x-enumNames": ["참여작품", "음원", "영상"],
+                  },
+                  link: { type: "string", minLength: 1, title: "링크", maxLength: 500 },
+                  instrumentsSet: {
+                    type: "array",
+                    items: {
+                      type: "object",
+                      properties: {
+                        id: { type: "integer" },
+                        nameEn: { type: "string", minLength: 1, title: "영어 이름", maxLength: 30 },
+                        nameKr: { type: "string", minLength: 1, title: "한글 이름", maxLength: 30 },
+                      },
+                      required: ["id", "nameEn", "nameKr"],
+                      title: "AristSwitchRequestInstrumentsRequest",
+                    },
+                    title: "작업분야",
+                  },
+                  description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                },
+                required: ["instrumentsSet", "kind", "link"],
+                title: "AristSwitchRequestDiscographyRequest",
+              },
+              title: "디스코그라피",
+            },
+            isPro: { type: "boolean", title: "공연권 단체/저작권 수집 협회 등록 여부" },
+            proSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  name: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 이름" },
+                  number: { type: "string", minLength: 1, title: "공연권 단체/저작권 수집 협회 등록번호" },
+                },
+                required: ["name", "number"],
+                title: "AristSwitchRequestProRequest",
+              },
+              nullable: true,
+              title: "아티스트 공연권 단체/저작권 수집 협회 등록정보",
+            },
+          },
+          required: [
+            "country",
+            "discographySet",
+            "instrumentsSet",
+            "introduction",
+            "isPro",
+            "languageSet",
+            "nickname",
+            "proSet",
+            "profile",
+          ],
+          title: "ArtistSwitchRequestUpdateRequest",
+        },
+      },
+    },
+    required: true,
+  }}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              profile: { type: "string", title: "프로필 이미지" },
+              name: { type: "string", readOnly: true, title: "실명" },
+              rrn: { type: "string", readOnly: true, title: "주민등록번호" },
+              nickname: { type: "string", title: "활동 이름", maxLength: 30 },
+              instrumentsSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", title: "영어 이름", maxLength: 30 },
+                    nameKr: { type: "string", title: "한글 이름", maxLength: 30 },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "AristSwitchRequestInstruments",
+                },
+                title: "작업분야",
+              },
+              country: {
+                enum: [
+                  "AUSTRAILIA",
+                  "CANADA",
+                  "CHINA",
+                  "FRANCE",
+                  "GERMANY",
+                  "INDONESIA",
+                  "ITALY",
+                  "JAPAN",
+                  "ROK",
+                  "RUSSIA",
+                  "SPAIN",
+                  "THAILNAD",
+                  "UK",
+                  "USA",
+                  "VIETNAM",
+                ],
+                type: "string",
+                description:
+                  "* `ROK` - Republic of Korea\n* `USA` - USA\n* `UK` - UK\n* `AUSTRAILIA` - Australia\n* `CANADA` - Canada\n* `SPAIN` - Spain\n* `JAPAN` - Japan\n* `CHINA` - China\n* `VIETNAM` - Vietnam\n* `THAILNAD` - Thailand\n* `FRANCE` - France\n* `INDONESIA` - Indonesia\n* `RUSSIA` - Russia\n* `GERMANY` - Germany\n* `ITALY` - Italy",
+                "x-spec-enum-id": "7e3833a14afadc3b",
+                title: "국가",
+                "x-enumNames": [
+                  "Australia",
+                  "Canada",
+                  "China",
+                  "France",
+                  "Germany",
+                  "Indonesia",
+                  "Italy",
+                  "Japan",
+                  "Republic of Korea",
+                  "Russia",
+                  "Spain",
+                  "Thailand",
+                  "UK",
+                  "USA",
+                  "Vietnam",
+                ],
+              },
+              languageSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: { id: { type: "integer" }, name: { type: "string", readOnly: true, title: "언어 이름" } },
+                  required: ["id", "name"],
+                  title: "AristSwitchRequestArtistLanguage",
+                },
+                title: "언어",
+              },
+              introduction: { type: "string", title: "소개글", maxLength: 1000 },
+              discographySet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    kind: {
+                      enum: ["ALBUM", "AUDIO", "VIDEO"],
+                      type: "string",
+                      description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                      "x-spec-enum-id": "451e9e7ea9bd467a",
+                      title: "유형",
+                      "x-enumNames": ["참여작품", "음원", "영상"],
+                    },
+                    link: { type: "string", title: "링크", maxLength: 500 },
+                    instrumentsSet: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          id: { type: "integer" },
+                          nameEn: { type: "string", title: "영어 이름", maxLength: 30 },
+                          nameKr: { type: "string", title: "한글 이름", maxLength: 30 },
+                        },
+                        required: ["id", "nameEn", "nameKr"],
+                        title: "AristSwitchRequestInstruments",
+                      },
+                      title: "작업분야",
+                    },
+                    description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                  },
+                  required: ["id", "instrumentsSet", "kind", "link"],
+                  title: "AristSwitchRequestDiscography",
+                },
+                title: "디스코그라피",
+              },
+              isPro: { type: "boolean", title: "공연권 단체/저작권 수집 협회 등록 여부" },
+              proSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    name: { type: "string", title: "공연권 단체/저작권 수집 협회 이름" },
+                    number: { type: "string", title: "공연권 단체/저작권 수집 협회 등록번호" },
+                  },
+                  required: ["id", "name", "number"],
+                  title: "AristSwitchRequestPro",
+                },
+                nullable: true,
+                title: "아티스트 공연권 단체/저작권 수집 협회 등록정보",
+              },
+              isRejected: { type: "boolean", readOnly: true, title: "반려 여부" },
+              rejectReason: { type: "string", readOnly: true, title: "반려 사유" },
+              createdAt: { type: "string", format: "date-time", readOnly: true, title: "생성일시" },
+              updatedAt: { type: "string", format: "date-time", readOnly: true, title: "수정일시" },
+            },
+            required: [
+              "country",
+              "createdAt",
+              "discographySet",
+              "id",
+              "instrumentsSet",
+              "introduction",
+              "isPro",
+              "isRejected",
+              "languageSet",
+              "name",
+              "nickname",
+              "proSet",
+              "profile",
+              "rejectReason",
+              "rrn",
+              "updatedAt",
+            ],
+            title: "ArtistSwitchRequestUpdate",
+          },
+        },
+      },
+      description: "",
+    },
+    "400": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "object",
+                properties: {
+                  nonField: { type: "array", items: { type: "string" } },
+                  profile: { type: "array", items: { type: "string" } },
+                  nickname: { type: "array", items: { type: "string" } },
+                  instrumentsSet: { type: "array", items: { type: "string" } },
+                  country: { type: "array", items: { type: "string" } },
+                  languageSet: { type: "array", items: { type: "string" } },
+                  introduction: { type: "array", items: { type: "string" } },
+                  discographySet: { type: "array", items: { type: "string" } },
+                  isPro: { type: "array", items: { type: "string" } },
+                  proSet: { type: "array", items: { type: "string" } },
+                },
+                title: "ArtistSwitchRequestUpdateErrorMessage",
+              },
+              errorCode: { type: "string" },
+            },
+            required: ["errorCode", "message"],
+            title: "ArtistSwitchRequestUpdateError",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

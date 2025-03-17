@@ -1,0 +1,71 @@
+---
+id: user-get-enc-data-retrieve
+title: "표준창서비스 호출 결과 반환"
+description: "표준창서비스 호출 결과 반환"
+sidebar_label: "표준창서비스 호출 결과 반환"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU2L20gQ/SumTgkIy97NSYTAbHYIQ/YQ8nUxxrSlGrszUrfSXXLiGEECcwjLwrKEsJ7gnBL2tAczs4RZ2P1DY/k/hJJkj2bkScIkl4CxZXXVq1cfr3oCOkYjSGq1E4AHiUXTGyD1UPm9QJDoGSQjcYTgQCyMiJDQWPA6E5AKPHicoBmDA0pECB6s3MAB6w8xEuBNgMYxn1kyUg3AgUiqX1ANaAheO3UgQOsbGTOHswgGHyfSYAAemQRTZ3NIqQgHRtK4NxJhgpePXAf6MgKk91D1Rmis1Kong8sz2IB0jkLXARIDrn/eKug6YNFPmHXek59QGDTgdbpsatDGWlm0zOSHVot/fK0IFfGjiONQ+nnz3UeWGUzqzHX/EfrE3Tc8KiQLtHioFW5KkCSF/GL5+njxarb8fb44fLmcHkPqgLQ7ASqSNH6IRu6WoW/qKA6ROMU1Wl/rEIWqwC2OjrO3+eevt43sYH/x7rdG9uffiw/PIU2rZep8NoxTku+eoj+waG4hbSv/Zx69NK21hvlfa7W/YQUDJCHDegnPp1PaVdje1FGk1bYx2lxM9cfvg2rt1fKPWfb+eTb/P9ufLf7dz35931hOj7MPs8bJ4fzk6L/GYj5dHkxZSkhDzUtrgDllwaICd9R2WRpudYu5cKqTe5x0kddKLeu8RCxvI0s71/kQRYDmVOhbCQ21kc/yIubUpdrVuXuZ7hMx6mvT2LqzAw6UOgYP2s1WswXnMz2ZzxbzmdfoiFg2Axw1C++mr6PulSFRbD3XrZ9dvd437o3szT/Z9EXpfJFjxYmHItaWIpF3vszoy4t9hvq6XoRPyY1DIRXjJyafkaIRHRi1wSm2lAPVZoADPCJDbYnNJpO+sPjAhGnKr4vlyrsskFb0Q56sXRFarHFYDzdcuVsO4dVGJchGjns4PnvJFLs+V80lQ9bvjU9Erht/PYEN18YnGGywPqXQ5T9GMof8EnFWIuCGFP5bvo8xVbxqm4VR1uK8tX0fHBAJz0RVZ3u5zsoHRl8dqXEF+6zkVinwN1dro8tkUqg4Tdf2xdGFHmudr1oEaTdN048P4k3t
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"표준창서비스 호출 결과 반환"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/user/get_enc_data/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+표준창서비스 호출 결과 반환
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"enc_data","schema":{"type":"string","minLength":1},"description":"enc_data","required":true},{"in":"query","name":"integrity_value","schema":{"type":"string","minLength":1},"description":"integrity_value","required":true},{"in":"query","name":"token_version_id","schema":{"type":"string","minLength":1},"description":"token_version_id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"phone":{"type":"string","title":"핸드폰번호"},"isIdentityVerificationCompleted":{"type":"boolean","title":"본인인증 완료 여부"}},"required":["isIdentityVerificationCompleted","phone"],"title":"UserGetEncData"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

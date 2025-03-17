@@ -1,0 +1,182 @@
+---
+id: artist-virtual-retrieve
+title: "ArtistVirtualRetrieve"
+description: "아티스트 가상화 리스트 조회"
+sidebar_label: "ArtistVirtualRetrieve"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99vE0cQ/ldO+9RWl9gpqVqsqlIaJSiCJqihfUktWN+N7SV3u8funomxTkqKqfiRiiKRAq2DgoR4yoOlWsBD/6L4/D9Us3e213GCAPHQVrwk572dmW+++XZvpkVEBJJqJviKT0qESs2UvtxgUsc0uCxBSwYNIC6JqKQhaJCKlDZahHFSItdikE3iEk5DICXi1WO+eVmxG7hfeXUIKSm1iG5G+JZxDTWQJHGJD8qTLMKopETSnw/T/V764jZJyi7RtIYRciSk7BIFXiyZbpq43wKVIElpo4ybJahIcAUK43xeLOI/T3ANXOMjjaKAeSa7wlWFwVrTuETlKngaM5TIhWaZN+afgB0jUn+NB01S0jKGxCWceZtZ/qPdSkvGa8QlmukAF9K99uBeN737fHD3tdO/d6fffp4+bROXhHTrAvCarpPSmWJiIFRZ8GZfnYP0YNsZPGz3n3UGe23kk3EthR97GaFvsP1l96jbOXq9PRl6rljE4EpTHZvcgcch1mBtefnCyuoSccnaav7w48LiwqWVtVUszPEwk2X9zLmSWV1xZpw1HjAOP3FczJya1Wp1tDx0jOuDTu+ou50+f0BcsjWjIvBmENIM1oT4UPTn/XmYO3v2qy8qX1at/AZPOv37T5z05s7gZsfYotkqDcFIKg+H6fD8YRypbHhUWsYhcK3WQVtMUikpCp1pCNV7aifJzsnSiRWalJVVscc76e89J93v9V+0hy7Oy3dxMdjDilsuIiqH5yMI1qrmWH2gs/AvyC/BnddiJsHHmjOfjHCNvJfH1gvmmrloKFkZl59kt8tEfm/jecTuVIgJ5xYBTx+kj271X7bTvb9xvQZcwv9WfO9VnHNIic1ZbbgQCuF/5Mrm6jshfJuqMP+tdDP4KKsJqtaREpsrNVxgalkEgbiOGMagKkIEQLn9udl92H/WSZ/ecdJHh/2X22hLGyBpDdY1tRPicVgxV2ZVyJBq/IqJuBKA+WhWaRxoUiq+Id37d45eHTj9v9rpwW8GstA0+B4aDK4vcn3i5Wz7HTHf23f6Lw77r7pOevsxOqqaRE1Td4KPY4n+uZtbaVpbFPEpgUdGt3azjmeqPjZHNgTr9nOzIh77IB/rdCYrNb4OrKZs3FJZZ8BKYEoVJEmmGlRMeb449wGbSx80ZcG04o8zle+zUC6KMBR8SUohT4d65r8BdXoSmOiTf+2m+71Bu+tgh3ZzZ/DkIdYYdF345iNgsFJsYEmhMVfIBoZCProUyHhwWMdUs2yG48P4FozYeTDXIAKoA/WNiPOJZiHWdSHZDUOdAcx4VRjzPMnrtFER0lm4uEJc0gCpskzmZouzxamW+Kjb6Xc7JWeDRmzWh8ZsZj3ribD8SV3rSJUKhel3n35dkYVv0j966eOd3Pg0Q8vItHpC6ZCaeucZvQXFE5hHRGnY0oUooIyj41gaSWT0b5DGHHGHE5tL8hIQl6Ac6kJp3NNqVaiCH2SQJLiczY7Ye/pM0UqAKqrSQMEUgJGQrUnRPRnWJjSPz6ENGsRg5FbGH5JhLDM/usNyI4jMcsHzINKW1dTJQS8jDZ5buoR5x0iCrahNo6j8wWqvKW9avifFNQSPfxP3FJNWK9Nrkoz2Z69OtRgpOtuNNJWTJPkHajDZhg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistVirtualRetrieve"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/artist/virtual/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 가상화 리스트 조회
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "query", name: "chunk_size", schema: { type: "integer" }, description: "사이즈" },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              nickname: { type: "string", title: "아티스트 닉네임", maxLength: 30 },
+              profile: { type: "string", title: "유저 프로필" },
+              introduction: { type: "string", title: "소개글", maxLength: 1000 },
+              status: {
+                enum: ["OFFLINE", "ONLINE", "VACATION"],
+                type: "string",
+                description: "* `ONLINE` - Online\n* `OFFLINE` - Offline\n* `VACATION` - 휴가중",
+                "x-spec-enum-id": "de0d4d4e19985b7f",
+                title: "활동 상태",
+                "x-enumNames": ["Offline", "Online", "휴가중"],
+              },
+              instrumentsSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                    parent: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", readOnly: true },
+                            nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                            nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                          },
+                          required: ["id", "nameEn", "nameKr"],
+                          title: "ArtistParentInstruments",
+                        },
+                      ],
+                      readOnly: true,
+                    },
+                  },
+                  required: ["id", "nameEn", "nameKr", "parent"],
+                  title: "ArtistInstruments",
+                },
+                title: "작업분야",
+              },
+              genreSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistGenre",
+                },
+                title: "genre",
+              },
+              moodSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistMood",
+                },
+                title: "mood",
+              },
+              styleSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer" },
+                    nameEn: { type: "string", readOnly: true, title: "영어 이름" },
+                    nameKr: { type: "string", readOnly: true, title: "한글 이름" },
+                  },
+                  required: ["id", "nameEn", "nameKr"],
+                  title: "ArtistStyle",
+                },
+                title: "style",
+              },
+              isFollowing: { type: "boolean", title: "팔로잉 여부" },
+              averageStar: { type: "number", format: "double", default: 0, readOnly: true, title: "평균 별점" },
+              totalReviewCnt: { type: "integer", default: 0, title: "총 리뷰 수" },
+              followers: { type: "integer", title: "팔로워수" },
+              tagCount: { type: "integer", title: "테스트" },
+            },
+            required: [
+              "averageStar",
+              "followers",
+              "genreSet",
+              "id",
+              "instrumentsSet",
+              "introduction",
+              "isFollowing",
+              "moodSet",
+              "nickname",
+              "profile",
+              "styleSet",
+              "tagCount",
+            ],
+            title: "Artist",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

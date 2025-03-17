@@ -1,0 +1,71 @@
+---
+id: event-retrieve
+title: "이벤트 상세 조회"
+description: "이벤트 상세 조회"
+sidebar_label: "이벤트 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU2L3EYQ/SuiTjY0o9l8XEQITJIlmAQSnOQ0DKZHqh21LXVru0uKJ0IQ25uL40NyilnWC/4gYNjDEpbgg3+RR/sfQkkaWd6ZgZDkksuMpK5Xeu/161IJJkMrSRl9I4IAsEBNtyySVVggCMiklSkSWgfBtASlIYBMUgwCtEyxh6gIBLgwxlRCUAItM15TmnCBFioBEbrQqozfBAFMvFyrwxy9rsIrZMJ3EWpSB0ulFx7Fynn1k4vVHy8uH74agQCLh7myGEFANsdqJoDkgnm1HGAmwGGYW0XLhuwnKC1aCKYzrrXoMqMdOub33njMf6HRxMigBJlliQobJ/zbjkmWm3rM/DaGxLZY9o1U201FWzTzG2X0lU6WHd+1Y32lI6v0AgSQooQf9Gob3b8fgYBU3v0S9YJiCD4cNzaSVMnfbPLgXn30anX/oj5+yVug3CQkVQwpzI1JUOoB/PLxUX165tX3z+rjl/VvZ6s/f2SsI2npM0lb+R8Ym0qCACIu2Erl55P69Nf6yev69Bduhzr6F82e/bR6/mjdrBoGY9p3FtBEsrF8SH/2tuM+p+bmOutVtZFSZvrBeO8/TMqu7buqoqsbkP3UpKnR+9Yau5vq+/8PqhuPrmbWq5+eXx4/4vwjxYYn0wIbijx6AvCLPb858365Hj+VD2+P/zessZWxHgK9DJmpL3DJ+eA3xyij5rB202ySU2ys+qHxrGGq9IFp4J2672UxN9abfH0DBBRoXSthbzQejeGqsDfnJ6vzk8CbykyNIixGLXoUmnR2LSbKXOD7m2vXP5pb/+P6+KJ+fK8D7wIOQJyBzDhKZbPRnaLd3r5DtfeH8C75WSKV5n65bSLQ+j6FYg9EN20FBIPRz/sfG0dcVJZz6fA7m1QVPz7M0fJAngkopFVyzjZOS4iU4+sIggOZONzg0+cYrt3s8nbd+0cfjq3K1nHQnIWmC2dTwB1cDr9q1awS65Qw63Z5EoaY0QC4cdL4k9OH9/P9b0GAzNnEYRDvNEHsLrj7VlLvZnLNkH8rsQNSlm3Mq6qvb5d2IvqD0FazR7Oqqv4CVeP9Kw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"이벤트 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/event/{event_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+이벤트 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"event_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 이벤트.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","title":"이벤트 이름","maxLength":50},"detail":{"type":"string","title":"이벤트 상세내용"},"isActive":{"type":"boolean","title":"현재 사용여부"},"startDate":{"type":"string","format":"date","title":"이벤트 시작일자"},"endDate":{"type":"string","format":"date","title":"이벤트 종료일자"}},"required":["endDate","id","name","startDate"],"title":"EventRetrieve"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

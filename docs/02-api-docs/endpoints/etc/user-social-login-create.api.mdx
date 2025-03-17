@@ -1,0 +1,71 @@
+---
+id: user-social-login-create
+title: "유저 소셜 로그인"
+description: "유저 소셜 로그인"
+sidebar_label: "유저 소셜 로그인"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8FuGzcQ/RVhTm1AaaW4RdtFUcAJUiBo2gS2c1IFm9odaxntkhuSK1kVFkgPyakfEBQqkAI99pBDirq/5OgjiiFXq5VtQT44hwABBGFFzpBv3ns7pOagctTcCiUfxhBCYVAfGxUJnh6naiTkcaSRWwQGlo8MhH0XAgMGGp8XaOw9Fc8gnEOkpEVp6ZHneSoit2jwzChJYyZKMOP0ZGc5Qghq+AwjCwxyTRCsQOOXibERZawWcgQMplpYfCzTGYRWF8ggE/IRypFNIOyVDIwllOEcUBYZwRwpNUoJ95iPuSLAl5eM0URa5AQTQrjTOnGRJ612a/nfO/q8/utnead14lei8Yt//r44fwEMztomx6hNe7UF8fZV7+tudPfLeBjxvW+i3p6LoemfeIaOtjq3XhwGZelpFBpjinHFr2ohxMKmBPmpQX3oRHlEmhx45oHSm1yftafTaftU6axd6BQlLRd/Iv/DkZ8VqRU51zZwpMfc8k90fyi6N/KJF2ICo0ILO4OwP4d7yDVqCPuD0rUnkytpPNN3u91b7FEfJ/8MhDnAkTCWSKprHCqVIpdAjPF47Tpi18lwpMYor7PplXgeRWjMjUI1nmo0yQ1iL9mm2mOjmPVym5h3u8vbalMcKBl8cat+ydAYPsLdgVLJ7wWmcSOSa81nVK7F7BpqCf6lNnKDjNrAN00ptzL4QGulf6wKLBkg/b5/bWO7LOU6lNUUbZfKbbRdr94t6hWj5SLdXUAV18B8X2WZ2gV17+OAemVouXizfPOitXz12/LlovX+z8XFv+fLP86dejZR1JpyZRxGTkcVBJNeQLfFoHmhDGDdtg+pSl/IqnmvPZmLH9CZkvZOkMfuTZc8o9n9wiZKi18caw4rMXewvpI+OONZnuL6mF03mMr9q65NjVGeKrd1xc2UT4ZKt/afPAQGE9TGE9DrdDvdK8384u3i/dtF2OrzXHRinHR8didS2eCzxNrchEFwde7zb4c6+G75+7vl61+r5G2JjSRCSyRn3NmkYmO7MhtQa24tntkgTzk1QAaFdgbyovVh0gPmL/mrbuqFAwbkn4QkDvswnw+5wac6LUsafl6gpmN4wGDCteBDIrJPp04lHZ3QY5w55znrt48IDIWnhRd81022ZKsl9qMIc7sl2b1DdAWobfnk8eERMBhWf1Uyb4jGyqz5w8PmhU027Th2dqweqJzVlJw1kGw6k1WA6ZvgX5syn3uzl2Ud76e2ZtSvg48mHQdlWf4PlOXyPw==
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"유저 소셜 로그인"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/user/social_login/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+유저 소셜 로그인
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","writeOnly":true,"minLength":1},"state":{"enum":["google","kakao"],"type":"string","description":"* `kakao` - 카카오\n* `google` - 구글","x-spec-enum-id":"7180c25dbca39c13","x-enumNames":["구글","카카오"]}},"required":["code","state"],"title":"UserSocialLoginRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"code":{"type":"string","writeOnly":true,"minLength":1},"state":{"enum":["google","kakao"],"type":"string","description":"* `kakao` - 카카오\n* `google` - 구글","x-spec-enum-id":"7180c25dbca39c13","x-enumNames":["구글","카카오"]}},"required":["code","state"],"title":"UserSocialLoginRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"code":{"type":"string","writeOnly":true,"minLength":1},"state":{"enum":["google","kakao"],"type":"string","description":"* `kakao` - 카카오\n* `google` - 구글","x-spec-enum-id":"7180c25dbca39c13","x-enumNames":["구글","카카오"]}},"required":["code","state"],"title":"UserSocialLoginRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"state":{"enum":["google","kakao"],"type":"string","description":"* `kakao` - 카카오\n* `google` - 구글","x-spec-enum-id":"7180c25dbca39c13","x-enumNames":["구글","카카오"]},"isRegister":{"type":"boolean","readOnly":true},"socialToken":{"type":"string","readOnly":true},"access":{"type":"string","readOnly":true},"refresh":{"type":"string","readOnly":true}},"required":["access","isRegister","refresh","socialToken","state"],"title":"UserSocialLogin"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"code":{"type":"array","items":{"type":"string"}},"state":{"type":"array","items":{"type":"string"}}},"title":"UserSocialLoginErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"UserSocialLoginError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

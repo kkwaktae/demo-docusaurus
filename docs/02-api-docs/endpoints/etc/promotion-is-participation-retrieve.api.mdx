@@ -1,0 +1,71 @@
+---
+id: promotion-is-participation-retrieve
+title: "Promotion 창여 여부 조회"
+description: "Promotion 창여 여부 조회"
+sidebar_label: "Promotion 창여 여부 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v00AQ/SvRnFppFSfAyUJIBVWo4kDFxymyqo09jbe1vdvZtSFYK8GdO6jqhXsPOSBu/CEa/gMa23HTpBEXLlyS9e682fdm3mwN2iBJp3RxlEAIhnSu+etE2RMjyalYmeb4hNCRwgpBgJEkc3RIFsJJDapgpHQpCChkjhCCzcoZCLBxirmEsAY3N82+I1XMwAsgvCgVYQKhoxJ9JMDJGee75QCRAItxScrNm4ueoiQkCCcRxxNaowuLlvM/GI34L9aFw8LxUhqTqbjhHpxZXfDeFh89PcPYsSTiQjjVZlP2eF37GmCqdYayAL5eJi+LbN4JuCNpspWB9SmXcYrjlb6jjRjPSRK0MSnTXgtcqUej8T+UlqCTKrunJRsCurg13s90nuvikEjTbqoP/w+qW1t9UwbLxc/ll+vB8sv1zY+Pg+W3xe/LzyAgR5dqHpEZNkzZ7iEE1Tjo/RrUbHsfbI5OALc+fs3aW3krN/fypFEvcA6iHagUZYJ0O1IHpUs1qQ8rr3DYqW7gnep3sppqGhwcH4GACsm20sbD0XAEm4J/La5uFlfhYCKNGiZYDVv0MNZ5tJc6Z2wYBNtn+4+nFDxZXn5ffv3UgXcB10DsDaOty2VjgE7RX2t+h3FfJofvXWAyqQpOW1LjkLYfE6jGrY26F0RA2D1Fm00BAeyYVFvHuLqeSotvKfOety9KJH5zIgGVJCWnXOBJDYmyvE4gPJWZxS2KvfNh71Xn0P0BiPupr9pecM8rmZX8BQLOcb56Qn3kxcoJfH97dBDHaNwaaGvK+H3sHfv88A0IkCVXaN1s543ZugVnv5fQXd+t2PGvFzsgdd1a2fs+vj3aiejN3kZzfSLv/R84m1eZ
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Promotion 창여 여부 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/promotion/{slug}/is_participation/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Promotion 창여 여부 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"slug","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isParticipation":{"type":"boolean","readOnly":true}},"required":["isParticipation"],"title":"PromotionIsParticipation"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

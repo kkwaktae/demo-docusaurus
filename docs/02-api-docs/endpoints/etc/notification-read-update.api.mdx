@@ -1,0 +1,71 @@
+---
+id: notification-read-update
+title: "Notification 읽음 처리"
+description: "알림 읽음 처리"
+sidebar_label: "Notification 읽음 처리"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVcFu00AQ/RVrTq20ihPgZCGkUIFUIaAq9BRF1caeJNvau+7uOhCsleDea0VB7bWnHiqEEAf4IRL+AY3tJA5pWiH1wiVZ787svHnzZjYHlaLmVii5HUEAUlnRF2Gxsa+RR/tZGnGLwCBCE2qR0gkEMD05nlz88KbnP6fnx970y+nk4hIYpFzzBC1qA0EnB0GmKbdDYCB5ghCAiICBCYeYcAhysOO02JUWB6jB/R2n7WVSHGXoVRbeiMf0FaG0oj8WcuDZoTBeiacBDDQeZUJjBIHVGbouA8sHBGcpOegyMBhmWthxAfUxco0agk6XXDSaVEmDhjDeazbpL1TSorS05GkaVxf5B4aA5qs5qd4BhpZI0USyFeVtIromb4rIo5cyHlewGQizi7xu21MqRi5XbBlYYWOy+P3pZHr+3Zt+vJx8ew/O1cnolMxXt3YXTi9qrBRnzq1Ugery4E5ZSNAYPsDbDaWSTwXGdSK41nxMuVhMTG3fWC3koMS/LrsnWiv9vAruGCB9b6kIr7tnmb+FKZvDv4HHItJ6Mlt3SGaElov49gwquxroLZUkSt4C9f7/AdVRWexQ0RxLsyI0TZ4A/FHLr/e+n4vI+dREPiymwCvKoAQ5mwULxaXiGRaSo1BD5FHRs9VIa2d2qLR4Vw4WwiFkXxXuFfY3fNRT2mvvbAODEWpTYm41mo3mymj9dXU2uToLvA5PRSPCUaP0boQq6W4MrU1N4PurZ5sPe9p/NP38dXr6oXJe51hzogqnytiEF2WsMqpreWXGL6GtCWPdm1BxaPGt9dOYC0kxM12IoKxQB0YtorM+nxkExcCiMgEDUsJQGUvGed7jBvd07BxtH2WoaYZ3GYy4FrxHlHdyiIShdQRBn8cGbwC+sVspb9P79/fm2vRmupEkmuIKkiiDQxyXb6DrOjYTEoEtD9phiKmtuay0Gj1Oc5Xv7L0GBjwjDutaPSy0Wi3o9mvhLMt2ho1+HVvjkudlJzg3ty+P1nrMe6XKnDJwzv0BJksDcA==
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Notification 읽음 처리"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/notification/{id}/read/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+알림 읽음 처리
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 알림.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isRead":{"type":"boolean","readOnly":true,"title":"확인 여부"}},"required":["id","isRead"],"title":"NotificationRead"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}}},"title":"NotificationReadErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"NotificationReadError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

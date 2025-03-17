@@ -1,0 +1,71 @@
+---
+id: chat-invite-confirm-create
+title: "채팅방 초대 수락"
+description: "채팅방 초대 수락"
+sidebar_label: "채팅방 초대 수락"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVsFu00AQ/ZVqTiBt4wY4WQipoCIhQCAopyiqNvY0Xmrvmt1x0hCtBBJIPfABCMEHcCsSV36Ihn9As3YSt0mUSw9wsda7M7Nv3jzPeAqmRCtJGf0ohRiSTNKR0iNFeJQYfaxscZRYlIQggOTQQdwLRtAXYPFNhY7um3QC8RQSowk18VKWZa6SEDZ67YzmPZdkWEhe0aREiMEMXmNCIKC0DIIUOj6tbz80J6hbxo6s0kMQMLaK8JnOJxCTrVBAofQT1EPKIO56X6NSFlNG2o7VF0CKcg72IJP0ROmTF3UCwG5tyKe74/F499jYYreyOerEpBzvn8+hqHJSpbQUBeypJPnPo77kx3G9AIdJZRVNIO5N4T5KixbiXt8HzbnSaFcDvrW3d53CS1s2ShMO0QLfKNNl1l6Acg+VdXSgiWEtPAbG5Cj1ioeAFI9llVMT4CpRKVwJuYaumqcUXWJVyclBDOAF3LlWAgp0Tg5xu6E2+qHCvM2XtFZOOBPCwq2qh+Gvl9dWR79Kx4G1xj5t0HoByO8PTIrrL27TvTQVi3zXEB5u2Mx69xpZT5Gkyrcjb+zaYE1RGL0F6u3/A+rK1uzHhz+fPl6cf9+Z/Ty7+PRuZ3b2+eLbr1A2ygwPq9K4gFFyB4Jo1I14MkWXx1cEy37ykvOsU5l3laUOS/UYgxD59gxlGr5+LQs+3a8oM1a9DbwFtMzdi+UAPDiVRZnjShtdUMSBj024sOFkLEcDY3f2nz8CASO0rk6829nr7MFVOn6ff704/xrv9GSpOimOOrV3JzFF/0ZGVLo4ilbPbt4d2Oje7MvP2ef3jfMmx5YTo2VyCxnk0XCwuSKXoC4YJTylqMyl0hyvskE4dbF6MOqCqH8k5o1hXjAQwMrJuLhxD6bTgXT4yube8/abCi3Phb6AkbRKDpjKXt+Lecl4ZJzgJGguiH73kOGweV7Vhd426L2Yh9hPEixpg3P4engmLQT5/NnLQxAwaH6IitCRoBVZtF9q2LJiQtoyPAkybBaczvxIT1pILitSNID5yfDXukyntci9X9jXRxs9Fp9Bbc2V7Hvv/wIM+5su
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"채팅방 초대 수락"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/chat/invite_confirm/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+채팅방 초대 수락
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"inviteToken":{"type":"string","writeOnly":true,"minLength":1}},"required":["inviteToken"],"title":"ChatLinkRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"inviteToken":{"type":"string","writeOnly":true,"minLength":1}},"required":["inviteToken"],"title":"ChatLinkRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"inviteToken":{"type":"string","writeOnly":true,"minLength":1}},"required":["inviteToken"],"title":"ChatLinkRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isFirstEnter":{"type":"boolean","readOnly":true,"default":true}},"required":["id","isFirstEnter"],"title":"ChatLink"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"inviteToken":{"type":"array","items":{"type":"string"}}},"title":"ChatLinkErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ChatLinkError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

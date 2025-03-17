@@ -1,0 +1,71 @@
+---
+id: popup-list
+title: "Popup 목록 조회"
+description: "Popup 목록 조회"
+sidebar_label: "Popup 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v20YQ/SvEnNqA+nDqoClRFHBTozAauEHjAgVUIV6RY2ljcpfZXapRBAJ2Wp/iS4ECaQM7QNpD2iBAdTAMH/qLQuo/FLOUKCqSnbjNJReR4s68N/tmZmeHIGNUzHApNgLwIJZxEt8JuTbgQswUi9Cg0uC1hiBYhOCBnygtFbig8F7CFQbg7bBQowtcgAf3ElQDcCFA7SseEzJ4sNVDJ2ZdLiyVU2A4fRYmWAcXtN/DiIE3BDOIiUQbxUUX0tQteWPWxTuaP8BLUm8mUQeVI3cchToJjXaMdBSaRAknRkVhLY+BC4NdVJCmbRcM65IKhUDQdkGjnyhuBlaaz5EpVOC12mSrUMdSaNQEdrXZpIcvhUFh6JXFcch9K0TjrqYYh4vksnMXfZsERRkyvECbiL8glAsiCUPWCRE8oxJMbRS024otU4qRPtxgpN/MxYMlYhAuC74W4aAkMtwQ7WJI85alIYx/3MuPT8aP9iB1IfY3ItZd6r8jVcQMeJAofgHcrRvO+PA4f3zg5Mcn2d9n+XMLHMkOD/H/gmcv/sxGv+TH/yzlCLnY/Q/g87mqCFNQZM/3x/svp/hbFnsIKJKIKnD9u631bzbXboILG5uTVyrQ10KYb4IrzvbUeNupOdnDk+x073txxdmewtHn/Lez7HQPXLhf0zH6NaKsURnAx6tXm51r7HqAnzSvX1vducSmit04lPSnBxabYDdZhLahSs4iJminLnC95hver+atI2WITFyUqYOz/PTIyR+/JJjUBW2YMl8wc3H6A2awZniEbwH96Ch/+jM9Xo1+IgYUwTvF//0g++OwxE+r51yrJHOpMSsaTaqwUizztT9rsaokU/J2pY/s0ZamaeVTcWRjYNdu0liw6/PFRVKsNlfe4TEXoGE8XDoP5jSZ2FU2cUNGkRTrSkl1fqgfvR+hLnyyWXCyF39lz46d/Nlo/OSQko2mJ6lJu1hMbdMDDxr9lYYdVg2YDavbtKki7unImk2HmH+FdjwQVQ9ZYI/7yfRdS0xPKv7AimRD42JHWvfJdn5g/Y5UztqtDXChj0oXMa/Um/Xmwnn0anSUjY48p8ViXg+wXy+8676M2h/0jIm112gsrn34aUc1PsufnOS/7k+cz3OsONkxI7WJmM3sZEfLxZwLs9TG4H3TiEPGBWElyua7ELoF/RVS3TaPC5TgntSGFobDDtP4rQrTlD4X1xO6LgRc00k5u768xlqW5pvuTUvD28VB9ZpmjYvSvwzz216bLgihemObRdGmP4oXo6JFx/2k1kiZwnHN9zE2Fa+FBiWUsu6/XN8CF1hC6aiW864t58kLoU+XxKCCPV/Z09jplwRb6jIcFs2SpqV9sXSuR9lOhTWp1E7T9F8kyB89
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Popup 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/popup/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Popup 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"cursor","required":false,"in":"query","description":"The pagination cursor value.","schema":{"type":"string"}},{"name":"page_size","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"title":{"type":"string","readOnly":true,"title":"타이틀"},"pcImage":{"type":"string","format":"uri","readOnly":true,"title":"PC 팝업 이미지"},"mobileImage":{"type":"string","format":"uri","readOnly":true,"title":"모바일 팝업 이미지"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"팝업 링크"},"linkType":{"enum":["EXTERNAL","INTERNAL"],"type":"string","description":"* `INTERNAL` - 내부\n* `EXTERNAL` - 외부","x-spec-enum-id":"7420b5a8de90854f","readOnly":true,"nullable":true,"title":"링크 타입","x-enumNames":["외부","내부"]},"isActive":{"type":"boolean","readOnly":true,"title":"노출 여부"},"startDate":{"type":"string","format":"date-time","readOnly":true,"title":"노출 시작 시간"},"endDate":{"type":"string","format":"date-time","readOnly":true,"title":"노출 종료 시간"}},"required":["endDate","id","isActive","link","linkType","mobileImage","pcImage","startDate","title"],"title":"Popup"}}},"title":"PaginatedPopupList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

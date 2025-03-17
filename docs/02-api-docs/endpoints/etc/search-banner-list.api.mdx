@@ -1,0 +1,71 @@
+---
+id: search-banner-list
+title: "검색화면 배너 목록 조회"
+description: "검색화면 배너 목록 조회"
+sidebar_label: "검색화면 배너 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVV1r3EYU/SviPjVlvLtO2rgVpeAtppiSuuCEPDiLPStd704izcgzo603QuB8FFrooyGuv8BPrYOhSzEhgf6iSv4P5Y5213LXbkP71JddjWbOnXPPPfcqA5Wg5lYouRyCDwa5DvrrXS4l6vVIGAsMEq55jBa1AX8tAyHBh60U9RAYSB4j+DAG2GGCwMAEfYw5+Bm4Fz4Yq4XsAYPtOZNgMIcyjecEXRgsfNzqhuGdYCG8ffcT/ikwsMJGBPrjt53yxQ8XP+0Wp+deMRoVL7/3Ll7slMffuUAU42seI5GC4vUvxWi3PPodGJQH76DDgPZp695KGxg8XGpDJ2cQogm0SCjhv73ikXwkP/Q2Hi61N7w5rzx455b3Vtzy8ra8w8DynuNwRTtiYDBItbBDp1obuUYN/lqHMBpNoqQh8hncbrXoL1DSorT0yJMkEoErS/OxIarZrKhca04lEBZjU3uvuo8xcHXTVFwrqltI7ukZIS32UAMx4eGKjIbgW51izkDEvIfX1W5T6Zhb8CHV4h/KVB6dF7++LX/eAQpoFgMrBvWYXaUi5LIW5WLvZXl85pXPz8r90/LVWfFmB/Kc6G2lQmNIAosQJvQ6l8hVJ3u7Uj3P85kiE4ePWvP/RuIbpAzRchHNavRXwuNzNbJfqDhWcklr5bheT/XO/4Pqe3VT8fq0ODnyypPRxf6PwCBG21fU+D2sRovtgw/NwXzzSvs04bJ9VinVKptJE132QCK+QtcERKCPPHSmHk+lxdT2lRZPnXSOsJCbysHHSX7LB12lvcVvloHBALWpMplvtBotmMlvdFiMDn1vjSeiEeKgUaEbgYo7H/StTYzfbM7u3fqsq5ufl/vn5d6zMfgmYA1EVkiUsTF39R5n9D4SXyE9Vcritm0mEReSIqfaeaKSfw0G807v+vxiQGboK2PpQJZ1ucEHOspzel1NfxproTC8G5GHNnlkcOb2qY3/+6xl16fyBIczH6ABj1J0Ju3QQgvi6GYvm5iEyFfQxSDAxNZQM/1GUabG/XLpPjDgKSlX9+ET58PxA0WfbMlhLfZVS07Y02/OboBkWeXyPJ+er7ZuREz7oDpNOnXyPP8TqDb3WA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"검색화면 배너 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/search_banner/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+검색화면 배너 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"banner_type","schema":{"type":"string","x-spec-enum-id":"c750bdd3c7d268a9","title":"검색화면 배너 타입","x-enumNames":["모바일","웹"],"enum":["MOB","WEB"]},"description":"검색화면 배너 타입\n\n* `WEB` - 웹\n* `MOB` - 모바일"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"image":{"type":"string","format":"uri","title":"검색화면 배너 이미지"},"isActive":{"type":"boolean","title":"현재 사용여부"}},"required":["id","image"],"title":"SearchBanner"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

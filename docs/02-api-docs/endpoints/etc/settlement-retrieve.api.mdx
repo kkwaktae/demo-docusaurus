@@ -1,0 +1,71 @@
+---
+id: settlement-retrieve
+title: "수익관리 전체내역 -> 수익 상세내역"
+description: "수익관리 전체내역 -> 수익 상세내역"
+sidebar_label: "수익관리 전체내역 -> 수익 상세내역"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVm1vE0cQ/iurkZB4udjnkAA6VUgupC1qBRWUT65VNneTeMH3wt6ei2sdCuAPbkEVUhXVgCOlpSpComqUuMhI/CLf5j9Uc+d3OxWN+qVf7Lu9mdnnmX1mdhrgByi5Er53xQELQlSqii566huJSgqsIRgQcMldVChDsEoNEB5YEHBVAQM87uK0n3DAgNCuoMvBaoCqB2QgPIWbKCE2wMHQliKgPcGCIos8cTdCNrBgNV6lNwc9JTbqwttkqiJCpne39cO9HBgg8W4kJDpgKRlhXDZA8U1CNoECygaEaEdSqHqK+WPkEiVYpTI5SAwD3wsxJITLpkl/tu8p8rQawIOgKuw0K/nbIcFszDPy12+jrSg7knKoRBZNOAtY047cueZV6wPQBvjSQXll0jhUUnibYIASqkoLJd1q652/mH70QDd7ycOu/vmPMtMv3ydvesl+67Ddo3QGvE6ML0nkCp2iWhRxw5cuV2CBwxUuKeHiB26jd97rxx3aRvmKV4uuH3lqIcFRtP7+nt7t0HklB91hHNbvtfT2LxRI4kbkOceIdPisnbxtsYlQ2XkXa1xU+XoVj4Ouu8MOt1/3D5r9XisLKWvCxpsh38RPEBcGc/k94UYuWMuFlfMrF86eWzlvgCu8bNEc76abneRdU//wG9M7Xf38dfLyCczqv2DeXzWTV0/0i6dkdbjdZoXVEyzPxqvdVv/g/f3CnNkymRVm7diFE0TE9l1XhKHI1Ht8DlnCSCKt9iL8eruld5vDtA5psjOrpkmg8ky/6yY/dZjFzuZSXv295uGPvYHDePWgqX99Qv77XWaxZVo9WTDNLEpGjenHHZZnyZ89YrzTTV532fKqyfSLp8S4xhef/QdTTd5u9fe2dLM3T3L+IPVOmxXME+wMm8nQ4MNYn1Sd/yDND1dTu6V3t5l+tdXvfT+sAMVVlPYd9Mi8BJevXV0DA25c+mzt8s0v1i5TJ5xtB9PkTrNbI+tbbGm4Qbrb195pdotCTnx41sx0cG8pDNBeoo2XqOsBd84tc3t1xS6s2OY5256ou8yVWszho07qS25XuYtp456JPIkAynE82fNLk8o2IL1thr10QTOc6TfzBX5UF1lwetNNMBNceczxxsj++vDqjOO5+45ObcUs/Ic3joOKi+p825/N28BuAvEl33V9b01KXx4N9ez/A+rcUnar9btbye9vmN5t6v1udrexpYtswZVHpYiq4pOSNzHFTiOOBflaIT/WQr4xNevEeRhPGjcoDRnT4bwxYsoD8TnWSbEEroLcSat/MD8VI1XxpfguTWtKRngbfuo+SMC3vLbuS1b88gopD2U4uD5yZs6cK+n+XifZ61isxAORc7CWy7xztu+WT1aUCkIrn5//duqjdZm/qJ93dfvBwPkoxwmndAjxQ+XyVAsDRsdI/xSHUeIU3lP5oMqFRxtFMpVPdjQlqBWmChUMsGZHUVJRxQ8VmTca6zzEm7Iax7R8N0JJ42GZalkKqv50WHRESM8OWBu8GuIcslE1wMnrA9WeYv9+kF1IcCgXr552mGpEb2DAHazPzdlxOTaGUiLcmU3RtjFQE95zFUsj8Ejrn659BQbwiBI6qdY7qVoHDxR9IbJp4Q5h0m9sHOHSaGS1EMcj++zTkR6jasmsKVHlOI7/Bt4M+hc=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"수익관리 전체내역 -&gt; 수익 상세내역"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/settlement/{settlement_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+수익관리 전체내역 -&gt; 수익 상세내역
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"settlement_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 정산.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"orderId":{"type":"string","title":"[수익 상세내역] 주문번호"},"paymentCreatedAt":{"type":"string","format":"date-time","title":"[수익 상세내역] 주문일시"},"totalAmount":{"type":"integer","title":"[결제 정보] 주문 금액"},"refundAmount":{"type":"integer","title":"[결제 정보] 환불  금액"},"settleAvailableAmount":{"type":"integer","title":"[결제 정보] 총 합계금"},"serviceUsageFee":{"type":"integer","maximum":2147483647,"minimum":0,"title":"서비스 이용료","description":"10~50만원 이하 15% / 50만원 초과~150만원 이하 12% / 150만원 초과~ 8%"},"commission":{"type":"integer","maximum":2147483647,"minimum":0,"title":"결제수수료","description":"안전결제 이용료 +500원 / 카드 : 3.5% / 간편결제 : 3.5% / 계좌이체 : 2.5% (10000원 초과 시 / 미만이면 250 원"},"vat":{"type":"integer","maximum":2147483647,"minimum":0,"title":"부가세","description":"서비스 이용료의 10% + 결제수수료의 10%"},"settlementAmount":{"type":"integer","maximum":2147483647,"minimum":0,"title":"예정 지급액"},"status":{"enum":["DONE","SCHEDULED"],"type":"string","description":"* `SCHEDULED` - 지급예정\n* `DONE` - 지급완료","x-spec-enum-id":"ad62ac54c14c06cc","title":"지급 상태","x-enumNames":["지급완료","지급예정"]}},"required":["commission","id","orderId","paymentCreatedAt","refundAmount","serviceUsageFee","settleAvailableAmount","settlementAmount","totalAmount","vat"],"title":"SettlementRetrieve"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

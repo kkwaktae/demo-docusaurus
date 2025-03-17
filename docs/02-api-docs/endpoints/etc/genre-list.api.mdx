@@ -1,0 +1,63 @@
+---
+id: genre-list
+title: "Genre 목록 조회"
+description: "Genre 목록 조회"
+sidebar_label: "Genre 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVcFq20AQ/RUzpxYWy256EqWQhhBCCi2kPRlR1tLU2kTaVXZXalyx0ECPvaaEkBxyKbSnHHLoN8XOP5SRZEVx4h4KhfZiL7Mzb9+8N9otQWWouRVKbkfgwwSlxneJMBYYWD4x4I/qIAQMDIa5FnYK/qiEF8g1avBHgQsYaDSZkgYN+CU8GQzoL1TSorS05FmWiLA6x9szSlLMhDGmnFZ2miH4wLXmU2AgLKamE1fjPQyJUKaJrRX1KSLq5AhpcYIaiAmPXslkCr7VOToGkqe4KTu5xmohJ9SgsAkF5idH869Xvfn51ezbZ2CQ8sOXKCc2Bn9t0CDs6N8h3ByfXf/8tBohjEUS7aL9+91aPtl+KPWfEMIR4YNcaIxosEQELasWfNFCcAu6RQO4QRJWK3DLQK287GHMZSxCcAwiNKEWGU0l+EASPR0M/2RyV3gWoeUiuS/XMv0mr8NyQ6WpkptaKw0rqa79H1TvhSoLerMf32cX5735xeXN6ReaFLSxqu+gih6nmQGvGHrV/ePB7f2zS03VvBe30O1nlYkdrL4rOipGHlXfCQ0C+LCe21hp8bESqaIm5HtVlTftfODFWOne+uttYFCgNjXnYX/QH8ByJ9eXZ7PLM7834pnoR1j06+p+qNLgUWxtZnzPu7/3+NlYe8/np1fzk6OmeFVhp4hMz5SxKa+cbTp6WMw7NFttLB5aL0u4kISV68rvWugRFENgzVXPgAyOlbG0UZZjbvCtTpyj8EGOml6AgEHBteBjkm0UOLYQmx6HfZyS2mGIGZlZ8CSvzVmaUHo6WuO3Nt8AA54Tn66f+5WfzYLQF1ty2sG+ay1rKNCvYytKyrKeFufa/HprZUU7T3U2CRk4534BvzSOag==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Genre 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/genre/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Genre 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30},"childSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"tagId":{"type":"integer"},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30}},"required":["id","nameEn","nameKr","tagId"],"title":"GenreChildGenre"}}},"required":["childSet","id","nameEn","nameKr"],"title":"Genre"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,261 @@
+---
+id: artist-bank-update
+title: "ArtistBankUpdate"
+description: "아티스트 계좌관리"
+sidebar_label: "ArtistBankUpdate"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF1r3EYU/SviPiUgr+y2T6IUbJNCaNMEJ+nLsoRZ6Xp3Ymkkz4zW2S6CBExJkzwU2hTTriG0JU99MIkDfmj+kC3/h3JH2pV2tbv+wKUU/OC1PubeOffMOfOhAUQxSqZ5JG774AKTmiv9qM3E1qMk9plGsCFmkoWoUSpwmwPgAlyIme6CDYKFWIZxH2xQXhdDBu4AdD+ml1xo7KCE1AYflSd5TN2BC6tWIvh2glbRwuqxgO58FJpv9rnoWLrLlZW93j19eZC9+PP0xVEDbJC4nXCJPrhaJpi2bNCsQ9gKHNDK26DSa5HfJyheJDQKTZcsjgPumZKdx4qADOqYo/Zj9DTVLokgzVGZWJOf2DF3QXB301CyOOqi7bk/gz0bNNcBPcn2n57+8oPFfUjTKhlNCmyV7VYN2DUmtuhvIycE0tZ0JhoY5nlRIvQ3SVjpWmnJRQdsCLn4GkVHd8FdKaOP3+9mv786eff8dO+IcnSjwEd50Xgr+/5VNnyT/fF3rZwKKDsncdzJzDLvMME6WN4vKnm6q3JgF6QeJyTGKjJ6srSzs7O0GclwKZEBCi/y0b/W1bWuLqGrMAk0j5nUjtGTzzS7VtK1ki6spLS2Ttqg0Esk130zwmvIJJHRbKVmvVRxJFQ+vJ8sL//ni+YciUlk/l0R9Mc1/XvSzXOvRz7e1/4s0Uxiqcjm6Hk2/HD87iB7M8x++9E6fv8he7lvZR9/PvlpSHm5lzM4nZAczzS4kEi+IH+BMXu9m+0fZh/3KGW+ETs/xlGO/cOTt7s1sVULL+DaYHZ3pp+5Fr6Udy/u1qvwpz13Lpo26dW5M7fl5CaYKv3sSv0WolLU2ZkNRSS+5BhUtc2kZH3iRmOo6tSbjc+Enc+3rlzAkmciSOeJ71sWcN9QdkvKSM4V3jlqrEnvcqimlVRDuCDKtLhTDGVqA9I9eXI24qoYy6b2WAwLVDnCMkeaK1coTR8148HZFRTtKqDXozAsaZsD9dP/B9Tao+oB18ontePDpydv/zIDqLsRHc3jxICkc7cLTm/FyY3oDMaH79QhvzlQLvT3qdi8ntFyX0o65l+h0TRB6CLLZ8XiRL+a6G4k+XeGPAOZCNwoT9W3nrAwDrC+wI/+k6uXpzxYTuEjh1Vp5WIzMgALIndYrx1Ja/XebbChh1LlbK00lhvLMM3h8cHw5GDoWk0W84aPvUYe3fCisHWjq3WsXMepv7v5eVs6X2S/HmZ7z4rgeYGVIJJbHCkdMqOpgrNFwzgBdjwGGp9oJw4YF5QxkUZv+RA3obcCo9kWbHCr31iKpYxU142UptaDQZspfCiDNKXH2wlK2ue1bOgxyVmbGG0OwOeKrn1wN1mgsAZs7B64sVGo/KZ12Q81M6scyU+Q9kwiMoUNW9if+JKUtmgizmVJyPP36zm+pQeUpYw/+zSe2qMUq56HsZ4TbKYJWvDHvrv38AExXnxICs0MDJXEdvWGdtM2sIRGsOq0LeO04qKySZ1kYdJ0I0rol9DPDBkMch+n6bh9/mpuxNjpeWsalFaapv8AR+9OKg==
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistBankUpdate"}></Heading>
+
+<MethodEndpoint method={"put"} path={"/v1/artist/{artist_id}/bank/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 계좌관리
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    {
+      in: "path",
+      name: "artist_id",
+      schema: { type: "integer" },
+      description: "A unique integer value identifying this 아티스트.",
+      required: true,
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            artistbank: {
+              allOf: [
+                {
+                  type: "object",
+                  properties: {
+                    bank: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: { id: { type: "integer", title: "은행 id" } },
+                          required: ["id"],
+                          title: "ArtistBankBankRequest",
+                        },
+                      ],
+                      title: "은행",
+                    },
+                    accountNum: { type: "string", minLength: 1, title: "계좌번호" },
+                    holder: { type: "string", minLength: 1, title: "계좌 소유주" },
+                  },
+                  required: ["accountNum", "bank", "holder"],
+                  title: "ArtistBankManageArtistBankRequest",
+                },
+              ],
+              title: "은행",
+            },
+          },
+          required: ["artistbank"],
+          title: "ArtistBankManageRequest",
+        },
+      },
+      "application/x-www-form-urlencoded": {
+        schema: {
+          type: "object",
+          properties: {
+            artistbank: {
+              allOf: [
+                {
+                  type: "object",
+                  properties: {
+                    bank: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: { id: { type: "integer", title: "은행 id" } },
+                          required: ["id"],
+                          title: "ArtistBankBankRequest",
+                        },
+                      ],
+                      title: "은행",
+                    },
+                    accountNum: { type: "string", minLength: 1, title: "계좌번호" },
+                    holder: { type: "string", minLength: 1, title: "계좌 소유주" },
+                  },
+                  required: ["accountNum", "bank", "holder"],
+                  title: "ArtistBankManageArtistBankRequest",
+                },
+              ],
+              title: "은행",
+            },
+          },
+          required: ["artistbank"],
+          title: "ArtistBankManageRequest",
+        },
+      },
+      "multipart/form-data": {
+        schema: {
+          type: "object",
+          properties: {
+            artistbank: {
+              allOf: [
+                {
+                  type: "object",
+                  properties: {
+                    bank: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: { id: { type: "integer", title: "은행 id" } },
+                          required: ["id"],
+                          title: "ArtistBankBankRequest",
+                        },
+                      ],
+                      title: "은행",
+                    },
+                    accountNum: { type: "string", minLength: 1, title: "계좌번호" },
+                    holder: { type: "string", minLength: 1, title: "계좌 소유주" },
+                  },
+                  required: ["accountNum", "bank", "holder"],
+                  title: "ArtistBankManageArtistBankRequest",
+                },
+              ],
+              title: "은행",
+            },
+          },
+          required: ["artistbank"],
+          title: "ArtistBankManageRequest",
+        },
+      },
+    },
+    required: true,
+  }}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              artistbank: {
+                allOf: [
+                  {
+                    type: "object",
+                    properties: {
+                      id: { type: "integer", readOnly: true },
+                      bank: {
+                        allOf: [
+                          {
+                            type: "object",
+                            properties: {
+                              id: { type: "integer", title: "은행 id" },
+                              bankCodeStd: { type: "string", readOnly: true, title: "금융결제원 공식 코드" },
+                              icon: { type: "string", format: "uri", readOnly: true, title: "은행 아이콘" },
+                              name: { type: "string", readOnly: true, title: "은행 이름" },
+                            },
+                            required: ["bankCodeStd", "icon", "id", "name"],
+                            title: "ArtistBankBank",
+                          },
+                        ],
+                        title: "은행",
+                      },
+                      accountNum: { type: "string", title: "계좌번호" },
+                      holder: { type: "string", title: "계좌 소유주" },
+                    },
+                    required: ["accountNum", "bank", "holder", "id"],
+                    title: "ArtistBankManageArtistBank",
+                  },
+                ],
+                title: "은행",
+              },
+            },
+            required: ["artistbank"],
+            title: "ArtistBankManage",
+          },
+        },
+      },
+      description: "",
+    },
+    "400": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "object",
+                properties: {
+                  nonField: { type: "array", items: { type: "string" } },
+                  artistbank: {
+                    type: "object",
+                    properties: {
+                      bank: {
+                        type: "object",
+                        properties: { id: { type: "array", items: { type: "string" } } },
+                        title: "ArtistBankBankValidationError",
+                      },
+                      accountNum: { type: "array", items: { type: "string" } },
+                      holder: { type: "array", items: { type: "string" } },
+                    },
+                    title: "ArtistBankManageArtistBankValidationError",
+                  },
+                },
+                title: "ArtistBankManageErrorMessage",
+              },
+              errorCode: { type: "string" },
+            },
+            required: ["errorCode", "message"],
+            title: "ArtistBankManageError",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

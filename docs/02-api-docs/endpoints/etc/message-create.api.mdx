@@ -1,0 +1,71 @@
+---
+id: message-create
+title: "Message 등록"
+description: "Message 등록"
+sidebar_label: "Message 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWM+L20YU/lfMO7Uwa9ltTqIUNiGBkJaE/DgZU8bSW3sSaUYZjex1jCCh2UtwT81hKdlCYaH01F3IIYH+RbX2fwhvRra0tjf2wZeFvRhpZr6nb977vjeSJ6AS1NwIJe+H4EOMacr7+EugkRsEBob3U/A78wnoMtD4MsPU3FbhGPwJBEoalIYueZJEIrDRvOepkjSWBgOMOV2ZcYLgg+o9x8AAg0TTs43A1IYZcEMUFuuENNhHDQxGWhh8KKMx+EZnyMAIE9GS4vztxfRodvZPQ4SQsxK5iJAaLWR/XYBYyJ9Q9s0A/HYV7uLX18WfRzYQHpqtAsksiniP0F8NfPRb8e704t0nii1iyuPughcnH2f/fir+fk3BD0S0y9gX02lx8h8F5lko1C5ZH5/O3r8vjk8puMZA6ZDi7TIt0+LteWN29Lk4mUKeO90KjSHJuVRbKZluBfvZ6fyx07jF1VV9uDcajfYOlI73Mh2hDFSI4Y3Mb2R+/WUeZ5ERCdfGs/IOueE3wr4R9nUX9iUgPTBnkGKQaWHG4HcmcBu5Rg1+p5vbl5s0UTJ1mv6u1d7hG45Y7w6NPKzSs7xREa7ZndtWiGmgRUJcwAeqw61Wa4d85698GxdKJe8JjOrb41rzMTAQBuN0VRVEf6VhbIFZahDbIC53gi0Qy/7eArLk2i0Qy3bcArLOZBth+Yp27mqt9EJHDJDu76hwTdtZ1mK1lNW/B9Y94GqF7tJRIRouos3Ey3U1rndUHCu5ger314PqylBZiMbs9/PZXye2WGag6PMuUamlxqnZgjdse2UdPai64hPakmM9742V4BLxAK3i6EED5KHtYZLHNLufmYHS4pVNkSVGaXpcfS/ePeRx4rwyt3+LrZwYzrPVfenIasD5rbov3VQN1LyySDRxPnCeKzM74sOe0o39R/eBwRB16tLXbraaLVhO6v9nH2ZnH/xGhyeiGeKw6dDNQMXdbwbGJKnveatz3/7Q096PxR8fi+M3JfgqYA1EbKlWMbciK9O7UtdLDBc1ovR5ScSFpDCZtqpzJe/AsF0zLwMS2oBE4XdgMunxFJ/pKM9p+GWGmk7ILoMh18Kd2J1uzuZlp8PzBY6tRK1H9p4SAVoeZU4smz6ccjYPsR8EmJgrwNZsdDovhPzo4ZOnwKBX/gcR2/4FtcisfuNo84xSUJfyCyvl8oK2M5+S4xqTy6pmJWH6JfprIZOJM0qeL9a7qSsRCyu51VS7bp7nXwC8VUlC
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Message 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/message/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Message 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"chatId":{"type":"integer","writeOnly":true,"title":"채팅방 id"},"type":{"type":"string","writeOnly":true,"minLength":1,"title":"타입"},"text":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"텍스트"},"image":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"이미지"},"file":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"파일"},"audio":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"오디오"},"recording":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"음성 녹음"}},"required":["chatId","type"],"title":"MessageRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"chatId":{"type":"integer","writeOnly":true,"title":"채팅방 id"},"type":{"type":"string","writeOnly":true,"minLength":1,"title":"타입"},"text":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"텍스트"},"image":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"이미지"},"file":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"파일"},"audio":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"오디오"},"recording":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"음성 녹음"}},"required":["chatId","type"],"title":"MessageRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"chatId":{"type":"integer","writeOnly":true,"title":"채팅방 id"},"type":{"type":"string","writeOnly":true,"minLength":1,"title":"타입"},"text":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"텍스트"},"image":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"이미지"},"file":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"파일"},"audio":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"오디오"},"recording":{"type":"string","writeOnly":true,"nullable":true,"minLength":1,"title":"음성 녹음"}},"required":["chatId","type"],"title":"MessageRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true}},"required":["id"],"title":"Message"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"chatId":{"type":"array","items":{"type":"string"}},"type":{"type":"array","items":{"type":"string"}},"text":{"type":"array","items":{"type":"string"}},"image":{"type":"array","items":{"type":"string"}},"file":{"type":"array","items":{"type":"string"}},"audio":{"type":"array","items":{"type":"string"}},"recording":{"type":"array","items":{"type":"string"}}},"title":"MessageErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"MessageError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

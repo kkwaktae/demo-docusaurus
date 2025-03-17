@@ -1,0 +1,71 @@
+---
+id: comment-destroy
+title: "Comment 삭제"
+description: "Comment 삭제"
+sidebar_label: "Comment 삭제"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVEtv1DAQ/ivRnFrJ2uxCTxFCWsoeKhBCPE6rFfIm043bxE7tSWCJLAHn3rgg1AN/AKkHDvymdn8Emry6ZdsDRy552DP297JrMAVaScroowQiiE2eo6Z3CTqyZg0CCmlljoTWQTSvQWmIoJCUggAtc4QIVAICXJxiLiGqgdZFM6oJV2jBC0jQxVYVvAlEMA1Krc5KDLqKoJIZ/yWoSR2vlV4FlCoXXJ9/vfr9aQQCLJ6VymICEdkS/UIAyRXD6eHCQoDDuLSK1g3KJygtWojmC6626AqjHTqG92B8wK/bmF6YoC8KliZZM+qD8YQLY6OJt4hqkEWRqbgRKzxx3Fjv8jbLE4yJhbMsLal22wRJqmyrzpFVegXeb/Ob93XMUVHGhYcmz42eWWsseL8jZwv14f8BdWfosDUw2Hz5uflxAQJypNRwEhPMkLAJIKUQQVhNws7usFaJD+HG89fMrAXfOz+Al4V6hhzkJrkpygTtTXanJaXGqo+NUg0+pY9N095xei+rpbHB9OURCKjQuhb4ZDQejeFvOleXF9eXF1Ewl4UaJViN2u5RbPLFXkpUuCgMd+f2Hy1t+Hjz/dfm2+eu+b7GrSZ2vjCOctnY2zHaUfQWwkEWwg8UFplUmpcpbeN3K/UcqgmI4WwJiJoTzkanxhEX1PVSOnxrM+95+KxEywdvIaCSVsklKzevIVGOvxOIjmXmcAfLEFjYe9UFaz/49/vhTkq9/Zq9b5bgBAo4xXV7Z/mFF30eGGw7MY1jLGirZeck8Y0ypPTp7PnszQwEyJKl207daZO67oM3uBPR7QD28PjpxT0tdd1m2vuhvp26t2NIfUeeSXjv/wBxYRTg
+sidebar_class_name: "delete api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Comment 삭제"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/comment/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Comment 삭제
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 댓글.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"No response body"},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,83 @@
+---
+id: bank-list
+title: "BankList"
+description: "은행 목록 조회"
+sidebar_label: "BankList"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM9rE0EU/lfCOykM2cR6WkRoS5GioFA9hUUmu6/JtLsz25nZ2BgGFHpQ9CD4g1ITsBdBT0Fb8NJ/KNn+D/J2N2naGg/evOwOb+Z7873ve28GoFLU3AolNyPwoc3l7tNYGAsMLO8Y8FtFDAIGBsNMC9sHvzWANeQaNfitwAUMNJpUSYMG/AHcajToFyppUVpa8jSNRVjc4u0YJSlmwi4mnFa2nyL4wLXmfWAgLCZmIa7aOxgSn1QTVyvKW0S0cEZIix3UQEx49FDGffCtztCxgv26inDLLgKM1UJ2qEhhYwpMfr3Kh6eTH+P8yzD//K42+XmavxnV8rMP0/dDYJDw/QcoO7YL/opjIHmCf0uXj16cf3pdy0cn068Hl+HNhmMgwlKFq/htpRNuwYdMiz+k+3iQj07ys0Nwjkrdy4TGaObRrMoqOyOJKqbBRao1ctM5ShChCbVIyRbwARyD243mv1i3xKIILRfx9TKvkq/OLZBcV0mi5IbWSsNSqiv/B9VrocrM6fdv0+NRLT8enx+9pRZB21U0gx0s+HFqFvB6TY/M9eBiALeoqJL3bAwvpigV97EYI7qqizwqxqLsV1jNbFdp8bwQqaAm5LYq4FU5z3ivrXRt9dEmMOihNiXnZr1Rb8DVSibj4XQ89Gstnop6hL16ia6HKgludK1Nje951/du3mlr725+dJIfvqzAy4ALIDI9VcYmvHC2qmiJmJd4zsWxuG+9NOZCUrJMF4aXQreg14TytQAGZHBXGUvxwaDNDT7RsXMU3stQ0xMYMOhxLXibZGsFjs3EptdxF/ukdhhiSl72eJyV5lzpUHo7577f23gMDHhGdBb93C38rBaUfbYl+wu5L1vLKgr0dWwJZDAou8W5+flyayli3k/ladIxcM79BgzDPvc=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"BankList"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/bank/"} context={"endpoint"}></MethodEndpoint>
+
+은행 목록 조회
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                id: { type: "integer", readOnly: true },
+                bankCodeStd: { type: "string", title: "금융결제원 공식 코드", maxLength: 3 },
+                name: { type: "string", title: "은행 이름", maxLength: 10 },
+                icon: { type: "string", format: "uri", title: "은행 아이콘" },
+              },
+              required: ["bankCodeStd", "icon", "id", "name"],
+              title: "Bank",
+            },
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

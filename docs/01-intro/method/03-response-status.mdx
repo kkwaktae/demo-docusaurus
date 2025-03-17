@@ -1,0 +1,50 @@
+---
+title: 2.3 응답 HTTP STATUS
+sidebar_position: 3
+---
+
+모든 상품권거래는 상품권 승인서버에서 처리되며, HTTP API로 요청한 거래의 응답 STATUS는 요청한 거래가 상품권
+승인서버에서 승인거절되더라도 STATUS = 200(정상)으로 응답된다. 이경우 요청한 거래의 처리여부는 응답메시지 body 중
+응답코드값을 통해 판단한다(8.1 응답코드표 참조). 암복호화∙네트워크∙포맷 오류 등으로 인해 상품권 승인서버로부터 받은
+처리결과를 반환하지 못하는 경우 HTTP STATUS = 500(내부 서버 오류)로 응답되며 Body메시지로 오류코드와 오류메시지가
+반환된다
+
+<br />
+
+- 오류 응답 Parameters
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>result</td>
+      <td class='text-center'>String</td>
+      <td class='text-center'>4</td>
+      <td>오류 코드 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_*응답코드표 참조_</td>
+    </tr>
+    <tr>
+      <td>message</td>
+      <td class='text-center'>String</td>
+      <td class='text-center'></td>
+      <td>오류 메시지</td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+- 오류 응답 Message Format (JSON)
+
+```md
+{
+"result": "9001",
+"message": "내부 처리 오류 (Internal Server Error occurred! Please contact administrator)"
+}
+```

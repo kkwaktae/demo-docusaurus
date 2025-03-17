@@ -1,0 +1,71 @@
+---
+id: collaboration-is-participation-retrieve
+title: "Collaboration 참여 여부 조회"
+description: "Collaboration 참여 여부 조회"
+sidebar_label: "Collaboration 참여 여부 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v00AQ/SvRnFppFSfAyUJIBVWo4kDFxymyqrU9jbe1vdvZtSFYluDOvVXVC/ceckCI30TDf0BjO2mcNBIHLlyS9ey+2fdm3mwF2iBJp3R+FIMPkU5TGeo2cqLsiZHkVKRMGyB0pLBEEGAkyQwdkgV/UoHKwQcjXQICcpkh+GDTYgoCbJRgJsGvwM1ME3ek8inUAggvCkUYg++owDoQ4OSU8/V5QCDAYlSQcrPmsucoCQn8ScAYQmt0btHyHY9GI/6LdO4wd7yUxqQqahJ5Z1bnHNvipMMzjBzLIi6IU202ZY/X9a8BQq1TlDnw9TJ+naezTkRP1mQrA2tULuUUL9Y1Hm2cqzlRjDYiZdqrgSv2ZDT+h/JidFKlD7RmQ0R3rsc9y3R+SKRpN9XH/wfVrVCvMYPF/Ofi8nawuLy9+/F5sPg2/339FQRk6BLNIzPFhi1b3wevHHs973oVj0HtbY6SB/eefss1aGUunb2SKY16hTMQ7YAlKGOk+xE7KFyiSX1aeoaPneoG3qn/IMtQ0+Dg+AgElEi2lTgejoYj2BT+a35zN7/xBxNp1DDGctiih5HOgr3EOWN9z9ve238akvdscf19cfWlA+8CroHYI0Zbl8nGCJ2iv6p9j/WqVA4/Os+kUuWcuqDGLW1fJlCOQWy8KgL87onabA4IYAcl2jrGVlUoLb6ntK45fFEg8TsUCCglKRlyoScVxMryOgb/VKYWt2iuJgH23nSO3R+AeJj+sv05976UacFfIOAcZ8untQ5qsXQE399uHUQRGrcG2po6fjNX7n15+A4EyIKrtG6688Z03YKzP0io778lO/6txQ5IVbWWruvV+XZrJ2Jl+vY01yeo6/oPL2JiHQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Collaboration 참여 여부 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/collaboration/{slug}/is_participation/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Collaboration 참여 여부 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"slug","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isParticipation":{"type":"boolean","readOnly":true}},"required":["isParticipation"],"title":"CollaborationIsParticipation"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

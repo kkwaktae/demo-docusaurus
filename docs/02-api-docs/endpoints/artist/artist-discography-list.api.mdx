@@ -1,0 +1,141 @@
+---
+id: artist-discography-list
+title: "ArtistDiscographyRetrieve"
+description: "아티스트 디스코그래피 상세 조회"
+sidebar_label: "ArtistDiscographyRetrieve"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v20YQ/SvEnJKA1kfjNAhRFHBqozDixkET9+IK9oocSxuTS2Z3qVohCERID0WRQ1s0rZHaRXNpkSIHH3zwpX8oov5DMUtKoizargs3QE+idmdm3868ebMJhBFKpnkoVj1wgEnNld7yuHLDjmRRt7/lc6XBhohJFqBGqcDZTIALcCBiugs2CBbg1Jd7YINyuxgwcBLQ/Yg2lZZcdCC1QeKTmEv0wNEyxtROxv5uLFUooWyxw3yFdn7YkxhlH2zwULmSRwQZHHjURStiHS7MHaw8htVjfoy183DQuTNhCxC7XJyH34a9BRWhu4AiDhY4pWzxVhPv4G1kd9re4oe3GdigufbJKTv4bbT/0jiR/X0WIGUPsqOT7Oe32a/fj374BmzIDl9kv3xHH/uD7PkAWjaQOVkurd3d+AxsWNpYXl0HG75YXV5Zh1Z6Og03rG1jsm0tWHm4L8UNa9uYmzUT2ayZkGatjKJUh4h1cEvxp3jJUtyPgzZKK9yxJKrY18rSoSVRx1JYEUoqU3VNuNDYQQlp2rJBs47JUc4myoVCN5Zc9w3v7iKTKMHZbJGxRBWFQlFWE/ig0aAfNxQahaZPFkU+dw0z6o8VgUzmTw/bj9E1DJfUC5rn0Qo2VjBAxL7P2lTgnMBQXLdky6RklCCuMVAXn0U8mssGxWXeuvD7k4MMOZ3kInbYc5CvmCzvpwtSG3wudqtKMA49/GMwGrwFGwK2t4aio7vg3Go0TrfHRTUsYf3rx+Gb/dG3J7Mxmw0TlAulZRyg0Ooh6v++3tSQK5X4J3j3B9lPx1Z2eDz8/etZzDcbRYR7lSweRxi9PHh38uysCDN6vQlG2wtUk+CtabDl6dxYneYK0so4p7Jpj7XXFL06aB5pvPEg1330ShZrJBrGapbzNHkWG80rFAgPNeN+5WiZuWthV7rQJ2EQhGJFylCeDfXm/wPq3FKpFtbwzzfD14dW9vpo9OoFcQt1NyS16GD+pCCWQb3XrOdqX08mb4i0XnqD1GE6BR7SnfNrjWfBtA0jfg9NHxKSLjLP9FUx15Zi3Q0lf2pyaJBzsRMa9+K2X7FeO5TW0oNVsKGHUuVXatYatcacir47OhgeHTjWJot4zcNeLfeuuWHQutbVOlJOvT6/d/2jtqx/nL06zvYHhfNZjiUn4kQUKh0wU/jiRufluloANe7peuQzLihiLA0p8jpsQq8J9nju2uCU33OlYoANxJBuqDQ5JUmbKdyQfprScv40oEntcUUKO306nEI04fZFb7hK6LvYLz8ZjXHeO5c5+Qom4TnoCj37l9j+6XPqHADll9wURYv+SJ6Pv0sV6trnhVhct846eNyJol8+cwxoSqmUxnvRoQQi319yXYx0yXNO9Qj9REY+XXlEjI2JvmUR2DUiUHxQ9EpUs3owKRr2TaEqXZIkl5g0ndjnW2d6TEQot6YktdI0/RtXScpT
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistDiscographyRetrieve"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/artist/{artist_id}/discography/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 디스코그래피 상세 조회
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "path", name: "artist_id", schema: { type: "string" }, required: true },
+    {
+      name: "cursor",
+      required: false,
+      in: "query",
+      description: "The pagination cursor value.",
+      schema: { type: "string" },
+    },
+    {
+      in: "query",
+      name: "kind",
+      schema: {
+        type: "string",
+        "x-spec-enum-id": "451e9e7ea9bd467a",
+        title: "유형",
+        "x-enumNames": ["참여작품", "음원", "영상"],
+        enum: ["ALBUM", "AUDIO", "VIDEO"],
+      },
+      description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+    },
+    {
+      name: "page_size",
+      required: false,
+      in: "query",
+      description: "Number of results to return per page.",
+      schema: { type: "integer" },
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              cursor: { type: "string", nullable: true },
+              results: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    kind: {
+                      enum: ["ALBUM", "AUDIO", "VIDEO"],
+                      type: "string",
+                      description: "* `AUDIO` - 음원\n* `VIDEO` - 영상\n* `ALBUM` - 참여작품",
+                      "x-spec-enum-id": "451e9e7ea9bd467a",
+                      title: "유형",
+                      "x-enumNames": ["참여작품", "음원", "영상"],
+                    },
+                    link: { type: "string", title: "링크", maxLength: 500 },
+                    description: { type: "string", nullable: true, title: "코멘트", maxLength: 1000 },
+                    instrumentsSet: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          id: { type: "integer", readOnly: true },
+                          nameEn: { type: "string", title: "영어 이름", maxLength: 30 },
+                          nameKr: { type: "string", title: "한글 이름", maxLength: 30 },
+                        },
+                        required: ["id", "nameEn", "nameKr"],
+                        title: "DiscographyInstruments",
+                      },
+                    },
+                  },
+                  required: ["id", "instrumentsSet", "kind", "link"],
+                  title: "Discography",
+                },
+              },
+            },
+            title: "PaginatedDiscographyList",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

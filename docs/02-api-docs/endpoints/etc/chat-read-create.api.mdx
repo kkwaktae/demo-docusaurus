@@ -1,0 +1,71 @@
+---
+id: chat-read-create
+title: "읽지않은 메세지 읽음처리"
+description: "읽지않은 메세지 읽음처리"
+sidebar_label: "읽지않은 메세지 읽음처리"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVkFrFDEU/ivLOymkO1v1NIhQRUFEWqqelqVkJ6+dtDPJmGR2uy4DFepFPCqK2Ksi9FBFxIt/yB3/g7xkdzu1W6rQg16WTPK95Pve+/KyY9AFGu6kVncFxJCk3G0Y5GIjMcgdAgPHtyzEXb8EPQYGH5do3U0tRhCPIdHKoXI05EWRycRvFm1brWjOJinmnEZuVCDEoPvbmDhgUBg62km0tCpFAyOVwy00wGBopMNVlY0gdqZEBk66jCD1p/2fL55Njj62pICqCrSkQUFUpSCiM+itlLt15GI9EPfoJtXdpeFwuLSpTb5UmgxVogWKf5h7XmZOFty4yHMW3PF/lu0JOO1bMbCYlEa6EcTdMdxEbtBA3O1V3lu20MoGolc6nYs0mCVmDVxf6wy5AjqVi4XKD77XBy9a9evDyde909LDhgvkB90CbWJkQWQhBqgYXLtQQTlay7fwfKDS6o7ErKmdG8NHwEA6zG1j3joj1ZaXKv8KX53Owm1jtLk/JVkxQPq+pQUuPq+Z2mMom8tckGd/wtnJXr7AZAt0XGbnM5/immR1nmt1DtWr/wfVU1N0Qz7s1a+e1wd7rcnHl/X+t/rDXitcnPrzm8n7Q19Cl2p6XQptPV/uUoghGixH9KhEdP8iOG4MD0hpEDNrD8dOLOQ99Fak81PkwncvxXNaXSldqo184jPn+VL21o9frNu7PC8ynPXBDhldbWp/wDQLQz7oa9NaWbsLDAZobJC63O60O/B7An4cvZscvYtbXV7ItsBBO0S3E533LqXOFTaOotNrl6/3TXSjfvulfvN0GnxWYCOIvEIpzLk3xFTzn9XgBO15Nh3uuqjIuFS0d2m8bUJ5ujBYBhZe/dAigQG5JaUixl0Yj/vc4iOTVRVNPy7RUEvvMRhwI3mfktntVWxWJOr2OzjyPvNGX3pIJAielaG0573JFZttsZIkWLgzgv2Noedkbry11QcPgUF/+p8l910IGjuz5kegzUtKQ9N4O9540wHJmS2pUYPJSQ+yKWH6JfoLQ8bjYOuqmuPD0pkRc+MHNNWvV1XVL2omhCk=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"읽지않은 메세지 읽음처리"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/chat/read/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+읽지않은 메세지 읽음처리
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","writeOnly":true,"title":"채팅방 id"}},"required":["id"],"title":"ChatReadRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"id":{"type":"integer","writeOnly":true,"title":"채팅방 id"}},"required":["id"],"title":"ChatReadRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"id":{"type":"integer","writeOnly":true,"title":"채팅방 id"}},"required":["id"],"title":"ChatReadRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isRead":{"type":"boolean","readOnly":true,"title":"읽음 여부"}},"required":["isRead"],"title":"ChatRead"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"id":{"type":"array","items":{"type":"string"}}},"title":"ChatReadErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ChatReadError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

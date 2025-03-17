@@ -1,0 +1,71 @@
+---
+id: promotion-list
+title: "Promotion 목록 조회"
+description: "Promotion 목록 조회"
+sidebar_label: "Promotion 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV1tvE0cU/iujoz5Au74FAs2qqmQqVKFSgtr0pZYbxrsn9sDemJ11E6yVEkiqKAGpDyCiyEZBopSgPLiUojzkF7GT/1DN7sbe2OvElXjpS+LdPec737nOmQ64HnIqmOvcMEEHj7u2q54WLeYL0MCjnNookPug1zrgUBtBByPgvstBA473A8bRBH2JWj5qwBzQ4X6AfAU0MNE3OPMUHuiw0ELi0SZzYnMkwSBtagVYBA18o4U2Bb0DYsVTRnzBmdOEMNQ6p2FTEsxfpIZgbcxTbriuhdQ5U7tBHQf5tCCpnkebuOizB/gfvb8V2A3kxF0iHP3AEj4RLuEoAu4QD7mKTH4YmCOwiRzCsK6BoE2ViGGeoK6Bj0bAmViJM3QNKUcOeq2u5Dn6nuv46CvAmXJZ/TNcR6Aj1E/qeRYz4nyU7vqKZ2ecgNu4i0ZcC1wVi2AJWloDY/nSwAksizYsBF3wAMOYhfI4I0s5pypGTKDtn2+LmTkBUbjUnHeslYEh0QrshkOZlUdryeU2FaBDwBloIJhQFEE+OYzWX8ne0VjKPn54LF/8QeTDA9l7L19v6qRSnpsly+TK1RkIBwjjlgbQe93o7T5oYNPlm+g0RQv0y+VQAz9oLJyr/NvjPP1KWQFkcnh29Id40cP3cndf8fatoDmNZsbqbGVGzQIhkKvI/FIr0MKDauHncmFusf7FZwqV+dWkkcb7J0Pi9YHcenW8dUiijUP5oUvk84Pow2qif5s5DppT6stHa9H2G/Lx7z259ywDY3CkAs1qbmwGJWBSgQXBbByrokwCHvXk+l+ydyS3uwnBa/HAmMbN/aeyd0iifj9a38x1lXLBDObRpNRyoCaxOn66Hr3sRm/fyI0dIvuH8vlBBjkZafPcRJ7bMTZdZnZgg35p5uqVqxrYzEmey+eR3+zK9e5Yi5Rlb5XIvTW5ux/9viP/XCXy2Zbc+ifa3oy2XxUVpcGoagRCJM5Sy5pfiqfVp2n7BHkhlusAOsqhGtya/+H76k01IEfL4LQPn5M7iegdUiCydxT1d0CD5YLvoVFQYAXFA3Buzix/OUsbxuzc5ZlLM2fkKHq3frx1RI4frcoXGzGWgrlFbYyHd2qjrkYILucW6nnIG0/SNrggd9aig8N4SO3uk2RkXVRxt5hzb4oxOGpp4vhILMvn/Y/v+iTgljoVMydgLZsFTaUupZA6WR9C3T6piMGPa0lpJCfWqeSO2Bh2d2pitJXG6y0zbbMHxAmdPF4QhmHmdbKzoDn4flPtRrHM6UpSYb9crnzCQ9ZEkXuajcYllcs4841r265znXOXT6Z66f9BdezVIBMkersfvewR+bJ/vPtYDTgULVe1axOT9VWdXlBqV0qDuijBcGX6UTmX8D9ZnIY7ise+w3hJUSZbSM14+qR7YDUQLZezBzQtGCW25MbqqVu/0nbD5aR6+wZo0EbuJ9wrxXKxPL5r9LtRv6uTGvVY0cR2MdEuGq5dv9ASwvP1Umn828WvGrz0tdx9L3fWUuVJihmleCy7vrBpnOHUo8lBPUV1EB/V1iXPosxReGoi6J004DVoV7KtCBqohLdcX6iPnU6D+vgTt8JQvU4WZnUcmMxXs2e4UI9YHpTqeZeJXIr3cCV7d4mFk1bIsZwIZ+8YU8qP3irOVpvo4LT3hTM8zV5Vhizq6oGzZMbX1CGUlrZKQKJYNQz0REZrbC4olEGrfXt9ATSggcp8tnvuxd2T/sic9tRZyWCfbqQT7uqvCliuSqeT9GYYDuSTTxM1Bt2bpkl5EIbhv3f9gL0=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Promotion 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/promotion/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Promotion 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"cursor","required":false,"in":"query","description":"The pagination cursor value.","schema":{"type":"string"}},{"in":"query","name":"is_active","schema":{"type":"boolean"}},{"in":"query","name":"is_banner_active","schema":{"type":"boolean"}},{"name":"page_size","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"thumbnail":{"type":"string","format":"uri","title":"썸네일","description":"권장 사이즈: 1095 x 672"},"title":{"type":"string","title":"제목","maxLength":40},"subTitle":{"type":"string","title":"소제목","maxLength":100},"content":{"type":"string","nullable":true,"title":"내용"},"slug":{"type":"string","nullable":true,"maxLength":512,"pattern":"^[-a-zA-Z0-9_]+$"},"isActive":{"type":"boolean","title":"리스트 노출 여부"},"isPinned":{"type":"boolean","title":"리스트 상단 고정 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"isBannerActive":{"type":"boolean","title":"메인 배너 노출 여부"},"isParticipation":{"type":"boolean","readOnly":true,"title":"프로모션 참여 여부"},"bannerOrder":{"type":"integer","maximum":32767,"minimum":0,"title":"메인 배너 노출 순서","description":"0은 적용되지 않습니다."},"promotionbutton":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"buttonType":{"enum":["NORMAL"],"type":"string","description":"* `NORMAL` - 일반","x-spec-enum-id":"e99d085abc594232","readOnly":true,"title":"버튼 타입","x-enumNames":["일반"]},"text":{"type":"string","readOnly":true,"title":"버튼 텍스트 (영문 사용 권장)"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"버튼 연결 url"}},"required":["buttonType","id","link","text"],"title":"PromotionPromotionButton"}],"readOnly":true}},"required":["createdAt","id","isParticipation","promotionbutton","subTitle","thumbnail","title"],"title":"Promotion"}}},"title":"PaginatedPromotionList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

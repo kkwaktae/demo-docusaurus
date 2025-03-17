@@ -1,0 +1,71 @@
+---
+id: chat-retrieve
+title: "Chat 상세 조회"
+description: "Chat 상세 조회"
+sidebar_label: "Chat 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV19rG0cQ/yrHPCXhbElpKfQoBTV1g9s0Dk78pIpmdTeSNj7dnXf3VLviQI5VSO1AKTjUDnJIINQEEqoUU/LQTxStvkOZu9Ppr107SR/6It3d7sz8ZuY3M7st8AMUTHHfW3bAArvO1PcCleDYRDAhYII1UKGQYJVawD2wIGCqDiZ4rIFDCe6ACdKuY4OB1QK1FdAS9xTWUEBkgoPSFjwgO2BB0Qg9vhGike4wmsylNwc9xatb3KsZqs6loV93Bg9/WgQTBG6EXKADlhIhRmUTFKsRptg+lE2QaIeCq60Y5xfIBAqwSmXaKlAGvidRErar+Tz92b6n0FP0yILA5XYcg9w9SQBbs774lXtoK4qIoIgpnmjjzhx/ySJzVjx3K4VrQigJTraTCcG2wASusCHf0Uo0TEG2IpXgXm3GvAle6Lqs4uLwXXFFL6CPTvq/d0hTIPwqd+cqq/qiwRRYEAp+Ed3dp/pp2xjsd/rPuoNHsRUui0JxqcbMVHzfRebNUZwpetQZ7PX07vPB7htjcNjt/3Jo6N9e9v9qpyptxZt4IZWDw67uvB4c7o/0sAwYc92Vasyid0vKGaGcS4vzJZGyze31c26OxiumBHF5ZuIjiGMAyqPoXKsztSZRpLlKKugs9WnszMROlpGxfKdUHVmeYw6iOT6zab58oMr5z5KUAL55we3nz+xQZPlcjWduopYpS2M4Z1Ckifx3lgwZEtfhKm6EKFWcfKbmF2RW03Fj7/deGFkpGvrxvv7z1agiqbHfiRW0AL2wQQ5cX11ZuwUm3Fpavb1ys3iDHldXvl66dgdMuL1046sY4VQEJ2fPFeMubbxrLBj9+wf6sK2PDtJB8513xbib6qP1pHfpp0fUeca2xChiBXvP9fNfJ6RTYLT6ttfVR0NBMGFzQQZoL5AvC8RLKDiOfdXOV5jjfOJUP63OD9BOWz9JxEmSMhbPvQnbYMK0tTngwYRpl6F8xhg5tbVn4NIBYkKDbd5Ar6bqYBXyBeKD1+QK7/jr6L3XhDp50H/YNvrH24Ptl8QKl0n1LUrJaueafEM9/eMH+rjdP/7Z6L/Y13tdfdye0nZNIFPoFNWZM9BhChcUj4vkArYMvXOkO68Nvdd92+tMWR6S/D18GbIkMkEqpkJ5IX33TyapPth5RZpwk0vFvRpV+rnazeTB4o83hn52op+8HDw66O/uGyPWLH8Z1/cHC3gSXH30t97rwnTPG5mZ8Wg4sMaoOkmwUwgym70s7OlJb6pPQhTNnIEpBB/nCx/wLOqgYtydjeZ0RNJ94xj9RsP3loTwxelQP/p/QJ35RAkw9M627hAhe4PHD6lfoar71INrGKOjK40FuWYhR2Mn10pvNVEORjeL2+Rcgn94vxgdSwL+DcbnEjJZR+bE9ZHekYqhqvuC/xgHKxmXXtWPxVO3fmDNii+M4q1lMKGJQibYC4v5xfzMCHvb6/Z7XcsosYAvOthcTKQXbb9RvlRXKpBWLje7dvmzish9rh+f6IPtVPg0wTGh+LTkS9VgcYZTj+YGdQJlFhqFmyoXuIx7pCoUcdqTgJegWYBk0oMJ1ugqSRmv+3TwK0GrVWES14QbRfR5I0RBl7yyCU0meDI0Si1wuKRnB6wqcyXOoMmYC5dWU4ZdNi5+EZ3r1JAEHjEgVkFUNGEdt8ZuyBHN2pQahDhZLdo2BmpMbqau6ACe8fX6Eh11WEjhG2ffesy+9GHs8jKJaZKIQ4D0G5mniLRaCbejKNufLJ0qkbE/2U0hKkdR9A8P2B1c
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Chat 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/chat/{chat_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Chat 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"chat_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 채팅.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"user":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"name":{"type":"string","readOnly":true,"nullable":true,"title":"이름"},"profile":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"유저 프로필"},"isArtist":{"type":"boolean","readOnly":true,"title":"아티스트 활동 여부"},"isActive":{"type":"boolean","readOnly":true,"title":"활성화여부"},"artist":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"},"profile":{"type":"string","readOnly":true},"username":{"type":"string","readOnly":true},"nickname":{"type":"string","readOnly":true}},"required":["id","nickname","profile","username"],"title":"ChatUserArtist"}],"readOnly":true}},"required":["artist","id","isActive","isArtist","name","profile"],"title":"ChatUser"},"readOnly":true},"artist":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"profile":{"type":"string","readOnly":true},"username":{"type":"string","readOnly":true},"artistName":{"type":"string","readOnly":true},"artistNickname":{"type":"string","readOnly":true},"artistId":{"type":"integer","readOnly":true}},"required":["artistId","artistName","artistNickname","id","profile","username"],"title":"ChatArtist"}},"isRequestActivate":{"type":"boolean","title":"채팅방 활성화 요청여부"},"chatType":{"enum":["GROUP","PERSONAL","PROJECT","SELF"],"type":"string","description":"* `SELF` - 나와의 채팅\n* `PROJECT` - 프로젝트 채팅\n* `GROUP` - 다중 채팅\n* `PERSONAL` - 개인 채팅","x-spec-enum-id":"1ddc2c0badd6df9f","title":"채팅방 타입","x-enumNames":["다중 채팅","개인 채팅","프로젝트 채팅","나와의 채팅"]},"name":{"type":"string","nullable":true,"title":"채팅방 이름","maxLength":101},"inviteToken":{"type":"string","readOnly":true,"nullable":true,"title":"초대 링크"},"lastMessage":{"type":"string","readOnly":true,"title":"마지막 메시지"},"lastMessageCreatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"마지막 메시지 생성 시간"},"lastMessageType":{"type":"string","readOnly":true,"title":"마지막 메시지 타입"},"status":{"type":"string","readOnly":true,"title":"내 프로젝트 탭"},"existingChatId":{"type":"integer","readOnly":true,"title":"이미 존재하는 채팅방 ID"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["createdAt","existingChatId","id","inviteToken","lastMessage","lastMessageCreatedAt","lastMessageType","status","user"],"title":"Chat"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

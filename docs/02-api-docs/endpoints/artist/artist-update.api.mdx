@@ -1,0 +1,599 @@
+---
+id: artist-update
+title: "ArtistUpdate"
+description: "아티스트 정보 수정"
+sidebar_label: "ArtistUpdate"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistUpdate"}></Heading>
+
+<MethodEndpoint method={"put"} path={"/v1/artist/{artist_id}/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 정보 수정
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    {
+      in: "path",
+      name: "artist_id",
+      schema: { type: "integer" },
+      description: "A unique integer value identifying this 아티스트.",
+      required: true,
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{
+    content: {
+      "application/json": {
+        schema: {
+          type: "object",
+          properties: {
+            profileStr: {
+              type: "string",
+              writeOnly: true,
+              nullable: true,
+              minLength: 1,
+              title: "아티스트 프로필 (입력용)",
+            },
+            introduction: { type: "string", nullable: true, minLength: 1, title: "소개글" },
+            status: {
+              type: "string",
+              nullable: true,
+              minLength: 1,
+              title: "활동 상태 (ONLINE / OFFLINE / VACATION 중 선택)",
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "아티스트 언어 id" } },
+                required: ["id"],
+                title: "ArtistArtistLanguageRequest",
+              },
+              nullable: true,
+              title: "언어",
+            },
+            country: { type: "string", nullable: true, minLength: 1, title: "국가" },
+            averageContactTimeStart: { type: "integer", nullable: true, title: "평균연락가능시간 (시작)" },
+            averageContactTimeEnd: { type: "integer", nullable: true, title: "평균연락가능시간 (끝)" },
+            isPriceVisible: { type: "boolean", nullable: true, title: "단가 노출 여부" },
+            genreSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "genre",
+            },
+            instrumentSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  instrument: {
+                    type: "object",
+                    properties: { id: { type: "integer", title: "tag id" } },
+                    required: ["id"],
+                    title: "ArtistTagRequest",
+                  },
+                  unitPrice: { type: "integer", title: "instrument 별 단가" },
+                  workDay: { type: "string", minLength: 1, title: "instrument 별 작업기간" },
+                  freeRevisionNum: { type: "integer", title: "instrument 별 무료 수정횟수" },
+                  paidEditCost: { type: "integer", title: "instrument 별 유료 수정비용" },
+                },
+                required: ["freeRevisionNum", "instrument", "paidEditCost", "unitPrice", "workDay"],
+                title: "ArtistTagInstrumentRequest",
+              },
+              nullable: true,
+              title: "instrument",
+            },
+            moodSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "mood",
+            },
+            styleSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "style",
+            },
+            answerSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  question: {
+                    allOf: [
+                      {
+                        type: "object",
+                        properties: { id: { type: "integer", title: "아티스트 질문 id" } },
+                        required: ["id"],
+                        title: "ArtistAnswerQuestionRequest",
+                      },
+                    ],
+                    title: "아티스트 질문",
+                  },
+                  answer: { type: "string", title: "답변" },
+                },
+                required: ["question"],
+                title: "ArtistAnswerRequest",
+              },
+              nullable: true,
+              title: "아티스트 질문 답변",
+            },
+          },
+          title: "ArtistUpdateRequest",
+        },
+      },
+      "application/x-www-form-urlencoded": {
+        schema: {
+          type: "object",
+          properties: {
+            profileStr: {
+              type: "string",
+              writeOnly: true,
+              nullable: true,
+              minLength: 1,
+              title: "아티스트 프로필 (입력용)",
+            },
+            introduction: { type: "string", nullable: true, minLength: 1, title: "소개글" },
+            status: {
+              type: "string",
+              nullable: true,
+              minLength: 1,
+              title: "활동 상태 (ONLINE / OFFLINE / VACATION 중 선택)",
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "아티스트 언어 id" } },
+                required: ["id"],
+                title: "ArtistArtistLanguageRequest",
+              },
+              nullable: true,
+              title: "언어",
+            },
+            country: { type: "string", nullable: true, minLength: 1, title: "국가" },
+            averageContactTimeStart: { type: "integer", nullable: true, title: "평균연락가능시간 (시작)" },
+            averageContactTimeEnd: { type: "integer", nullable: true, title: "평균연락가능시간 (끝)" },
+            isPriceVisible: { type: "boolean", nullable: true, title: "단가 노출 여부" },
+            genreSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "genre",
+            },
+            instrumentSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  instrument: {
+                    type: "object",
+                    properties: { id: { type: "integer", title: "tag id" } },
+                    required: ["id"],
+                    title: "ArtistTagRequest",
+                  },
+                  unitPrice: { type: "integer", title: "instrument 별 단가" },
+                  workDay: { type: "string", minLength: 1, title: "instrument 별 작업기간" },
+                  freeRevisionNum: { type: "integer", title: "instrument 별 무료 수정횟수" },
+                  paidEditCost: { type: "integer", title: "instrument 별 유료 수정비용" },
+                },
+                required: ["freeRevisionNum", "instrument", "paidEditCost", "unitPrice", "workDay"],
+                title: "ArtistTagInstrumentRequest",
+              },
+              nullable: true,
+              title: "instrument",
+            },
+            moodSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "mood",
+            },
+            styleSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "style",
+            },
+            answerSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  question: {
+                    allOf: [
+                      {
+                        type: "object",
+                        properties: { id: { type: "integer", title: "아티스트 질문 id" } },
+                        required: ["id"],
+                        title: "ArtistAnswerQuestionRequest",
+                      },
+                    ],
+                    title: "아티스트 질문",
+                  },
+                  answer: { type: "string", title: "답변" },
+                },
+                required: ["question"],
+                title: "ArtistAnswerRequest",
+              },
+              nullable: true,
+              title: "아티스트 질문 답변",
+            },
+          },
+          title: "ArtistUpdateRequest",
+        },
+      },
+      "multipart/form-data": {
+        schema: {
+          type: "object",
+          properties: {
+            profileStr: {
+              type: "string",
+              writeOnly: true,
+              nullable: true,
+              minLength: 1,
+              title: "아티스트 프로필 (입력용)",
+            },
+            introduction: { type: "string", nullable: true, minLength: 1, title: "소개글" },
+            status: {
+              type: "string",
+              nullable: true,
+              minLength: 1,
+              title: "활동 상태 (ONLINE / OFFLINE / VACATION 중 선택)",
+            },
+            languageSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "아티스트 언어 id" } },
+                required: ["id"],
+                title: "ArtistArtistLanguageRequest",
+              },
+              nullable: true,
+              title: "언어",
+            },
+            country: { type: "string", nullable: true, minLength: 1, title: "국가" },
+            averageContactTimeStart: { type: "integer", nullable: true, title: "평균연락가능시간 (시작)" },
+            averageContactTimeEnd: { type: "integer", nullable: true, title: "평균연락가능시간 (끝)" },
+            isPriceVisible: { type: "boolean", nullable: true, title: "단가 노출 여부" },
+            genreSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "genre",
+            },
+            instrumentSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  instrument: {
+                    type: "object",
+                    properties: { id: { type: "integer", title: "tag id" } },
+                    required: ["id"],
+                    title: "ArtistTagRequest",
+                  },
+                  unitPrice: { type: "integer", title: "instrument 별 단가" },
+                  workDay: { type: "string", minLength: 1, title: "instrument 별 작업기간" },
+                  freeRevisionNum: { type: "integer", title: "instrument 별 무료 수정횟수" },
+                  paidEditCost: { type: "integer", title: "instrument 별 유료 수정비용" },
+                },
+                required: ["freeRevisionNum", "instrument", "paidEditCost", "unitPrice", "workDay"],
+                title: "ArtistTagInstrumentRequest",
+              },
+              nullable: true,
+              title: "instrument",
+            },
+            moodSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "mood",
+            },
+            styleSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: { id: { type: "integer", title: "tag id" } },
+                required: ["id"],
+                title: "ArtistTagRequest",
+              },
+              nullable: true,
+              title: "style",
+            },
+            answerSet: {
+              type: "array",
+              items: {
+                type: "object",
+                properties: {
+                  question: {
+                    allOf: [
+                      {
+                        type: "object",
+                        properties: { id: { type: "integer", title: "아티스트 질문 id" } },
+                        required: ["id"],
+                        title: "ArtistAnswerQuestionRequest",
+                      },
+                    ],
+                    title: "아티스트 질문",
+                  },
+                  answer: { type: "string", title: "답변" },
+                },
+                required: ["question"],
+                title: "ArtistAnswerRequest",
+              },
+              nullable: true,
+              title: "아티스트 질문 답변",
+            },
+          },
+          title: "ArtistUpdateRequest",
+        },
+      },
+    },
+  }}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              profile: { type: "string", readOnly: true, nullable: true, title: "아티스트 프로필" },
+              introduction: { type: "string", nullable: true, title: "소개글" },
+              status: { type: "string", nullable: true, title: "활동 상태 (ONLINE / OFFLINE / VACATION 중 선택)" },
+              languageSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", title: "아티스트 언어 id" },
+                    name: { type: "string", readOnly: true, title: "언어 이름" },
+                  },
+                  required: ["id", "name"],
+                  title: "ArtistArtistLanguage",
+                },
+                nullable: true,
+                title: "언어",
+              },
+              country: { type: "string", nullable: true, title: "국가" },
+              averageContactTimeStart: { type: "integer", nullable: true, title: "평균연락가능시간 (시작)" },
+              averageContactTimeEnd: { type: "integer", nullable: true, title: "평균연락가능시간 (끝)" },
+              isPriceVisible: { type: "boolean", nullable: true, title: "단가 노출 여부" },
+              genreSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", title: "tag id" },
+                    type: { type: "string", readOnly: true, title: "태그 타입" },
+                    name: { type: "string", readOnly: true, title: "이름" },
+                  },
+                  required: ["id", "name", "type"],
+                  title: "ArtistTag",
+                },
+                nullable: true,
+                title: "genre",
+              },
+              instrumentSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    instrument: {
+                      type: "object",
+                      properties: {
+                        id: { type: "integer", title: "tag id" },
+                        type: { type: "string", readOnly: true, title: "태그 타입" },
+                        name: { type: "string", readOnly: true, title: "이름" },
+                      },
+                      required: ["id", "name", "type"],
+                      title: "ArtistTag",
+                    },
+                    unitPrice: { type: "integer", title: "instrument 별 단가" },
+                    workDay: { type: "string", title: "instrument 별 작업기간" },
+                    freeRevisionNum: { type: "integer", title: "instrument 별 무료 수정횟수" },
+                    paidEditCost: { type: "integer", title: "instrument 별 유료 수정비용" },
+                  },
+                  required: ["freeRevisionNum", "id", "instrument", "paidEditCost", "unitPrice", "workDay"],
+                  title: "ArtistTagInstrument",
+                },
+                nullable: true,
+                title: "instrument",
+              },
+              moodSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", title: "tag id" },
+                    type: { type: "string", readOnly: true, title: "태그 타입" },
+                    name: { type: "string", readOnly: true, title: "이름" },
+                  },
+                  required: ["id", "name", "type"],
+                  title: "ArtistTag",
+                },
+                nullable: true,
+                title: "mood",
+              },
+              styleSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", title: "tag id" },
+                    type: { type: "string", readOnly: true, title: "태그 타입" },
+                    name: { type: "string", readOnly: true, title: "이름" },
+                  },
+                  required: ["id", "name", "type"],
+                  title: "ArtistTag",
+                },
+                nullable: true,
+                title: "style",
+              },
+              answerSet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    question: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", title: "아티스트 질문 id" },
+                            query: { type: "string", readOnly: true, title: "질문" },
+                            placeholder: { type: "string", readOnly: true, title: "플레이스홀더" },
+                            order: { type: "integer", readOnly: true, title: "질문 나열 순서" },
+                          },
+                          required: ["id", "order", "placeholder", "query"],
+                          title: "ArtistAnswerQuestion",
+                        },
+                      ],
+                      title: "아티스트 질문",
+                    },
+                    answer: { type: "string", title: "답변" },
+                  },
+                  required: ["id", "question"],
+                  title: "ArtistAnswer",
+                },
+                nullable: true,
+                title: "아티스트 질문 답변",
+              },
+            },
+            required: ["id", "profile"],
+            title: "ArtistUpdate",
+          },
+        },
+      },
+      description: "",
+    },
+    "400": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "object",
+                properties: {
+                  nonField: { type: "array", items: { type: "string" } },
+                  profileStr: { type: "array", items: { type: "string" } },
+                  introduction: { type: "array", items: { type: "string" } },
+                  status: { type: "array", items: { type: "string" } },
+                  languageSet: { type: "array", items: { type: "string" } },
+                  country: { type: "array", items: { type: "string" } },
+                  averageContactTimeStart: { type: "array", items: { type: "string" } },
+                  averageContactTimeEnd: { type: "array", items: { type: "string" } },
+                  isPriceVisible: { type: "array", items: { type: "string" } },
+                  genreSet: { type: "array", items: { type: "string" } },
+                  instrumentSet: { type: "array", items: { type: "string" } },
+                  moodSet: { type: "array", items: { type: "string" } },
+                  styleSet: { type: "array", items: { type: "string" } },
+                  answerSet: { type: "array", items: { type: "string" } },
+                },
+                title: "ArtistUpdateErrorMessage",
+              },
+              errorCode: { type: "string" },
+            },
+            required: ["errorCode", "message"],
+            title: "ArtistUpdateError",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

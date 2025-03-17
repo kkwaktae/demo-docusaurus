@@ -1,0 +1,71 @@
+---
+id: follow-list
+title: "팔로우 정보"
+description: "팔로우 정보"
+sidebar_label: "팔로우 정보"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99vG0UQ/leseQJ08Y8UijghpIAKqqhoJeiTa6Xru7G9zd3udXfPjWudVCS/0FbiJREkMigRFU88GIgQD/xF+Pw/oNk722efHShqhJD6kti7M9/MfPPN7noIMkLFDJfipg8udGQQyEf7AdcGHIiYYiEaVBrc5hC4ABcexqgG4IBgIYILXqy0VOCA9noYMnCHYAYR7WijuOiCAyEXt1B0TQ/cRuKAj9pTPKKQS//E2QwfsS7ua/4YN0XgwmAXyXkNdOm1DVfH7QfomRVUFHEIbhOYMlyb/YwKpNpijSr/TiW1nFKNhzs6Qm+HIHY4EYm719lu+71ddp0htt9519rQ9mcsRP1Pw1xKXXo+mZ0+r6Q//JH+cnFP3BNvVe6vQtyv7FRWV6zRWmSyWk8moRpZ1yaaLVI6Gr1YcTOwavgQmUIFbrNFxgp1JIWm0oawW6/TP08Kg8LQRxZFAfeszmoPNKU/LPdTznsSKVKl4RlaLpENyhJxELB2gOAaFWNis4gDowu2TClGfecGQ/33sah3JX0RLvNvi2CwCESs2rqC4HbH0vFqcLM+XAWy4N5BJv4yj4YbIhHS49Hs2SR9+mL29PfK9NlX09GL9PsRjTA7nOvwWj2xKXR4sBGrI1XIDLgQK15q0ZZQs6PR9Hw8Ox7RKHO9tyAhB29LGSAT5bJsyx/GXKFPSuU+FPwLNbeWgT+2as5NSLklEW1jaWsp311Mf7wilsZn6dmTl+BnM70n4+nXJ5X0m5+mvz3JITzD+3gpxOxknI5+np0czf3WyGZzlrlf5veuzg+R1wr/7xV+OWSxj/nBVgKDhLzma3dYlwtm0M82b9k4Sel+olLfrjde4U3go2E8KPdkvaTcrlDGRzIMpbihFL01tqV67f+Ramlp9vxoej5OTyeV9Ox4+usFyRlNT9I7pIvZQ46EDbV+o5bd5jVY3uafU0lZ1vM7fXl9RvxTtPcnBeoh8+3s5a+ovdj0pOKPLUU2MS460rrnxTxi/bZUlb07N8GBPiqdZdyo1qt1WK/jz8l4Ohm7lSaLeNXHfjXzrnoybL3RMybSbq1W3nvz/baqfZCeXqTffpk7b3MsOFHLI6lNyGxf84o2ULmS44IYg4emFgWMCwKKlW11RnMT+g17TNjJcYCa25M07k0YDttM410VJAktZ69SOgJ9rukQ8cHtsEBjKexClssX98ZMDnBQtOmzIMZM4C8To/jsviRM0exfRrrKR+yluS9/ASwzb9EXxbPTvNlKnLniqUOZ257nYVT0Kh0ShLIYv09ufAEOsJh0URyqAztU+YfCFcjEoIC9Ol/zzOkvkbzRZTjMRjZJFvbZ1laPxVBn1sRRK0mSvwDIixo+
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"팔로우 정보"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/follow/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+팔로우 정보
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"cursor","schema":{"type":"string","minLength":1},"description":"cursor"},{"in":"query","name":"page_size","schema":{"type":"integer"},"description":"page_size"},{"in":"query","name":"subject","schema":{"enum":["artist_follower","user_following"],"type":"string","x-spec-enum-id":"e26a2b92a6aeeb57","x-enumNames":["artist_follower","user_following"],"minLength":1},"description":"조회 주체\n\n* `user_following` - user_following\n* `artist_follower` - artist_follower"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"artist":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"nickname":{"type":"string","title":"아티스트 닉네임","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"아티스트 프로필"},"isArtist":{"type":"boolean","readOnly":true}},"required":["id","isArtist","nickname"],"title":"FollowArtist"}],"nullable":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"유저 프로필"},"isArtist":{"type":"boolean","title":"아티스트 활동 여부"},"isActive":{"type":"boolean","title":"활성화여부"}},"required":["artist","id"],"title":"FollowUser"}],"readOnly":true},"artist":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"nickname":{"type":"string","title":"아티스트 닉네임","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"아티스트 프로필"},"isArtist":{"type":"boolean","readOnly":true}},"required":["id","isArtist","nickname"],"title":"FollowArtist"}],"readOnly":true}},"required":["artist","id","user"],"title":"Follow"}}},"title":"PaginatedFollowList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

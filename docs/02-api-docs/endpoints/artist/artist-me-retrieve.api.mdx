@@ -1,0 +1,113 @@
+---
+id: artist-me-retrieve
+title: "ArtistMeRetrieve"
+description: "내 아티스트 프로필 조회"
+sidebar_label: "ArtistMeRetrieve"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVl9rG0cQ/yrHPCXlbMlNQpujFNxgF9PUCiTpiyqS1d1I2vj+ZW+lWBUHTqxCYhuaYos47dnYYNpQAhVEUD/4E/n2vkOZu7N8smqSB7/0RVpmdmZ+M/Ob2euB56NgknvukgUGMCF5IB85+EigFBw7CDpI1gzAqOZKqOkQoNkWXHbBqPbgG2QCBRjVWljTQWDge26AARg9+Lxcpj/TcyW6ko7M921upgFLTwLPJVlgttBhdJJdH8EAr/4ETQk6+ILgSZ5541bhDnclNlEARWRWxbW7YEjRxjC1anAbC5cDKbjbpFS4JAWoQT/ZHKqNo2TjWEt2+vFhlAz6EOrgcnPFZc6nW8ebr+L+kdrvgw4OW72LblO2wLhRDnVoeLbtPUMR/CfwM3fJ1k58GKnftzT1cle7VvSu9o41FR2og7X4zy0t/jBSb96rwYmWDA60ePvv6zAOQgg/Icj+qzzI3kk83D3zfRhpY30yiLQihHj7SO3tklUaLZBMttN80G07RIvK4uLdpeUF0KGynB9+mL8z/2CpskxcuVhECwNTcJ8YAAZ8pj3OrB5rM1rFtbmLP7okzJym0kZjLD5zTPIkGp0O19TRr6DD6kzgozlDkGaIJmBh2bpp3cS527e/vFX/olGsxNso/uWtptafJ+tRaktmy8zBlOV5OErHzQ/nkWpUb247XlMwv9VNGW3blUY6CFfB3pAkT9tcoEVguJWWMEc+nw7gYiF+WNAmg37817vTf47j/d1k54Sa5aPLbNm9j7IQmwnBuqADl+gEH5+6THv5MCRb7+L+62RzqCXra2r/58kxuEUj9bFx2hvFf0yPz4VSpF5yOhWyfhiguJelSRlPoYKLfortK05ocZB0KnxhF0xU8nzBTLXme4SQ4k1ynHDdLM9d4Sa0UDJuT9f0Yq75vQLOO57jeO6CEJ64HOqN/wfUKdHkXn4xyje7OtgjgXrxnpi2Hak3rzW1/zLe2JlYdJo6GMQfRsRDlC2PtkgzazcjRkKpM1fKnsCSgyU4fwXvUymybM/ewvNh8/l3mE4bAWwhs9Kpz0YC5tuy5Qn+U1raNCHuNrzUPC/CM9ape0Kbv7cEOnRQBFmmc7Pl2fLUMj0dRvEwMrQq8/mshZ3ZzHrW9JzatZaUfmCUStO661/VRelr9dtI7T7PjS8zLBil+8ULpMNSPuQZXVULJhIbV1Piqiz5NuMuRW+LlFdZe6rQmQP97BuFegg6EJ1aXiBJ3evVWYAPhR2GJH7aRkHfLzUdOkxwVqdyV2m/502ijb6CXeqSaaJPPjvMbmdNvTAPtIbHpPl24QEBaROqIg9WUh7kh8J7wdxuwfckJfQcAv2G+iUmvV7GsjAc389Ul1qMeZjdpnLWwjD8FyeU3O8=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistMeRetrieve"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/artist/me/"} context={"endpoint"}></MethodEndpoint>
+
+내 아티스트 프로필 조회
+
+<ParamsDetails parameters={undefined}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              profile: { type: "string", title: "아티스트 프로필" },
+              nickname: { type: "string", title: "아티스트 닉네임", maxLength: 30 },
+              followers: { type: "integer", title: "팔로워 수 (아티스트인 유저만 보여야 할 듯)" },
+              following: { type: "integer", title: "팔로잉 수 (일반 유저로 팔로잉한 아티스트들의 수)" },
+              status: {
+                enum: ["OFFLINE", "ONLINE", "VACATION"],
+                type: "string",
+                description: "* `ONLINE` - Online\n* `OFFLINE` - Offline\n* `VACATION` - 휴가중",
+                "x-spec-enum-id": "de0d4d4e19985b7f",
+                title: "활동 상태",
+                "x-enumNames": ["Offline", "Online", "휴가중"],
+              },
+              filmography: {
+                allOf: [
+                  {
+                    type: "object",
+                    properties: { id: { type: "integer", readOnly: true } },
+                    required: ["id"],
+                    title: "ArtistFilmography",
+                  },
+                ],
+                title: "필모그래피",
+              },
+              penaltySet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", title: "패널티 타입", maxLength: 5 },
+                    name: { type: "string", title: "이름", maxLength: 30 },
+                  },
+                  required: ["name", "type"],
+                  title: "UserPenalty",
+                },
+                title: "패널티",
+              },
+            },
+            required: ["filmography", "followers", "following", "id", "nickname", "penaltySet", "profile"],
+            title: "ArtistMe",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

@@ -1,0 +1,71 @@
+---
+id: review-create
+title: "리뷰 등록"
+description: "리뷰 등록"
+sidebar_label: "리뷰 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8uKG0cU/ZXhrmIoqaUkqyYExoMDJgljxk42QphS1x2p7O6udlW1NIqohWPvsglkY8wMJJsQgxdjbMgi+aJI+Ydwq1o9rVcUw8Qk4I3orr6PU+ecemgGqkDNrVT5bQExaBxLnNxPNHKLwMDyoYG4V41Dn4HGRyUae1OJKcQzSFRuMbf0yIsilYmvFT0wKqcxk4ww4/RkpwVCDGrwABMLDApNna1EsyzDk1AmTY9PIe7tS5GiUVbmFoeoCbG0KY0sfvvlzycXB1KAcwG11ChoLlLQPJZxJ35mR6H/SZgcuP56IXAMjOX6b3vOXz9d/Pg9hTZoqaKN1TIfAoNM5l9gPrQjiLuN1G/fLJ6/2MC65GUDcI3UsRXiz1qTyaR1qnTWKnWKeaIEivdKvCMlsjK1suDaRl4BwS1/z/074X4lw+oSCSkmpZZ26mm8iVyjhrjXd34XM4XKTeDww073GreyHYpo5OI4T6c1uv+I2P+qyuu6MggnizjcGk6LhluIQXCLLSsz3CCugfXJxeLpq8XF74vvznc6ptmQbaUheEegSbQsSHCIgYB+3OlcoykyNIYPcX9grvLPJKZNobnWfEroLWZmkza36qW3cNDewm6HZ77mqRSeiFtaK73FL/8Q86pt3h6Pb/9lxa1jgPR+pARub9l0yFUoq9XZMEc1vV0Ouc5tQ6DlMt2Pu4prQD1SWVYrsQvqR/8PqBtD859fzn+9PJj/8Gr+04WXyo4U3VQLZTwyTkcIRONuFO6oEVxt/HdpQgHzcvu/MlshP0fvNmozQi789pbzjL4elnaktPzGE+RhEUknV3ffW2c8K1JcO7VpeXXq1dBpmLzmiBqeKg+kImXCxwOlDw7v3AYGY9QmzLzb7rQ7sM7HH5fn88vz+KDHC9kWOG6H7Haisv4HI2sLE0fR5rcbnwx09Oni+ZvFs8dV8q7ERhKhJZ4z7v1RcbMuyQrAml+LZzYqUi5zqlJq75egVg/GXb+x+/2XATlkRHLGPZjNBtzgVzp1joYflajp/O4zGHMt+YAY6/UdWypGh+ZDnHpveapb96g/hadl0Hnf5dixZYnDJMHC7kj2q4QOy9qCd47v3gMGg+qvUOb3HWhUZs2XAJuXxEDThQ+9C6uHxh2A59MGklVDsgow/RL8rSmzWfC4c3V8+LQzo14FIZqk6zvn/gLkIwcn
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"리뷰 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/review/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+리뷰 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"컨택 id"}},"required":["id"],"title":"ReviewContactRequest"}],"title":"컨택"},"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["contact"],"title":"ReviewRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"컨택 id"}},"required":["id"],"title":"ReviewContactRequest"}],"title":"컨택"},"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["contact"],"title":"ReviewRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"컨택 id"}},"required":["id"],"title":"ReviewContactRequest"}],"title":"컨택"},"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["contact"],"title":"ReviewRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"컨택 id"}},"required":["id"],"title":"ReviewContact"}],"title":"컨택"},"star":{"type":"integer","title":"별점"},"content":{"type":"string","title":"내용"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["contact","createdAt","id"],"title":"Review"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"contact":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"ReviewContactValidationError"},"star":{"type":"array","items":{"type":"string"}},"content":{"type":"array","items":{"type":"string"}}},"title":"ReviewErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ReviewError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

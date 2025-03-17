@@ -1,0 +1,71 @@
+---
+id: review-update
+title: "리뷰 수정"
+description: "리뷰 수정"
+sidebar_label: "리뷰 수정"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk+L20YU/yrmnRIYW3bbkygFZ0khtKVhmz0ZE8bSW3sSaUY78+RdV+jQNIdCL7kUQthAToVCD1sa6KWfqKsPUd5ItrRrG7ewl70ISfPezO/PezNTgMnQSlJGP4khBItLhefP8yyWhCAgk1amSGgdhJMClIYQMkkLEKBlim2GikGAixaYSggLoFXGg0oTztFCKSBGF1mV8UoQwriXa3WWY6+J6C1lwl8xalKnK6XnPVoo17v+9ffrv64GIMDiWa4sxhCSzbGcCiA5Z1QNApjWMejokYlXDCIymlATv8osS1TkeQYvHEMottGa2QuMiFlbVoUUOh9H0u7gJIAUJfzn+s/X1Yc3TLKzYhPtyCo9BwGp0l+jntMCwlEn9dXH6t1vUJbtr2NP58Q7cFwT8uNdChf98/Pz/qmxaT+3CerIxKzMveOU5gmpTFoKPJdYkrx3LDjCYZRbRSvfJI9QWrQQTqalr0mXGe1qwJ8Mh3dYmCreSd6ijL/VyarpFHFHMt0WRkBkURLG453hbKgkCIHV6pNKcQtaO2f14/vq9R/V+7+rny+95G23TzrLCKY83W0IeCNu7jIM8rM7lTxF5+QcDwdqo79UmHQdktbKFXMgTN22ZOW2U/8hY9uwg0l7KvqxtcZ+0/ArBSB/H5kYdy/cdagNFRuF9tjkV9nv1egOvYqRpEoOo2/iOoCPTJoafQDqp/cD6tav+kjtVT+9rT784g2jheGzP8s9MD7dQwiWo6A+WINic8SXAbR73XfMrYa/3vHaGszUV+iLkFdcoIz9ftNcGcY5LYxV33utPELW67g9vB9fyDRLsN3ih51C32jDs58av2ojxrlczoztjZ8+AQFLtK5mPBoMB0O4rcM/V5fXV5dhbyIzNYhxOaizB5FJpw8WRJkLg2B77OHnMxt8Ub37WL39oUnel9hJYrSZcZRKXxeNELetuAFwIybhBQVZIpXmWXLr66S2aQLLkd9W/Q1IQNi9jXGZLIwjDiuKmXR4YpOy5N9nOVo+rKYCltIqOWP5JgXEyvF7DOGpTBxuIWpNeHDclOXD3v+/y+0kti4dzXXjp+D6FfASVzeumeW0FOuSYsz1+FGNrP+MZ2nzD1+aSrGeYhxFmNGeZN/RfJ5v2uXpyTMQMGvumqnfKKEzseh+8GVAgMzZtG6XvPRd0rwwm50q3GyYtST8ZPQ7U4qi7sGy3MTXQ3szNl1aR7Mp07Is/wVAylAW
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"리뷰 수정"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/review/{review_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+리뷰 수정
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"review_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 리뷰.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"title":"ReviewUpdateRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"title":"ReviewUpdateRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"star":{"type":"integer","title":"별점"},"content":{"type":"string","minLength":1,"title":"내용"}},"title":"ReviewUpdateRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"star":{"type":"integer","title":"별점"},"content":{"type":"string","title":"내용"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["createdAt","id"],"title":"ReviewUpdate"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"star":{"type":"array","items":{"type":"string"}},"content":{"type":"array","items":{"type":"string"}}},"title":"ReviewUpdateErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ReviewUpdateError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

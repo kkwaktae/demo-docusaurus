@@ -1,0 +1,63 @@
+---
+id: region-list
+title: "Region 목록 조회"
+description: "Region 목록 조회"
+sidebar_label: "Region 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVMFu1DAQ/ZXVnECyNruFU4SQSlWhCiQQhdMqQt5k2LhNbNd2QpfIEty5F1Xl0BMCCakHvoou/4DGye6mWy0HTnBJrLHf+M17M25AaTTcCSUPMojB4Ewo+boQ1gEDx2cW4kkXhYSBxbQyws0hnjTwCLlBA/Ek8QkDg1YradFC3MDOaES/VEmH0tGSa12INNwUHVklKWbTHEtOKzfXCDFwY/gcGAiHpe3F1fQIU2KkDfF1or1FZL0zQjqcoQFiwrNnsphD7EyFnoHkJfZOWmeEnFF9whUUWHx5vzj7DgxKfvoU5czlEO+MPIM0F0V2iO6fpegp1UklDGZklMigS5WsoS+Ce3tUSrsEv4lb1cn+lIJwnkGGNjVCk5MQA3gG90fjv3F7i2QZOi6K22Jsku7O9WjuqbJUct8YZWAr1Xv/B9VbodaDwfW3r9eXnweLy6tf5x+pH9DlikZ3FuzTnDoDonoctVMbwXpqD6mslvlydtd9rcUTDI1Nl+XIs9CobV/CbuVyZcS7IFMgJ+QbFeBdQW95PVVmsPv8ABjUaGzLejwcDUewWcvPq4vrq4t4MOFaDDOshy16mKoyuZM7p20cRbf37j6Ymujh4vzH4tOHDrwN2AOR7VpZV/LgbVfRFjlv8FyJ4/DURbrgQlKyygTLW6knUI/DQIcJYUAm58o62mmaKbf4yhTeU/ikQkMvZ8Kg5kbwKQk3STxbyk2P6jHOSe80RU1+1ryoWns2upSe3JX3j/dfAgNeEaG+o8fB0W5B2Zdbct7LfdNc1lGgr2dbIE3T9ov3q/Pt1lbEqqPa06Rk4r3/DREZQr0=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Region 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/region/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Region 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","title":"지역","maxLength":20},"childSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","title":"지역","maxLength":20}},"required":["id","name"],"title":"RegionChildRegion"}}},"required":["childSet","id","name"],"title":"Region"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

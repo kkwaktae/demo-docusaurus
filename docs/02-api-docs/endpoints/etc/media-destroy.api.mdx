@@ -1,0 +1,71 @@
+---
+id: media-destroy
+title: "Media 삭제"
+description: "Media 삭제"
+sidebar_label: "Media 삭제"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM1uEzEQfpXVnFrJyibQ0wohBcih4keIn1MUIWc9zbrdtbf2bCCsfIBzH6BCReIFkHrgyBNBeAc03iRNm/bAkcuu155Zf392C7ZGJ0lbc6gggwqVlu8UenJ2AQJq6WSFhM5DNm5BG8igllSAACMrhAy0AgE+L7CSkLVAizrOGsIZOggCFPrc6Zq3gAyGSWP0aYPJqiKZy5K/FBrSRwttZgkV2id/zs6WX3/2QIDD00Y7VJCRazBMBJCcMZwOLEwEeMwbp2kRMT5C6dBBNp5wrUNfW+PRM7h7/QN+XUf0wibromRq1YIxH/QHXJhbQ2iIh7KuS51HodJjz43tLms7PcacWDbHspLutlVIUpdbdZ6cNjMIYZvdeF3HDDWVXPjYVpU1I+esgxB2xOyg3v8/oO5MPWf7kuXn78tvFyCgQiosZ1BhiYQxfFRABul8kEar01arkMKV36+ZVQd87foGuKz1U+QIx8wWKBW6q9QOGyqs0x+jShGbNkc2tq/4vJfzqXXJ8OUhCJij8x3oQa/f68NNKr8uL35fXmTJWNa6p3De67p7ua0mewVR7bM03V3bfzB16cPllx/L80+r5rsat5rY9dp6qmS0dsXohprX8G1EIfxAaV1KbfgnjYtOdzKPYT6ILvCZEpDFc80GF9YTL7ftVHp868oQePq0QccHbiJgLp2WU1Zt3ILSnscKsiNZetxBsgkq7L1aBWo/+fdb4VZCa+sN+x5/wckTcIKL7qYKkyDWWWCw3cIwz7GmrZadE8Q3ySafT0bPRm9GIEA2LNx24k5i4lYD3uBWRNfDt4bHzyDuaGnbLs8hbOq7pTs7NolfkWcSIYS/qiUPag==
+sidebar_class_name: "delete api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Media 삭제"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/v1/media/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Media 삭제
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 파일.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"No response body"},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

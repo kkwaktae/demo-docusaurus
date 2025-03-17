@@ -1,0 +1,71 @@
+---
+id: tag-list
+title: "아티스트 태그 목록 조회"
+description: "아티스트 태그 목록 조회"
+sidebar_label: "아티스트 태그 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVl+LE0kQ/yqhnk7pzR9XXB1EWL0gi7orbnw41qA9M2XSOtMzdvfEjcPAid6L56sgsgqCCIrCPij6mTbJdziqZzLJOsmigsK9ZGaq68+vqn5VnRSiGBU3IpIbPjhgeO9mILQBBjFXPESDSoOzk4KQ4MC9BNUQGEgeIjj5g4H2+hhycFIww5jk2ighe5Ax8FF7SsTkHxwYv/w0evsYMrbYnbVe7o7B7oqO0VtBmYQrguC6Z06tnnbdZuuEe+rMWnMNGBhhAjKaPNo7+PK1Nnn09/jVP9aWzDZ5iJQPXGxvXmsDg43N7c6161fam51tYHBla+tPYLDd+etyG7oMyOR7tSvZHkJwQ96Qx2u35hzcqq3U5j7tsY1DB/bFiigISehpBTYcSfK4WZdR12xShvcItUYvUcIMbd/OI1eowNnpkqZCHUdSUw1SONFs0sOLpEFp6JXHcSA8S4fGHU1ZpNV2cKU4dU0YDPWcPHLvoGeZo4hURuRRqFGljpAGe6iAkHB/SwZDcIxKMGOFRvpDNWcVihxuwS+p+G/nYZZPSFsumolpnPHzh6MPX2vFiDEI+e5llD3TB2e1WXi4pI7ycPD54xEeMmrZvUQo9Am38KFEVTov2tGd+ezwHmRZVpkN2g0nm62fod8SmvlouAgWLKFvgBd6cxgvRGEYybZSkYKlUFf/H1CrK/fZ48m/++MnbyZPiISWi6P370avX9bGr/cnL55So9H0I6JxD/PFTy2HxqDVMLzXgNlC2aYE8xyma2W2FWJxCe1aoLB95L4d82K1ryemHynxwBbMwhTydmTNi9Tu84Ebqdr61Q1gMEClc/yterPerMz1wf7eaH/Pqe3wWNR9HNRz67oXhd0/+sbE2mk0qmfHzrqqcW784tP4+cPCeJnhnBERII60CbntcpHR9xT2EOiyUgZ3TSMOuJDkOVGWCXnRd2DQArvPgQE1vh9pQ+I0dbnG6yrIMhLnFyetd19o7gbEl9s80FiJWVIWyrleCOMuDmcX+oAHCebU/5EIv+fCOzKB4i/ELIEufShBGdg7kE2pScXLbdY9D2MzZ1WZbfJSDsnFdgcY8IT6Nc/+u5b9xQt5nx7J4Zzvw4MwhU2/VOuFJmmaz1aWlfr50VKLcvpybSpQN8uy/wCgy2yC
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"아티스트 태그 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/tag/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+아티스트 태그 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"name","schema":{"type":"string"},"description":"이름"},{"in":"query","name":"type","schema":{"type":"string","x-spec-enum-id":"b9638bb012b69707","title":"태그 타입","x-enumNames":["GENRE","INSTRUMENTS","MOOD","STYLE"],"enum":["GENRE","INSTRUMENTS","MOOD","STYLE"]},"description":"태그 타입\n\n* `INSTRUMENTS` - INSTRUMENTS\n* `GENRE` - GENRE\n* `MOOD` - MOOD\n* `STYLE` - STYLE"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"type":{"enum":["GENRE","INSTRUMENTS","MOOD","STYLE"],"type":"string","description":"* `INSTRUMENTS` - INSTRUMENTS\n* `GENRE` - GENRE\n* `MOOD` - MOOD\n* `STYLE` - STYLE","x-spec-enum-id":"b9638bb012b69707","title":"태그 타입","x-enumNames":["GENRE","INSTRUMENTS","MOOD","STYLE"]},"nameEn":{"type":"string","title":"영문 이름","maxLength":30},"nameKr":{"type":"string","title":"국문 이름","maxLength":30}},"required":["id","nameEn","nameKr","type"],"title":"Tag"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

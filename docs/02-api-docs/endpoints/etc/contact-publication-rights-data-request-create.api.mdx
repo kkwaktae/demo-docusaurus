@@ -1,0 +1,71 @@
+---
+id: contact-publication-rights-data-request-create
+title: "자료 요청 생성"
+description: "자료 요청 생성"
+sidebar_label: "자료 요청 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV82L21YQ/1fMnBJ4tuw0vYhSutlsIbQlyyY9GWOepVn7JZKe8t6Td10j6MceCukhh5Smy24I9BRIIS1LT/mLav0RZZ4kS17b62XxpZCLrY+Z38z85uONpiBjVNwIGT3wwQVPRoZ7ph8ng0B49nlfieHI6L7PDe8rfJagNn1PITcIDGKueIgGlQa3OwURgQsxNyNgEPEQa5DCBwbaG2HIwZ2CmcT0VkQGh6ggZUDYQqEPrlEJpj0Ghg8JtoSAXi6E2tyT/oRQ6A1Ghi55HJcuO0+0jOjZkjk5eIKeIb8VBW4EanpboKLaC7kIavLaKBENgcGhVCE34AJaCQahiL7GaGhG4HYYGGECks9OX2Z//5m9ftHIzi9mb19m5x9Ilh+Xsnc+vZsy8NGssbMG9vWL2R+/NHL0xuzHi+z0LaQLnHVLUHY5ml6Fs1+l9cBm9T43/CAXL/4sbJ3L4+bR0VGT4m8mKsDIkz7Z+0juTckNk8CImCvjWFKprz7SeVM6l+cGA41eooSZ2Il0D7lCBW63l9rxoWMZ6ZzJO+3OFmeI8FeMNbLI/YdRMJl7d4P8bS1jV+eIgdD3ZYQ1zYGUAfJoKY7LUNmbk9nzd43s9xOL+9u72T/fE2B+Tvg75so4fW6waUSIV9n56Tw7+Ss7/5A9PyPkJPa3hfzzq+zNryXypUKtAmBV0dqjrOBqKaF1165Zznkd+6g9JWKSABcoxrvt9hYLNESt+RA3C0Yy+lJgUK9nrhSfUNAGQ73MeHpVXV9Dd6liN+qk12N2TympvikCTxkg3e9KH9fHUGa+EmVz6q6ZT2t1fVK3OXXW9fqagVsLYFeGoYw2uPrJ/8PVpUeLAy6fHTaPZiRpz42ltg7SpuqCM+44xY7pTKt9NXU2rMEOVIfNI2IhD7Q8cqpqjsVXaMuZfBsh9+3RUCzIO4kZSSW+s2ZsLMTsQbXo7h3zMA5w1eEPiUb1BeYCLU+G1Ziq+CW7h9L6UxB6xMcDqRo7+w+AwRiVzlnrtNqtNlzm8t/3Z7P3Z26jy2PR8nHcyrXJWu/WyJhYu46z/O72ZwPlfJ6dXmSvfiiU1ynWlMhbSk7IbW0VFK1J54Kfc7YNHhsnDriI7DmhbMnlme7CuANs/j3BwF34OtmQbmBAVTmi2nG7MJ0OuMZvVZCm9PhZgopWjh6DMVeCD4jp7hR8oenaB/eQBxqXvJ53F9w6KLrgdoPO6lXRlAUVUTWNeZDQHTB4ipPFT620l7Ky0siLXGA3t9V8TDAVwOZ1P2UlxI7nYWzWKNuRQHvWvNH2Hz56DAwGxfdaaEcv1JBZ/Ya2NAY8oVzVu+ep7Z7igsJZycNiI5Wk0C+5v1JlOs17M03n8vmrtRrz7s2lKS29NE3/A2YmmyU=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"자료 요청 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/publication_rights_data_request/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+자료 요청 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"requesterEmail":{"type":"string","format":"email","minLength":1,"title":"요청자 이메일","maxLength":254},"detail":{"type":"string","minLength":1,"title":"자료 요청 내용"}},"required":["detail","requesterEmail"],"title":"PublicationRightsDataRequestRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"requesterEmail":{"type":"string","format":"email","minLength":1,"title":"요청자 이메일","maxLength":254},"detail":{"type":"string","minLength":1,"title":"자료 요청 내용"}},"required":["detail","requesterEmail"],"title":"PublicationRightsDataRequestRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"requesterEmail":{"type":"string","format":"email","minLength":1,"title":"요청자 이메일","maxLength":254},"detail":{"type":"string","minLength":1,"title":"자료 요청 내용"}},"required":["detail","requesterEmail"],"title":"PublicationRightsDataRequestRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"requesterEmail":{"type":"string","format":"email","title":"요청자 이메일","maxLength":254},"detail":{"type":"string","title":"자료 요청 내용"},"isDone":{"type":"boolean","readOnly":true,"title":"자료전달 완료 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["createdAt","detail","id","isDone","requesterEmail","updatedAt"],"title":"PublicationRightsDataRequest"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"requesterEmail":{"type":"array","items":{"type":"string"}},"detail":{"type":"array","items":{"type":"string"}}},"title":"PublicationRightsDataRequestErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"PublicationRightsDataRequestError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

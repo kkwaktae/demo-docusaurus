@@ -1,0 +1,71 @@
+---
+id: payment-confirm-retrieve
+title: "결제 승인"
+description: "결제 승인"
+sidebar_label: "결제 승인"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE1v00AQ/SvWnFppFSfAyUJIoapQxYGKj1NkVRt7kmxr77q7a0Ow9lD1xi+oUJA4ceJQVRzgL9HwH9B4nTSpWyEkLlwSf8xbv/fmzdSgCtTcCiUPUoig4PMcpT1KlJwInR9ptFpghcCg4JrnaFEbiEY1CNmU2xkwkDzHDbBIgYFJZphziGqw84LeCmlxihocgxRNokVBX4UIhkEpxWmJQVsRVDyjuxSlFZO5kNPAzoQJfl5dLj8vesBA42kpNKYQWV2iixlYPiVaKwoQMzCYlFrYecP2KXKNGqJRTNUaTaGkQUP0HvT79JcoaQkZ1cCLIhNJY0p4bIhj3ZWjxseYWPJFk4VW+NNEeodk+iJPX8hs7hkzsMJmVOE1BSIlW4zltjQbeGO1kNM/w5dXF9dfvgbL87Nf5wtwbtOhEfh2+LPjG+yht2rPdxqc6zSGOD3qD/6hOylaLrKuwtuU27oNtnsqz5Xc11rp+6k+/D+odh6t2vjhx/LTd2CQo50pGscpNsRoyiIIq0HY5jusb2bNhe2whnAT+lek0gtZRX8thBfiOc6B+RGeIU+biLZDPCztTGnxvnGt4SrkRDXwVt9bXo2VDoaHB8CgQm28iEGv3+tDR9rl4vpyEQUjXoheilXPo3uJyuOdmbWFicKw+2738ViHT5Yfvy0vzlrwfcANEKWgUMbmvGl1q+i2u1sE165YfGfDIuNC0imlblrvnR9BNWja4HcLg2hr07X2AwNKwUwZS5C6HnODb3TmHD0+LVHTKooZVFwLPiYrRzWkwtB1CtGEZwY77NZphp2Xbep2g7/fmHeKXOVBUhiaIyieDE5wvr3NXezYKihE2hcMkwQLuwHtjBvt2nWWn+2/Bga8JEc3s3jSZLG9oNPvpLUdyxVH+nXsHkhd+6Q7t673r+5FrGfBV5NLsXPuN/Qlirs=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"결제 승인"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/payment/{payment_id}/confirm/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+결제 승인
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"payment_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 결제.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true,"title":"결제 id"},"status":{"type":"string","readOnly":true,"title":"결제 처리 상태"}},"required":["id","status"],"title":"PaymentConfirm"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

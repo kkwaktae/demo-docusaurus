@@ -1,0 +1,126 @@
+---
+id: user-my-project-retrieve
+title: "내 프로젝트"
+description: "is_switch_confirm=True이고 is_artist=False인 경우:<br/>[POST] /v1/artist/ 엔드포인트를 통해 아티스트 정보 등록 페이지를 보여주시면 됩니다.<br/>아티스트 정보 등록이 완료되면 is_artist=True로 자동 변경됩니다.<br/><br/>is_switch_confirm=True이고 is_artist=True인 경우:<br/>/v1/artist/{artist_id}/ 엔드포인트를 사용하여 아티스트 마이페이지로 전환이 가능합니다."
+sidebar_label: "내 프로젝트"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99PG0cQ/ldWqz5AdGAT0kqxkkg0ohVqRBCQJ9cla9+CN/H9yN7aQK2T3NStCEYNEliY1EZGIaGRqOoGt+WB/EPs3v9Qzd2Bz9gmidSXSH2wfb7b+eab2W9m54rYsiknglnmlI4TOO9QvmCsLtjcekQzYoFTwRktUKxhnToZzmxYihOYOQvOMhOZ7ELGMhcZN27P8zxVjfbZcRMxZ4FwwRxx+yuSc6hqnKCzt+/Ui1biVprfSc7cn5tPoVhhLBasiiG1sy236t7zI9U48dZP5KtT5P38l1dtI1Ute5WWWj/w1k+QalblcRvJrT/lfgN5v9RUo60OS7BcHrfVzpF6eaoqdfmmjeTmG1lZk5WDUXA5GEU12kjtluXLDblZA8MOdwhI7teR2tuUz3eRPC6dvX3XjQufD8xEcLMrEZEMFIPfBaa7fbOhnh6pF2+8ak3tHHXnRB6uqUa7kwsg3Cx7u/AfnbVKcv2VVz3njDVsE04MKih3cCJZxAw20yYiizVsEoPC1upYw04mSw2CE0UsVm246wjOzCUfQAjKwew7g36GXQ1z+iTPONVxQvA8dVMaFmQJ4H054ZSGHZrJcyZWfZdfUsIpx4lkCpZy6tiW6VAHfF2Px+EnY5mCmgIuiW3nWMYXaOyRA9Ir9nKz0iBW4MZBzoIFaEyPrGGmoEuUY/BI9PtmbjWk61stshztF2z3Wg0LJmAhVvWmapaQt12W+3WvWoY0BOnrxTDzuRxJg9kljEZbvi5jDRtk5R41l0QWJ8bjroaZM+cLapY+yVNHRDDTlpWjxMQRkG5lw8YjVWmqt78jtXMk/y7hLkDIE9U/FjEElK2abB70wt4NdP/xPCNIE77+PxzC261DUXYgggKa6r/lfSGY3rGbZpnHg/avr7GsPJPlA7VX7mDMDJZR/xCi4lm0cjlr2a/KK/h7G9tyv65+3UBqrYaGonDQWwJVysON83ZYPUVetYnk1h/DHSdA6QOc7D0LnTROZat2jr1fRxfPvWq9qxfJrQPVqIGV782mJsmJ1Tka3VbCOVnFGmaCGs77Szh4Ojih3sZvsrzpVVrI+7Gk9n7qrqbPr6jK91RhV1tLBihaAJLqGD9wKJ8JwoSIe1jBzQKjy0CAmnkDoCZm56fm5rGG796bmpye9+Euces+aq+hh8HSh2gEBVffmtfQwwAIbl5Arow4Ns2MgKsR6H5Yv3Fd18dv3ozHx9Np+gWJpq5WVntHoJSz46baW5Pr28jb3YYzcCjwgmIh8rAPDajTxKBO3yhcDedNaJezFCKetgRbDBv35ApzhHN1bTfeqcOSqq6rRgnJ10fynxZS1Q35+vSixC/tyEW995Tw5XqMFle0BrTgpOtpjl3K7ZwO743vsi6CEQq7wLx7R0EWN+Jj/+FRp1NBWK5X55ezFq6LUL1rGYZlTnJu8cFUxz8Nqq6GDSqyFih/Kdg8mGwSGCYtmEViRRiwOvNtDHdmkzngH1A8n1A6Xctm31C/bYGjLCW63zHDgWkiL7IWZ9/7+fBZMHPR8s1D5sukkLY4mpiZwhouUO4EjMdG46Pxnno/a9Vlq55ASWKzUZ0WRgPr0YxlpIayQthOIhbrfTZ8K81jd9SLtqr9EBoPMowY+Y3acoRB/E0MI5JP2+HxpJoNb/3kMseIGP5/E/hU3wRCbQu6ImJ2jjATtJDnfmkGdZPEhTHoe46v9oTfLjvFgzUM1Zm1YG5L4mIxTRz6gOdcF24/yVMO835KwwXCWTAAJ4tYZw5c6zixCIq4QlhDs2E3GEaD2J6Xpwm1WSC5PPzDGn5MV4MXGRfOpbBewXvwYCKTobaImPT0M3gzuWglX0/CQUfykJJoS3jst4TwAtD70unuDufc4NvVBpgUi0HDcd2L9cGjgRYXLSmMHCJwXfdfu6KuHw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"내 프로젝트"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/user/{id}/my_project/"} context={"endpoint"}></MethodEndpoint>
+
+is_switch_confirm=True이고 is_artist=False인 경우:<br/>[POST] /v1/artist/ 엔드포인트를 통해 아티스트 정보 등록 페이지를 보여주시면 됩니다.<br/>아티스트 정보 등록이 완료되면 is_artist=True로 자동 변경됩니다.<br/><br/>is_switch_confirm=True이고 is_artist=True인 경우:<br/>/v1/artist/\{artist_id\}/ 엔드포인트를 사용하여 아티스트 마이페이지로 전환이 가능합니다.
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "path", name: "id", schema: { type: "string", pattern: "^me$" }, required: true },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              id: { type: "integer", readOnly: true },
+              profile: { type: "string", readOnly: true, title: "유저 프로필" },
+              name: { type: "string", nullable: true, title: "이름", maxLength: 30 },
+              isSwitchRequest: { type: "boolean", title: "아티스트 전환 신청 여부" },
+              isSwitchRejected: { type: "boolean", title: "아티스트 전환신청 반려여부" },
+              isSwitchConfirm: { type: "boolean", title: "아티스트 전환 여부" },
+              isArtist: { type: "boolean", title: "아티스트 활동 여부" },
+              artistId: { type: "integer", title: "아티스트 id" },
+              artistNickname: { type: "string", title: "아티스트 닉네임" },
+              artistProfile: { type: "string", title: "아티스트 프로필" },
+              followers: { type: "integer", title: "팔로워 수 (아티스트인 유저만 보여야 할 듯)" },
+              following: { type: "integer", title: "팔로잉 수 (일반 유저로 팔로잉한 아티스트들의 수)" },
+              penaltySet: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", title: "패널티 타입", maxLength: 5 },
+                    name: { type: "string", title: "이름", maxLength: 30 },
+                  },
+                  required: ["name", "type"],
+                  title: "UserPenalty",
+                },
+                title: "패널티",
+              },
+              view: {
+                enum: ["ARTIST", "CLIENT"],
+                type: "string",
+                description: "* `CLIENT` - CLIENT\n* `ARTIST` - ARTIST",
+                "x-spec-enum-id": "d42dd399003bbe6a",
+                title: "현재 보고있는 화면 (CLIENT / ARTIST)",
+                "x-enumNames": ["ARTIST", "CLIENT"],
+              },
+              unreadReviewNotificationExists: { type: "boolean", title: "읽지않은 리뷰 알림 여부" },
+            },
+            required: [
+              "artistId",
+              "artistNickname",
+              "artistProfile",
+              "followers",
+              "following",
+              "id",
+              "isSwitchRejected",
+              "penaltySet",
+              "profile",
+              "unreadReviewNotificationExists",
+            ],
+            title: "UserProject",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

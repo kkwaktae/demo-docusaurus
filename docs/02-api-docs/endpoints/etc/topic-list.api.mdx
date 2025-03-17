@@ -1,0 +1,71 @@
+---
+id: topic-list
+title: "Topic 목록 조회"
+description: "Topic 목록 조회"
+sidebar_label: "Topic 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV19PG0cQ/yqneUqiA9uhRI1VVXKJ26JGgILzRC2yvhvbG+5fdvcoxDqJJrQv7SNUUWQk8tIqUSpRAVUf0i+Ez9+hmt3DPv8BmihR0xeMPTszv5n5zcxuB8IIBVM8DBZdKIMKI+6se1wqsCFigvmoUEgor3WAB1CGRzGKbbAhYD5CGZw2U+vcBRuk00afQbkDajsikVSCBy1IbBD4KOYCXSgrEWNidwbasZChgPyJJvMk2qO+XJSO4BGBhDLU2mhFrMUDjdoyNqxN5sU4exmOnN+ItXBd8sf4lq6XYr+BwgqblkAZe0paKrQEqlgEVoSCYE3HwAOFLRQGxLQ8mrzr0xeHYMPWjIzQmcEg9mc41euW23A+vT1Xulmab9667VIhFFceKfV/POzv/W2dnb7u/bmrdUltiflI5YTeD2/Sg2fpk9f9/d/BhrO/jvpPd8CGdH83PTjp7e2lv5zQ18P93vHJ2fFp2j2kY8en6W87ULeBjJGdO4urC/dXVxeXl8CGam0BbFi8U63Qx9KXy+urX1fuVcGGpeXa4kIV6sl4Tm9YD4zsgTVjGfPfBjesB0O7JMij1eKhcRLnURrxnWpFC3LRaEG1tqAdmXCTug2KtXRCdAkoMolOLLja1qT/AplAAeW1Op0VKKMwkJTBDtwsFunDCQOFgaJ/WRR53NG8LDyUFF5nsphh4yE6ur0E9Z7ixlrWC1OKHsSexxpUU9M+kJEvd5YJwYhNXKEvr/ZF1JngJtll7nLgbQ8ceTzYWEX14R3FwpsWeTMUPlNQhlhwsMFnW3cxaKk2lG/Nz8/NJyOzZQ30HCJT9WEX1Kiqd3mwQb0HsUSdYuZ5y01d3/eD33TxVaUboiJO/ro7GtJcMdHum9ybamssGRea7h6mhztWf2+396Lb39+FKVkaz899iWIl82xoPhaf7o2aBtR51863JyL6iAbBRzRak4GfSQ4MinzY7b16Ocqfm8Sf3DC6SLf35CR9PqZbKhaNtu9joBbCeMTEFRPiLY47AplCtzIV4IDgLlM4o7iPEyZyGXh6kO7+kR68SX/qTlB8JI5hUvL+bTMthvjPTWdDYrxFIEmGhYEVc/9ANxsvUhn5KKPp7vNJsfQel4SLivEpo3I8Adm5XBALoe+HQVWIUFwMde7/AXXiJ10Fq/fqZe/FgZW+OOo//5n4jaodUie30NxmielQ2CwV9DgrwHDVr1JQBvf5wh+uvIh/g3rnkas2MldzO7u4VWLVDgV/rJOkofGgGWr1LJzv2GYjFFZlZRFs2EQhDebSbHG2ODEEz466vaNu2VpjEZ91cXPWaM86oV+/1lYqkuVCYVJ2/bOGKHyePj9Jn32fKV+kmFOiokehVD7Tlc0imp7MEZiD3CjcUoXIYzyA4RY3iV6DzRJkmwNsoAK3Q6lI0Ok0mMT7wksS+tlchWkZu1zSShvexce8DqgJ1+5lFLpugT0dzQZujzxQ9AvBUP1tPF3x3LjM9fnr5h09/9vXxiUQ8g+dd0TxH6/lS4IbeTMNo6vTF8HN3WiN1mnWs8Qwo1lxHIxUTmti0JGVwfz4qloDG1hMtM6PhQ09FrJ/cpdJFmznbI9OiHPw9JcKMVWl0zFDJ0kG543oQo3BWDKnKU31JEn+AcaYwJw=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Topic 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/topic/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Topic 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"chat_id","schema":{"type":"string"},"required":true},{"name":"cursor","required":false,"in":"query","description":"The pagination cursor value.","schema":{"type":"string"}},{"name":"page_size","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}},{"in":"query","name":"topic_type","schema":{"type":"string","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"],"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"]},"description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"url":{"type":"string","format":"uri","maxLength":65535}},"required":["id","url"],"title":"TopicLink"}},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"유저 프로필"}},"required":["id"],"title":"TopicUserProfile"}],"readOnly":true},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","title":"제목","maxLength":20},"content":{"type":"string","title":"내용","maxLength":1000},"commentCount":{"type":"integer","readOnly":true},"linkCount":{"type":"integer","readOnly":true},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["commentCount","content","createdAt","id","linkCount","title","user"],"title":"Topic"}}},"title":"PaginatedTopicList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

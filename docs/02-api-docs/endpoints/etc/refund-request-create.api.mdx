@@ -1,0 +1,71 @@
+---
+id: refund-request-create
+title: "환불요청/작업중단 생성"
+description: "환불요청/작업중단 생성"
+sidebar_label: "환불요청/작업중단 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1GL20YQ/itinhLQWXbbJ1EKlyOFkJYLl7QvxoS1NGdtImmV1co+1ywkTQ5CLw8JNPQa3NDSPCSQwCWkpQ/5RWf5P5RZybLsO9dNuZeGvIjV7uzom++bmV2NQCQomeIivuSDCxJ3s9i/LvFWhqm67klkCsEGxXopuO2ldejYUA4vCH8I7gg8ESuMFQ1ZkoTcM76dG6mIaS71AowYjdQwQXBBdG+gp8CGRBISxTE1bgJW+AjD7V1w2+vsuV/zyWOFPZQEm6uQZvLX96YP9idHLyzug9YFai7Rp5i4T3HMTHdMhDtFVFsBU+UQdMeGgeQKt+NwCK6SGS5/AHTFxzUDpYKUKsnjHpziIeLxVxj3VABuq+bvyY/5m1fTu7fzp/vWuenPh5M/7xdzlmPlTx/lP+3nzx5NDp5b+fjd5LexNX08Pv7rNo3y39/lB+PJi7fW8dHD/PuX08eHx29+zX/4Y3Jwf3LwrHH+BAGG7EXkqwipyND2gr57G4PBYGNXyGgjkyHGnvDR/yj4hyV4lIWKJ0wqxwjtM8U+SvwhSbzgg0LRNqToZZKroRHsAjKJEtx2R5vWnyYiTgu1Pmm2zrD/r9BeIvPnRL+H6EVwPqae5AkhAhdI2c+azTNEHWGash6uN4xF/CXHsB4kk5INwQauMEpPZhnBnxXQe1C31qv+hyr5loXcN0xclFLI1ZXwn79i/H5dsqZtQHrfEv4pZbYs9tzUrnhfpX4Jf1UKnGXi+qgYD9fDL+1qiLdEFFVMr4L66f8D6omperdzFnvd3V/ye6+NiCoQdAdNRGrAMuqf4PRbzuKt04F5V7pKsRbhzHrTPCsTfhlNWhKCAJlvekjMIlrdzFQgJP/OcGcQE38789vsxT0WJSHWTy4qreZyFVS00Yd2hQFQ8jRg/a6Q1uaVS2BDH2VakNFqNBtNWKbo+Gg8ORq7VpslvOFjv1Hsbngi6pwLlEpS13FOrp3/vCudL/Inb/PDO+XmVRtrmwgt8RwxkzIlJ/9CpQXMFdUK95SThIzH5DiTJqsKAdvQb5nOvfDjYAPlU0BKu20YjbosxW9kqDVN38pQ0nnTsaHPJGddIrPd0fZMRDqKbuLQZKIphQ0jBZmHWSH9uquptmcuNj0PE7Vis6kpOuuq7LyyffUa2NAt/3ci06yg5tmuvxSwWUZM1BPzpknMclC7CrF4WEOymKN2CZieBP/ULaNRkfZaV/bF0sodVWEU1iRhR2v9NxIeWhY=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"환불요청/작업중단 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/refund_request/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+환불요청/작업중단 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"채팅방 id"}},"required":["id"],"title":"RefundRequestChatRequest"}],"writeOnly":true,"title":"채팅"},"requestType":{"type":"string","writeOnly":true,"minLength":1,"title":"요청타입 (환불요청 / 작업중단 으로 한글로 주시면 감사하겠습니다.)"}},"required":["chat","requestType"],"title":"RefundRequestRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"채팅방 id"}},"required":["id"],"title":"RefundRequestChatRequest"}],"writeOnly":true,"title":"채팅"},"requestType":{"type":"string","writeOnly":true,"minLength":1,"title":"요청타입 (환불요청 / 작업중단 으로 한글로 주시면 감사하겠습니다.)"}},"required":["chat","requestType"],"title":"RefundRequestRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"채팅방 id"}},"required":["id"],"title":"RefundRequestChatRequest"}],"writeOnly":true,"title":"채팅"},"requestType":{"type":"string","writeOnly":true,"minLength":1,"title":"요청타입 (환불요청 / 작업중단 으로 한글로 주시면 감사하겠습니다.)"}},"required":["chat","requestType"],"title":"RefundRequestRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true}},"required":["id"],"title":"RefundRequest"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"chat":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"RefundRequestChatValidationError"},"requestType":{"type":"array","items":{"type":"string"}}},"title":"RefundRequestErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"RefundRequestError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

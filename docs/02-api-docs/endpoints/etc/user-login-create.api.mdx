@@ -1,0 +1,71 @@
+---
+id: user-login-create
+title: "유저 로그인(테스트용 임시)"
+description: "유저 로그인(테스트용 임시)"
+sidebar_label: "유저 로그인(테스트용 임시)"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVlFr1EAQ/itlnipsLz31KYhQRUFUKrZ9Oo6yl0wvq0k2zm7ueh4BBX2p/gCRUxR88c0Hwf4mjf9BZpNe7mrKVeiL9CUkuzOz33zz7UymoDMkaZVO74XgQ26Q9mM9VOl+QCgtggArhwb8ntuDvgDCZzkae0uHE/CnEOjUYmr5VWZZrAIXzXtidMprJogwkfxmJxmCD3rwBAMLAjLis61Cw7scPZUJLlgaSyodgoAxKYvbaTwB31KOAhKVPsB0aCPwu4WATBoz1hT+u29RpaMIQ05xHkg0ePoCrLIxB90zSA+YnMcVBcD+i0kfbozH440DTclGTjGmgQ4xvBQsJHlsVSbJei77UFp5CfJeCsAHFAIMBjkpOwG/N4VbKAkJ/F6/cDfHZDo1VcpXNzcv8PrIIEBj2igglGHDgEN8QGiic9ie4qc+o4nQRk7FSogmIJVxKuADFAKuX2i6CRojh7jaMNXpXYXxojgkkZyAAGUxaWGM4bfI8RxeLUJc6VW0UHiHSNPDOsNCAPL3bR223I7TJWpMxZyjtiq5I84uVfcCSxWilSpeDb22W0B7WyeJXgX12v8B9a+lcvap/PRi7dfn2c8fx+WH4/Xfr9+WR19+Hx2X77+ulR9flW9mV1wVbaR5NGfaOMSSexd4o67HKvXcsPag6Ts7nGyVz0n3aeSYqfvo9MgQIpQhEgiopA5buY00qeeOPAeZCXzcjPs7hzLJYlxu2E33aPQ/J45POtAOQc3UWI4Gmta2Ht0DASMkU9HR7Wx2NuE0ST+/zX59m/lrPZmpToijTuXdCXTSX4+szYzveX/vXbkxIO9m+f57+e5l7XyW44ITo2WSE+lEU2d33jotAZ8TbvHQelksuS8KyMmJqyphD0bdetKAAFdGEMCiirjSfg+m04E0uEdxUfDysxyJp0pfwEiSkgPms9cvxEkheeA8xYmTo7sPG7uMgs3jvCr/ql+VQpyE2AoCzOwZzu5i8USbq/PR9s4uCBjUP4WJ61awEFksflSwZW6jZXE+deKsXzidk610soBkWaeiBsxPht/qMp1W0i+KuX21dabH/HJU1lzAflEUfwDIp/mY
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"유저 로그인(테스트용 임시)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/user/login/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+유저 로그인(테스트용 임시)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"username":{"type":"string","writeOnly":true,"minLength":1},"password":{"type":"string","writeOnly":true,"minLength":1}},"required":["password","username"],"title":"UserLoginRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"username":{"type":"string","writeOnly":true,"minLength":1},"password":{"type":"string","writeOnly":true,"minLength":1}},"required":["password","username"],"title":"UserLoginRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"username":{"type":"string","writeOnly":true,"minLength":1},"password":{"type":"string","writeOnly":true,"minLength":1}},"required":["password","username"],"title":"UserLoginRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"access":{"type":"string","readOnly":true},"refresh":{"type":"string","readOnly":true}},"required":["access","refresh"],"title":"UserLogin"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"username":{"type":"array","items":{"type":"string"}},"password":{"type":"array","items":{"type":"string"}}},"title":"UserLoginErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"UserLoginError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

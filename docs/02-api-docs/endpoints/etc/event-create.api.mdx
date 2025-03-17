@@ -1,0 +1,71 @@
+---
+id: event-create
+title: "이벤트 등록"
+description: "이벤트 등록"
+sidebar_label: "이벤트 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV02LG0cQ/StLnWLo1WjjnIYQWJs1mHys8UcuQoTWdK3U9kz3uLtHu4pocMCnXH0xYQ0OBJ/t4EN+U3bzH0x1z45GmZkoIZtDwAeJUXdV9atXr6tGa9AlGu6kVncFpIBLVO67zCB3CAwcn1tIJ3EZpgwMPq3QultarCBdQ6aVo510Dbwsc5mFSMljqxWt2WyBBacntyoRUtCzx5g5YFAaOtdJtLQbw1OQPD8+gXSyy0GKVlCpHM7REFzpclq5fPX+4tdf/vjxtz0pwPsIWxoUlIsUlMiV6REd/ciiCQ/foHUo7sckwU97QnbiNdx0QjZxPNui52z/9PR0/0SbYr8yOapMCxQf+driq6hyJ0tuXBJ4Etzxjwy1GNpycaZCz8BiVhnpViHdW8gNGkgnUx/urS21sjHXT8cH13h5B5gzyMWxylcNuv+2JAwUL7DlYJ2Rat4B0udPT2+e95W1jrqjukNlZVBZKsG/TrnD5VCuqspzPiMc3VzfPAcGBT/7CtXcLSC9Of6bOqYPRBENMHn++vL1swEZs8hjYKIvetSyQJsZWZIAIQWi7rPx+BpFWqC1fI67DZVWdyTm7TpwY/iK8nBY2C7rvq3tf1DenWH9X6vuW55LEdg4MkYb6Lenra/r5Ako/b6tRY96OuVrTFlDX+9FqE8fqOJ1thqBjst8N/TaroX2ti6KDVEDUG/+P6B2ljad7OLFu4ufX4WCuYWmF7pS2wCO05WHZHmQBK0msBkXDyiliPpqaGxEWsovMaiUDlogF6Ehxf4Dh5VbaCO/DxQFYETT/c074tEZL8octyYyXYLQeqQ60eGoOvFTvpxps3d47y4wWKKxMbuD0Xg0hj/n/Pvb84u35+nehJdyJHA5it6jTBfTTxbOlTZNku7ejc9nJvni8qf3ly9/qJ2HHFtOJA8isuBBA3X2PbRvYWxIdHjmkjLnUoWZYIIsYkUmsDwA1rRK0sGCKpZOYL2ecYuPTO49LT+t0NBknzJYciNjl59MPbuqCk2XJ7gKCgoS3n9Ix5N5XsVa7noF9ewqxGGWYekGnMNdoIHQqOze8YOHwGBW/y0oQoOBVmTW/hFh84oIaCvtSVBa/dAallytWki2RcdqwPRN8Htd1uuoY+8b+7g16NEoPVpT5abe+w+ORrnY
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"이벤트 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/event/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+이벤트 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"event":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"이벤트 id"}},"required":["id"],"title":"EventUserEventNestedRequest"}],"title":"이벤트"}},"required":["event"],"title":"EventUserRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"event":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"이벤트 id"}},"required":["id"],"title":"EventUserEventNestedRequest"}],"title":"이벤트"}},"required":["event"],"title":"EventUserRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"event":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"이벤트 id"}},"required":["id"],"title":"EventUserEventNestedRequest"}],"title":"이벤트"}},"required":["event"],"title":"EventUserRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"event":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","title":"이벤트 id"},"name":{"type":"string","readOnly":true,"title":"이벤트 이름"}},"required":["id","name"],"title":"EventUserEventNested"}],"title":"이벤트"},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30}},"required":["id"],"title":"EventUserUser"}],"readOnly":true,"title":"유저"}},"required":["event","id","user"],"title":"EventUser"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"event":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"EventUserEventNestedValidationError"}},"title":"EventUserErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"EventUserError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

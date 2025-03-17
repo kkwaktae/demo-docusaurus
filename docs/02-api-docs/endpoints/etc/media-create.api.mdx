@@ -1,0 +1,71 @@
+---
+id: media-create
+title: "Media 생성"
+description: "Media 생성"
+sidebar_label: "Media 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVtrG0cU/ivLeShtWFmSbwmiFBxFDqbxBUktBVXYI+3YmmRvmR3JVsSCQxwIrgv1Q0hp5dYF074YqtZOcCD9Q9L6P5Qzu1qvLq7lxg8N1YuZnZlzznfOfOfbWbkBlk05EcwyFzRIgUE1RlbLnBJBQQVBNhxIFfxpKKrA6eMqdcRdS6tDqgFlyxTUFDgktq2zsvQUf+hYJs455Qo1CI5E3aaQAqv0kJYFqGBzjCsYdXCVOSvMNKkW2VmyLJ0SEzEwoeNMZ2/7fL+peDtH3uFLxXt13HmzDa4K65auUT5CkKh7Zgq6QTm4rp8T4xi9gJuKFyEXMe156T/rJ44BZTHy0k8DqFk10DCTT4MKC0urK9nl+9lMLgcqLC58tTq3dG91cS6Xz2RBhWwmvZy9t7B0X47nM9nMUjoDKuTymUUZ1wfnCM7MDVBBo06ZMxtrCim4paxF/K8pMcX7ad979dw72v/avKWshR5xqXP44vzbd52fW97uUbAaxJarz996B3udkzO51ItTrv/+1ts9Uj5SOr+98HaPzndaciPilHEPX3ZOTtsnr73moVzI5NM43z5rnT/bBhW2Yo5NyzEsTgzrDtNTk7MkOUtKCTJTolPJyLme7+15B++U9uvjzpsdaYtmS8SgknqhzzBZUGEQH052k8JxJH20jQCGoquCxhxbJ3WMEmFFWHiDmQ+ouSEqkEpGkO43vW+aindw2vkVkRpkq7trJjnpqmBey53343edk7N/cOewJ3QIZ+VOZiDvJpPTt6fvTM1O35ZB/MlYOHsngv3pcfushfS1CUYYFWT7z786vzR70c3OzEzN9HdOtKJBJYJYQSL9fRV2lKv2iMdWbHNzM7ZucSNW5To1y5bmK8NYTcZqMlaTsZpcqSZGVRfMJlzEpYpoRJCxfoz1Y6wfY/0YQT96PAlepZg7LVc5E3VIFRpwlxKOLV4ouvKLyLEt0/G7ejKRvMnPomEagRGJtmzq9RDdByBYY6X6XyjVe2vTf1SN3lN/mDaaCPnq08tehDWdSNygrBjUccgGvXqjaZnzjOrRxieckzpmJKjhDFbKHa5GI1j9Kxm60q87VIy+JDrTZO0ynFuD2jQ66uHtMIKheW2LPsKPYNFH5msXSxZnMSCLqwLF57SlDWncfvpfbFVDuvWTPaj9ZYy/yRepRgVh+tWwg30RpGnLMEKaXAZ16sOAOjAlj0Hxnh14O3/IgxIVC186tuWIrlKlIF5LxmV7xOHiIpTDdHzE3evQBdFs9jmVTMMgFUo0Kcw+5WGuKioWZ09keSQoLFH24nflzBYxbJ32fonhTScqEigDid6+Da4SPS15oeBm37PfTokwy26ZEfW6JbMJ6rpJaiWLK3MrC6BCjXLHL15yIjGRGLhrtFvNTquZUgrEZhMarU341hNlyyh+XBHCdlLx+ODaJ5+WePwz74dT7/ungfFlhhEj+cayHGEQSbEgxb5T7cEXnpGgWyJu64SZ6KTKJeP8UhSgloSgsqACUqyChEgVoNEoEYd+wXXXxenHVcrxSlxUoUY4IyWsVwGvCcGh4235Ea1LcsruiMmjwu161afKVb/7uWrXxVy5TG1xibFsM7yOhyReWc7lQYVS8J8KQ+oWRDyr0QcfNqn2KqbNHkkiBwNMp7tk1iNIejmtBoDxL8IfatJo+G3iuuF+f+lSi7CR/N14ckXXdf8Gc559hg==
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Media 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/media/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Media 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"folder":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"MediaFolderRequest"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512},"name":{"type":"string","minLength":1,"title":"원본 이름","maxLength":512},"size":{"type":"integer","maximum":2147483647,"minimum":-2147483648,"title":"크기"},"path":{"type":"string","minLength":1,"title":"경로","maxLength":65535}},"required":["displayName","name","path","size"],"title":"MediaRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"folder":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"MediaFolderRequest"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512},"name":{"type":"string","minLength":1,"title":"원본 이름","maxLength":512},"size":{"type":"integer","maximum":2147483647,"minimum":-2147483648,"title":"크기"},"path":{"type":"string","minLength":1,"title":"경로","maxLength":65535}},"required":["displayName","name","path","size"],"title":"MediaRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"folder":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"MediaFolderRequest"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512},"name":{"type":"string","minLength":1,"title":"원본 이름","maxLength":512},"size":{"type":"integer","maximum":2147483647,"minimum":-2147483648,"title":"크기"},"path":{"type":"string","minLength":1,"title":"경로","maxLength":65535}},"required":["displayName","name","path","size"],"title":"MediaRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isPinned":{"type":"boolean","title":"대표 설정 여부"},"folder":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"MediaFolder"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","title":"표시 이름","maxLength":512},"name":{"type":"string","title":"원본 이름","maxLength":512},"size":{"type":"integer","maximum":2147483647,"minimum":-2147483648,"title":"크기"},"path":{"type":"string","title":"경로","maxLength":65535}},"required":["displayName","id","name","path","size"],"title":"Media"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"isPinned":{"type":"array","items":{"type":"string"}},"folder":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"MediaFolderValidationError"},"mediaType":{"type":"array","items":{"type":"string"}},"displayName":{"type":"array","items":{"type":"string"}},"name":{"type":"array","items":{"type":"string"}},"size":{"type":"array","items":{"type":"string"}},"path":{"type":"array","items":{"type":"string"}}},"title":"MediaErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"MediaError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

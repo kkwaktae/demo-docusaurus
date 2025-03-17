@@ -1,0 +1,71 @@
+---
+id: collaboration-retrieve
+title: "Collaboration 상세 조회"
+description: "Collaboration 상세 조회"
+sidebar_label: "Collaboration 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVltPG0cU/iuroz5Au8Y2l1BWVSVTRVXUNEQpfanlJuPdAU/YW2ZnXYi1EgSoEBCpD41AyI6oRNNS8eAmFPmB/iF2+A/V2V3Mri/AQ176Yu/OzvnOd875zplpgONSTgRz7AcGaKA7pkmqTrzylFPBGa1TUMElnFhUUO6BVm4As0EDl4gaqGATi4IGnukvggqeXqMWAa0BYsWN1gVn9iIEKnD6wmecGqAJ7tOgooIgi4iXdQsVFTyq+5yJlcjZLCWcctDKFbTh1HMd26Me+hgvFPBPd2xBbYGPxHVNpkdA+eeeY+NaHyen+pzqAsPiGL9gMRozUnuYLegi5YAeiTFnmysJbxVEzbeqNmFmf5gqLDjcIgI08DkDFQQTJn6XrzvhxpFsnYMKBvV0ztwoWA0uznbl298V+epEtk7luy1NKRZmppRl5d70OKYtQej31IU+bIZ/HYMKFll+SO1FUQNtshCo4PnV+VuNf94dZF8sIEAqr732to8lQwhMyjVe+OpUHhwj70gQd7BMeZ0qjqPUhKAcM/NjOUdyL0u5Hwq5maeVzz5BVOaVdMHq6ZiqjmNSYqeCCt+dyO2jy+2OEm525FlTkXsn4dlqbP+Y2TY17mgv19fCnT+Viw+H8vBNBmaW2DbldyFz/KtsdZSw3Q43tvoJVSOcOW6gxAeozyLLzPIt0CbGp+9Nq2AxO34v3OZiqyk3mn1yK8jWqiIP1+TBcfjLvvxjVZFvtuX2P+HOVrhzNJbkiHDBdObGDTkoumxTpPT0bzNsnYcfTsPDLdTz5r4i2x25d5IKWeeUCGqUBgqr2z8GETQnmEVv8rbekht/y9a53GlGyOlBUvWFiNkT05xbiGbJxxkAMfJ8tK8B1MZylOHR3JNvSw9xfPXGlK3Ap8qzeOszJafI1nnY3gcVlnOeS/UcguWQB9CZGaPw+RSp6lMzk+MT4zekIXy/cbl9rlyur8q3mxEWwjwiFo3Ga+KjgsOELg/M+m3Im6+ThhiR+2vhSScaVwfHSjy8RjH3JrOX7jAQez0NHSSxZ7nXvnjfVnxuQpA5Q8rpKqhYuoRCEmTlGuqrtCoyL7OxROJzJVPkHl+DhJUWckKgt3NSMzh9bFxRG8YRAvSfVQ2meLJQ/IjHnUHFwDOsN/ZkX4asZTn2fc4dPpzqxP+Dat9SphJ4AMiNjiJ/a18e7OI4pqLmYHsu0ogm3oE0yNeL+YxE8g08/oI8XN9lvsNY43CubjTdcIjLvqErKCBkUKPEiAZPcrUq+aLmcPbyShu4bcGJzJMofyL1qsOV0uMHoEKdci8OpThWGCv0XzjazbDd1JQycdmYQetjsfWY7liVkZoQrqfl8/3fRr+o8vyX8uBU7q8lxsMMU0aoBdfxhEWigicR3ZzjDN1ujrCr865JmI2YOBC0RpL/MtSL0DP9QQUtuZOiHmqOJ3Bjo1ElHv2em0GAyy98yvGWWVGhTjiLB1G5AQbz8NkAbYGYHu3j1NU1jDxJ9DeqgDqY61WRbaxwnZg+voEKS3Tl6uIc4HBO6o7+408lXaeuSBn19RBOrq4kv74/DyoQH1OSltZSJK3kIXUKZgllVXbFDn8DdYhJoxELNwi6++NPQy260o53Y34qQRD8ByguqLI=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Collaboration 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/collaboration/{slug}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Collaboration 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"slug","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"thumbnail":{"type":"string","format":"uri","title":"썸네일","description":"권장 사이즈: 1095 x 672"},"title":{"type":"string","title":"제목","maxLength":40},"subTitle":{"type":"string","title":"소제목","maxLength":100},"content":{"type":"string","nullable":true,"title":"내용"},"slug":{"type":"string","nullable":true,"maxLength":512,"pattern":"^[-a-zA-Z0-9_]+$"},"isActive":{"type":"boolean","title":"리스트 노출 여부"},"isPinned":{"type":"boolean","title":"리스트 상단 고정 여부"},"isBannerActive":{"type":"boolean","title":"메인 배너 노출 여부"},"bannerOrder":{"type":"integer","maximum":32767,"minimum":0,"title":"메인 배너 노출 순서","description":"0은 적용되지 않습니다."},"isParticipation":{"type":"boolean","readOnly":true,"title":"콜라보레이션 참여 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"collaborationbutton":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"buttonType":{"enum":["NORMAL"],"type":"string","description":"* `NORMAL` - 일반","x-spec-enum-id":"e99d085abc594232","readOnly":true,"title":"버튼 타입","x-enumNames":["일반"]},"text":{"type":"string","readOnly":true,"title":"버튼 텍스트 (영문 사용 권장)"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"버튼 연결 url"}},"required":["buttonType","id","link","text"],"title":"CollaborationCollaborationButton"}],"readOnly":true}},"required":["collaborationbutton","createdAt","id","isParticipation","subTitle","thumbnail","title"],"title":"Collaboration"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,194 @@
+---
+id: message-list
+title: "Message 목록 조회"
+description: "is_user_only=True, is_artist_only=True, is_admin_only=True 인 메세지들은 모든 사용자에게 보여집니다. <br/>is_user_only=False 라면, 아티스트와 관리자에게만 메세지가 보여지면 될 것 같습니다. <br/>is_artist_only=False 라면, 유저와 관리자에게만 메세지가 보여지면 될 것 같습니다. <br/>즉, 해당 불리언 값들이 True인 사용자에게만 메세지가 보여지면 될 것 같습니다."
+sidebar_label: "Message 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"Message 목록 조회"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/message/"} context={"endpoint"}></MethodEndpoint>
+
+is_user_only=True, is_artist_only=True, is_admin_only=True 인 메세지들은 모든 사용자에게 보여집니다. <br/>is_user_only=False 라면, 아티스트와 관리자에게만 메세지가 보여지면 될 것 같습니다. <br/>is_artist_only=False 라면, 유저와 관리자에게만 메세지가 보여지면 될 것 같습니다. <br/>즉, 해당 불리언 값들이 True인 사용자에게만 메세지가 보여지면 될 것 같습니다.
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "query", name: "chat_id", schema: { type: "number" }, required: true },
+    {
+      name: "cursor",
+      required: false,
+      in: "query",
+      description: "The pagination cursor value.",
+      schema: { type: "string" },
+    },
+    {
+      name: "page_size",
+      required: false,
+      in: "query",
+      description: "Number of results to return per page.",
+      schema: { type: "integer" },
+    },
+    {
+      in: "query",
+      name: "subject",
+      schema: {
+        enum: ["artist", "user"],
+        type: "string",
+        "x-spec-enum-id": "c99dac6b8ce16ce0",
+        "x-enumNames": ["artist", "user"],
+        minLength: 1,
+      },
+      description: "조회 주체\n\n* `artist` - artist\n* `user` - user",
+      required: true,
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              cursor: { type: "string", nullable: true },
+              results: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    user: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", readOnly: true },
+                            name: { type: "string", nullable: true, title: "이름", maxLength: 30 },
+                            profile: { type: "string", title: "유저 프로필" },
+                            artist: { type: "string", readOnly: true },
+                          },
+                          required: ["artist", "id", "profile"],
+                          title: "MessageUser",
+                        },
+                      ],
+                      title: "유저",
+                    },
+                    artist: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", readOnly: true },
+                            nickname: { type: "string", title: "아티스트 닉네임", maxLength: 30 },
+                            profile: { type: "string", title: "아티스트 프로필" },
+                          },
+                          required: ["id", "nickname", "profile"],
+                          title: "MessageArtist",
+                        },
+                      ],
+                      title: "아티스트",
+                    },
+                    type: {
+                      enum: ["A", "F", "I", "P", "R", "S", "U", "W"],
+                      type: "string",
+                      description:
+                        "* `S` - 시스템 메세지\n* `U` - 유저 메세지\n* `P` - 추가 제안서\n* `W` - 채팅방 입장 메세지\n* `I` - 이미지\n* `F` - 파일\n* `A` - 오디오\n* `R` - 음성 메세지",
+                      "x-spec-enum-id": "0908dd1149460597",
+                      title: "메세지 타입",
+                      "x-enumNames": [
+                        "오디오",
+                        "파일",
+                        "이미지",
+                        "추가 제안서",
+                        "음성 메세지",
+                        "시스템 메세지",
+                        "유저 메세지",
+                        "채팅방 입장 메세지",
+                      ],
+                    },
+                    text: { type: "string", nullable: true, title: "텍스트" },
+                    image: { type: "string", title: "이미지" },
+                    file: { type: "string", title: "파일" },
+                    audio: { type: "string", title: "오디오" },
+                    recording: { type: "string", title: "음성 녹음" },
+                    recordingTime: { type: "number", format: "double", title: "음성 녹음" },
+                    isUserOnly: { type: "boolean", title: "의뢰인 전용 메세지" },
+                    isArtistOnly: { type: "boolean", title: "아티스트 전용 메세지" },
+                    isUserRead: { type: "boolean", title: "의뢰인 메세지 읽음여부" },
+                    isArtistRead: { type: "boolean", title: "전문가 메세지 읽음여부" },
+                    isMine: { type: "boolean", title: "현재 로그인한 유저인지 여부" },
+                    createdAt: { type: "string", format: "date-time", readOnly: true, title: "생성일시" },
+                  },
+                  required: [
+                    "artist",
+                    "audio",
+                    "createdAt",
+                    "file",
+                    "id",
+                    "image",
+                    "isArtistOnly",
+                    "isMine",
+                    "isUserOnly",
+                    "recording",
+                    "recordingTime",
+                    "type",
+                    "user",
+                  ],
+                  title: "MessageList",
+                },
+              },
+            },
+            title: "PaginatedMessageListList",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

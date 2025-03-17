@@ -1,0 +1,63 @@
+---
+id: style-list
+title: "Style 목록 조회"
+description: "Style 목록 조회"
+sidebar_label: "Style 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM9r1EAU/leWd1IIm13rKYhQpUipoFA9LUFmk+dm2mRmnJnExjBgwaNXpZT20Iugpx568G/qbv8HeZPsNv2xHrx5SYb3a773fe9NA1KhZpZLsZ1CBMbWOb7LubEQgGUzA9GkNUIcgMGk1NzWEE0aeIZMo4ZoErs4AI1GSWHQQNTAo9GIfokUFoWlI1Mq54m/J9wzUpDNJBkWjE62VggRMK1ZDQFwi4Xp2eV0DxMCpDShtby9hae9GC4szlADIWHpK5HXEFldovNtbN8X6gIQrMAt0fMZq7mYUe/c5mRYHB0uvl8MFqcX8x9fIICCHbxEMbMZRBujrsKO/luFq28nl78/r6vgCPCHkmtMiWqewgrVqviyhfi66K6XxDnKT9EkmiviFiKgth6Pxv/C/xqeU7SM53dbvI29i+uhfC6LQootraWGtVA3/g+od0xegsH818/52elgcXZ+dfyV1EWbSdqkGXp4jHSGsBqHfotCuN6iXWqqxb3cpetVUHwH/S7QVRmy1M82DQREsFnaTGr+yZPkoXHxXvr0rp2PrJpKPdh8vQ0BVKhNi3k8HA1HcLuTy/OT+flJNJgwxYcpVsM2e5jIIn6QWatMFIZ3fQ+fTHX4dHF8sTg67JLXJfaSSHQljS2YV7br6H4yb8BccWPxwIYqZ1xQrVJ7vVuiJ1CNiWG/HQGQwJk0lhxNM2UG3+rcOTJ/KFHTOxYHUDHN2ZRom8QuWJJNT9w+1sR2kqAiMSuWl604tyaUHsCV8C+23kAArCQ8fT33vZ7dgaovXaLu1b4pbdBBoK8L1qQ0TTstzq3iW9fajNU8tdFEZOyc+wMGFx7Z
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Style 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/style/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Style 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"tagId":{"type":"integer"},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30}},"required":["id","nameEn","nameKr","tagId"],"title":"Style"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

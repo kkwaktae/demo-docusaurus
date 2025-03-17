@@ -1,0 +1,71 @@
+---
+id: chat-exit-update
+title: "채팅방 나가기"
+description: "채팅방 나가기"
+sidebar_label: "채팅방 나가기"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVc1q20AQfhUxpwQWy257EqXghhRCKQ1tczImrKWJtYm0q+yO3LhioS3trQ8QSl6gNxd66DMl6TuUkeSfxA6hkEsvtrQ7s/N9334zqsAUaCUpo/cSiCBOJR3imaLDskgkIQgopJU5EloH0aACpSGCQlIKArTMcZ6kEhDg4hRzCVEFNC14S2nCMVrwAhJ0sVUFl4II+kGp1WmJQRsRTGTGbwlqUkdTpccBpcoF1z+//Pn2tQMCLJ6WymICEdkS/VAAyTFjquvDUIDDuLSKpjXO5ygtWogGQw616AqjHTrG9qjb5b/YaEJN/CiLIlNxLUN47Bhgtc7FjI4xJlbEsmikmtNUsoEvV5TJa51NW7h+lcCAk5iAooyzdlJJu2eKwPs1oVi6Jw8KOEfn5BjvD9RGv1CYrfKT1sopCFCEuVtZd2SVHjf4b7PatdbYV21RLwD5fcckuCn/pkzLULGAvUG3usLd4vUeULwESarsfuRt3CpYk+dG3wP18f8BdW2padOr2Y/g6vP55ezj5e9ZfWWUGh4rRVnD46kRQTjphdyyYdUODh/yxAlh2cFvmWLDYt7HSwsW6iXWHuTCKcqk7rd2FvVLSo1VH2rJaqBKH5k6vSX3Xk5Gxgb9/T0QMEHrGga9TrfThdu8LmcXV7OLKBjIQnUSnHSa7E5s8uFWSlS4KAzX97afjmz47Pr7r+vzT23yXYkrSWyBwjjKZX3PLaPN0t6AudCG8IzCIpNK81mlrW+/kX0Akx6IZlYKiJYzm7UHAXz/qXHEkVU1kg4PbOY9L5+WaHmoDgVMpFVyxDoOKkiU4+cEoiOZOVwDtfAxbL1p/bYd/Pvg38htbgbNTqiPYGMKOMHpyhfJD72YW4QRN7v9OMaCVvLWuow/GQvz7h+8AwGyZBVXXXhSu7B94NM3YrppyDlA/vXijpSqajzu/SK+2bozY9EFTTRLNPTe/wU9YsNa
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"채팅방 나가기"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/chat/{chat_id}/exit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+채팅방 나가기
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"chat_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 채팅.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true}},"required":["id"],"title":"ChatExit"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}}},"title":"ChatExitErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ChatExitError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: comment-update
+title: "Comment 수정"
+description: "Comment 수정"
+sidebar_label: "Comment 수정"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0+L20YU/yrmnRIYW3bbkygFZ0kgtCVhu8nFmDLWPNuTSDPamZG9rhC0aQ+F9lYKIWyg19wSyKGHfqKsP0R5I1mWV3a2KdvCQi7G0rw/v/d7f+YpB52i4U5qdV9ACJFOElTu2ywV3CEwSLnhCTo0FsJRDlJBCCl3c2CgeIIQghTAwEZzTDiEObhV6t8qhzM0UDAQaCMjU/IBIQw7mZKnGXYqic6Cx/QkUDk5XUk167i5tJ2LX3979+f3PWBg8DSTBgWEzmRYjBk4PiM4G7QwLoXQujtarAhFpJWjkzAHnqaxjHyIwRNLGPI2XD15gpGjeA0R4iRaf6pTGXkjcfxg6hl4v4IU+zgomkGMSIiCkC4mqaMyiBNydVxGARTk0kiHD1S8quJmMNWxQPP/wLnnfb0fT4PkyoV1RqoZMEik+grVzM0hHGxtXzx7u37xqgVgY6eNovZfsJ08nnWXy2V3qk3SzUyMKtICxcfE3szEJlnsZMqNC3xCBXf8YypvYiqL1qxmYDHKjHQrT8Qd5IbIGY0LP7JtqpUtWfik37/Gub2XU/LIxT9l5zIfDCKD3KEY7hWn0uUOQqB7s+tkgi1/W5vrH1+uf3qzfvnX+pfzg0w3HbL9BVByvnu/EtLPrpXMBK3lM7xaUGl1T2Lc5J4bw1cE32Fi27wR/Lp/PyClV5ot9vfuYx5L4Vm4a4z228m2Yf9b/2Wz7gHQrsF/Yd1b+7pKVMEA6flIC9zPebPetqKsTnW71Cq4h+ptcI31JtBxGV8NvJK7hLVm9hDUT28G1NarKhGd9c/P13/87pPl5pqW9jTzyGgrDyFYDIJqLw5yKYoAtkP4GwqrRL4ZxduiS+WX6KuOnM2RCz8yqyV/mLm5NvI7T5MHR1Qdb5fuu2c8SWPcuZCpZfo7LbZ5U9NfE0Z+p9qrVwwt+WKiTWf48D4wWKCxJQ2DXr/Xh8vkvHt9fvH6POyMeCp7Ahe9UrsX6WR8a+5casMgaJ/d/nxigi/WL96un/9QKR9SbCgR2lRbl3BfLBVFrfzsIKx5dnjmgjTmUpGZzPjqKXM3gsWAxn413BmE/tuKymaurSOBPJ9wi49MXBT0+jRDQ1frmMGCG8knxNwoByEt/RcQTnlssYVly/+t46pMb3c+/Mtsb0ibelJUTN4E1TODp7gqvxaLccE2BUZgy4OjElL3hNS3ildv/QXbmBhGEabugLJvbVo76rZ5+OgEGEyqL8bED0toGGbNB9pZGPCM8tTsmae+Z6o/jWVvN/zd9tlwQb+Efq9KnpcdWRS1fHl0UKPu2YppCrcoir8BV6KRbA==
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Comment 수정"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/comment/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Comment 수정
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 댓글.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"topic":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentTopicRequest"}],"writeOnly":true},"folder":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentFolderRequest"}],"writeOnly":true},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["content"],"title":"CommentRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"topic":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentTopicRequest"}],"writeOnly":true},"folder":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentFolderRequest"}],"writeOnly":true},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["content"],"title":"CommentRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"topic":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentTopicRequest"}],"writeOnly":true},"folder":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CommentFolderRequest"}],"writeOnly":true},"content":{"type":"string","minLength":1,"title":"내용"}},"required":["content"],"title":"CommentRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"content":{"type":"string","title":"내용"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["content","createdAt","id"],"title":"Comment"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"topic":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"CommentTopicValidationError"},"folder":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"CommentFolderValidationError"},"content":{"type":"array","items":{"type":"string"}}},"title":"CommentErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"CommentError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

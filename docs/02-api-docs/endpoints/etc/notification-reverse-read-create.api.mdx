@@ -1,0 +1,71 @@
+---
+id: notification-reverse-read-create
+title: "Reverse Notification 읽음 처리"
+description: "역방향 다중 알림 읽음 처리"
+sidebar_label: "Reverse Notification 읽음 처리"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWU9vG0UU/yqrd4JqHTtpBGiFkBzjiKgQR04oB2Ml493neJrdne3M2I6xVqLn9sKhtKDmViohFSlCCHGAL4Td74De7K69juM4oCgRki/27Mx7837z/vxmZncIIkLJNBfhjgcOhELzNndNx6HEHkqFhxKZd+hKZBrBBg+VK3lEEuDA+MUvo/Of333/kzV6+nr8+jtr/PzZ6M2f1vjsr/HZM2v868vRm7dgg2bHCpzGjAFo2iDxcReV3hLeAJwhuCLUGGpqsijyU8HiI0XGhqDcDgaMWnoQITggWo/Q1WBDJGkhmqOi0byVAyM5BAy7ASGofFY+ABsqtd2DcoVa29Xqp1vlygOwYa9e26vtlz8HG+rVhzvVrwhiakppycPjOQfcs45oxiOrYNH/1+E96yibhjqzthlIjRrhpGm6MwTUn7XNQAKCulM4NpwWVIRugVZT4BSyjXX8YKO0uYEf3i99tNleBxv6kmushf4AHC27SEokv8sCVP/BBbFt4sLcJC6+X2uD01gWAwI3keGhxmOU89jiOMkBLtEjaNwzLufaJ7XdXBwrCYR6kjAQN+fnSiAIxfy7BLqXYrgaqdthd+vODlviS4k9jv27xFg3CK5G2Ub0Wsw9uUuc2ymGq5BemGyOoRa7gDi4jsybzB7bM+R4Wuj3+4W2kEGhK30MXeGht2LLFVuu2HLFliu2jG0Iur7mEZO6aFjSY5qt+HHFjyt+XPHjih9n50r9oNDtSq4HZvlbyCRKcBrN2NzYVSRClax9o1S6wWv7Ak/S+4eZKHFFK8jJtoTwkYVzslMvvPvh+fjsD2v84u3o92/hkmBMZl3uusRns8QNsQ2bN+qMAJVix3id7Snc5ujn/cGkZANaksZA5frTXYfgX7apXV87x+D/IqRLJ47zvg/xIfO5ZxBWpRQSLlDy7VrOKPZ2rU5p83bt5onwNi3HS6vPCH6RFkdsA9JzRXh4eabmy3wqak/Ka3m5Z8gW1Pz6Dda8h5pxf/lCUrkc9ooIgqkTF0C9//+ASid21B1B59FIKGOb6Q44UOytF/PEVcy/oi7CdN/ap1UkQLPda5qjEX+AJknJXAeZZ3aZkAU0Wu7qjpD8m+QNNWEhz9Snr6mrpyyIfLz8YpAdhnP8SPVRusBcWV/GKdnztNqznnwdJn20/4VtYRaUerTPei0hrfLeDthADkk8ub5WWivNXTH+Pn81On/lWA0W8TUPe2uJ9porguZ7Ha0j5RSL82Pvf9ySxU/GP/42fvkkVV6kmFMylC2UDphJrtTHaXFZ+YKb+2IwgzqXttf/5JBEROOpLkY+4yGB6UoTgCSfGtCjC87MNwkThElOgQ2Uuh3KQqcBw2GLKfxS+nFM3Y+7KOmI1LShxyRnLYpGg244aVbR6ekEBybpDfyCSRMS97tJLi57jxfb2RRl18VIL1A25UvHs0nl7NX2KRNb6ZeVwDAk5Ga28w8JbNYlt+Qr5cRUStrInYVZOMghmS0aOwVMvwT/UpXhMKnDOJ7IJ0MLNSaVmkhTPJtxHP8D98w+ig==
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reverse Notification 읽음 처리"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/notification/reverse_read/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+역방향 다중 알림 읽음 처리
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"notificationType":{"enum":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"],"type":"string","description":"* `CHAT` - CHAT\n* `PROPOSAL` - PROPOSAL\n* `CONTACT` - CONTACT\n* `FEEDBACK` - FEEDBACK\n* `REVIEW` - REVIEW","x-spec-enum-id":"21e62042e73084f1","writeOnly":true,"x-enumNames":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"]},"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationContactRequest"}],"writeOnly":true},"proposal":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationProposalRequest"}],"writeOnly":true},"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationChatRequest"}],"writeOnly":true},"review":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationReviewRequest"}],"writeOnly":true},"feedback":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationFeedbackRequest"}],"writeOnly":true}},"required":["notificationType"],"title":"NotificationReverseReadRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"notificationType":{"enum":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"],"type":"string","description":"* `CHAT` - CHAT\n* `PROPOSAL` - PROPOSAL\n* `CONTACT` - CONTACT\n* `FEEDBACK` - FEEDBACK\n* `REVIEW` - REVIEW","x-spec-enum-id":"21e62042e73084f1","writeOnly":true,"x-enumNames":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"]},"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationContactRequest"}],"writeOnly":true},"proposal":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationProposalRequest"}],"writeOnly":true},"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationChatRequest"}],"writeOnly":true},"review":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationReviewRequest"}],"writeOnly":true},"feedback":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationFeedbackRequest"}],"writeOnly":true}},"required":["notificationType"],"title":"NotificationReverseReadRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"notificationType":{"enum":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"],"type":"string","description":"* `CHAT` - CHAT\n* `PROPOSAL` - PROPOSAL\n* `CONTACT` - CONTACT\n* `FEEDBACK` - FEEDBACK\n* `REVIEW` - REVIEW","x-spec-enum-id":"21e62042e73084f1","writeOnly":true,"x-enumNames":["CHAT","CONTACT","FEEDBACK","PROPOSAL","REVIEW"]},"contact":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationContactRequest"}],"writeOnly":true},"proposal":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationProposalRequest"}],"writeOnly":true},"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationChatRequest"}],"writeOnly":true},"review":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationReviewRequest"}],"writeOnly":true},"feedback":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","writeOnly":true}},"required":["id"],"title":"NotificationFeedbackRequest"}],"writeOnly":true}},"required":["notificationType"],"title":"NotificationReverseReadRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isRead":{"type":"boolean","readOnly":true,"title":"확인 여부"}},"required":["id","isRead"],"title":"NotificationReverseRead"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"notificationType":{"type":"array","items":{"type":"string"}},"contact":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"NoneValidationError"},"proposal":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"NoneValidationError"},"chat":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"NoneValidationError"},"review":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"NoneValidationError"},"feedback":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"NoneValidationError"}},"title":"NotificationReverseReadErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"NotificationReverseReadError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

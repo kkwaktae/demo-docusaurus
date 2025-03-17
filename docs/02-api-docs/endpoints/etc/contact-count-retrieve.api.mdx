@@ -1,0 +1,71 @@
+---
+id: contact-count-retrieve
+title: "컨텍 카운트"
+description: "컨텍 카운트"
+sidebar_label: "컨텍 카운트"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v00AQ/SvWnNrKxClwshBSqSpUcan4OAWr3djTZFt77e6uQ0NkidJyoIgDBxCqcuihEhx76AHEP6LOf0Cz66QJThEILlySzezM7HszbyYDSDOUTPNUrEfgQ5gKzUK9Gaa50JsSteTYQ3AhY5IlqFEq8FsD4AJ82MtR9sEFwRIEH1Te3sFQgwsq7GLCwB+A7mfmSksuOuACijwBvwVMaq7INVcoIShciFCFkmeEBHxYcrboZsu54ZTD0/L0xVOx5GzZKGN8fzR6c14en42Ov4ALEvdyLjECX8scC3c+wD4y+Qt0RRG4oFmHGI4LAYELCsNcct03xO8hkyjBbwXkLVFlqVCoKNvNZpO+KBKFpiPLspiHprrejiJig/rr6bhqmaReaG6zcbEh045EpVapF1MBXGjsIDHRXMdkKT8djT68Ls/eOeXhwehw6JRfL8qTC6pNYfKGiBEXnb/NhPsZVfl30ry4fDmck6OY7lVrNqFb41zHHly9sWo7ZO1FUZMQAb7dXP6HLYlQMx7PE84sq8pvBmuSpGJNylReD/XW/wG1Ziq/fR69ejvVZRcS1N2U9kkHDTamu+CD11v2qrnyzILx4Gq6HhEzC348YxPwLOMPsG8EAj50kUVGbdVYr+S6m0r+3FTK4ONiOzXhFadnrNdOpbOysQ4u9FAqC3y50Ww04Wc638+Hl+dD32mxjDci7DVsdCNMk2Chq3WmfM+r3y3eaUvvbnlyUX48qIKvC5wKMvOZKp0w096K0ZyKzmCcFEbjvvaymHFBiXJpOm6r3YLeMriTPUYnO1LU7G6qNLkMBm2m8ImMi4LMdl/Smou4Yu2YNLLNYoW19ycyhYWHlZwWnT9c2nM57GJ/5q+kx+Ic7YjMQWW9q71+5RrQD8nJ12xqd6wZomZjVsIQs+kHatNGWSY6vr/2GFxgOVV2Wpa7RpbVgbKPr0R/KvesQsew6ZNYzQ0ZDKzoi2Lib6+ujZiMhfWmcgZFUfwAacPgZQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"컨텍 카운트"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contact/count/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+컨텍 카운트
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"subject","schema":{"type":"string","enum":["artist","user"]},"description":"* `user` - 유저\n* `artist` - 아티스트","required":true},{"in":"query","name":"year","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"inProgressCount":{"type":"integer","title":"진행중 상태 카운트"},"proceedingCount":{"type":"integer","title":"진행중 상태 카운트"},"expiredCount":{"type":"integer","title":"지난 상태 카운트"}},"required":["expiredCount","inProgressCount","proceedingCount"],"title":"ContactCount"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

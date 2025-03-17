@@ -1,0 +1,71 @@
+---
+id: main-banner-retrieve
+title: "main_banner_retrieve"
+description: "main_banner_retrieve"
+sidebar_label: "main_banner_retrieve"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV99P3EYQ/leseYLI3A8IkFpVJWhRhRqgSmjzQE9hz17uNthrs15foZYl0oJUESq1ElJowvGQNmqpkHpCCBGJvwib/6GatY8z3B3QNg/ty51vvTPzfbPfzM6F4HpUEMlcPm2BAQ5h/GmVcE7FU0GlYLRBQQePCOJQSYUPxkIIjIMBHpF10IETh4IBzAIdfLNOHQJGCHLNU6tc0hoVEOlgUd8UzMNIYMCEFnC2ElAt26E1iI2/LMolW1pjvKbJOvO1+GAnaZ5e/LwTHxxrcasVb3xfAB0EXQmYoBYYUgQ0quggSQ2x5QlARQefmoFgck3BnqREUAHGQgUtBPU9l/vUR7zDpRJ+mS6XlEt8JJ5nM1NlpvjMR9BhNz+3+oyaEhMkMI+Spd6Y1SMHGJFYc9xey1DrQBuUy+nemyWTNq4kzeP46NeLrVONWZjHlNu82h4C5YGDtGfmJkGHJ1OTSDrz5UvBeA2up/6etvhkanJRG9KS1+++4ve0xZk59TP+4/e4tZM0z0CH1SHfo+YQuh9CNmCOj5aqljVijlvDYw/IBzmEPc5Iu/huPdnfVI7QxyxxqDqefIzk9TuoRDosM27luUx9OTU7DzrMzj2amXh4J0LpVsWpeRa3dhUt5Sddy1LYi1j1ARkeK9Px0bGlctUaMW8hlrzZjN/udhPLx0gxKG6Zq7CLQjsGJqp5fPFiHXRwyOpDymuyDsb9UqSDH1Tnb7NPNvbi0+0+XsoldMMcUuvpY8kVDpFgQCDYbbSbx/Gfp8lv6yhBV1hYRndROPMnTMka+fBV17Up4fkc7G4k+4da8u1h8uogeXkYn6gwviRCfkLkzdgt3JADv3manOxpyYu9ZP+npHmW7P+Ivii3/qmnN5vxL9sdT9hg0hqsBlK6/DGVOa9ECLIGOjBJHf/9NYo01PWi/+8UytHGxdZZ36LvVxt0Vd4k7bbXzR+SLdUAB5Ld5/HhaSYU7fxkO9l/O3hN8mORDjbjy3cQPA9sm1QxFqa5K3DysnV+1NICYV8NMVoe/jtFEOWvq4X0okyNsxRUOpFnCOOTSlydp0l19hDdXKApZrgeLXdbdIqgc/HoKZy0Q2SduLfEO5g7ZZnrUG1wPblAFHUNAMjnfqn8Hi9di0rC7O5jv56SbF8O6ceu47h8Sgj3Bqgj/w+oXUt9JjqHyrqLZV1Th6uGOQOKjXIxZ1AMmRUVoTNGPUaCKYf2MNVpfR77jKreh2HrlKRyyebDiUDWXcG+UQlTMBlfcpV5Ru1r0qi6Qpv4fBp0aFDhp/jLhVKh1NXKzlt7cWvP0BaIxwoWbRRS64LpOpWBupSebxSL3e8GP6yK4kfJq+Nk93lm3M8wZ4QC8FxfOkSdcsYI86SledJyib2C8zI5WOhFzyZMFTK2FCPMkr4AjXJWdO3BVQdD1SWefN31JW4Kwyrx6RfCjiJcXgmowKm2okODCJa2sYUQLObjswXGErF92oXnUsEw8ChT2qD2L6fxnhzbquAoCeUP9anDMl1L/y5EeAdkMkHk6YsJ06SezJl01RnO7pfq/XQKL0ASYCLzSlxWSswe0HtPOFdF2caGn5HexyQMU51H0eX+9FVfi8tKyJgjgyiK/gK6/wSO
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"main_banner_retrieve"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/main_banner/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+main_banner_retrieve
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 메인화면 배너.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"eventId":{"type":"integer","title":"이벤트 id"},"bannerType":{"enum":["MOB","WEB"],"type":"string","description":"* `WEB` - 웹\n* `MOB` - 모바일","x-spec-enum-id":"c750bdd3c7d268a9","title":"메인화면 배너 타입","x-enumNames":["모바일","웹"]},"kind":{"enum":["EVENT","NORMAL"],"type":"string","description":"* `NORMAL` - 일반\n* `EVENT` - 이벤트","x-spec-enum-id":"b8a261e756f1bd3c","title":"메인화면 배너 종류","x-enumNames":["이벤트","일반"]},"title":{"type":"string","title":"타이틀","maxLength":40},"subTitle":{"type":"string","title":"서브타이틀","maxLength":100},"image":{"type":"string","format":"uri","title":"메인화면 배너 이미지"},"order":{"type":"integer","readOnly":true},"isActive":{"type":"boolean","title":"현재 사용여부"},"startDate":{"type":"string","format":"date","title":"노출 시작일자"},"endDate":{"type":"string","format":"date","title":"노출 종료일자"},"mainbannerbuttonSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"buttonType":{"enum":["EVENT","NORMAL"],"type":"string","description":"* `NORMAL` - 일반\n* `EVENT` - 이벤트","x-spec-enum-id":"b8a261e756f1bd3c","title":"버튼 타입","x-enumNames":["이벤트","일반"]},"text":{"type":"string","title":"버튼 텍스트 (영문 사용 권장)","maxLength":16},"link":{"type":"string","format":"uri","nullable":true,"title":"버튼 연결 url","maxLength":512},"order":{"type":"integer","readOnly":true}},"required":["id","order","text"],"title":"MainBannerMainBannerButton"},"title":"메인화면 배너 버튼"}},"required":["bannerType","endDate","eventId","id","image","kind","mainbannerbuttonSet","order","startDate","subTitle","title"],"title":"MainBanner"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

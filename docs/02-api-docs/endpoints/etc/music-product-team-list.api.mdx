@@ -1,0 +1,71 @@
+---
+id: music-product-team-list
+title: "MusicProductTeam 목록 조회"
+description: "MusicProductTeam 목록 조회"
+sidebar_label: "MusicProductTeam 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVUtv00AQ/ivWnECy8uBxsRBSQQghXpUopyiqNvY0WbB3l9l1IFh7qODID0AIDr0gwamH/ioa/gMar5O4dUpB4sIlD3vmm29mvpmpQBsk4aRWDzJIoCitTPcN6axM3b5DUezn0jqIwQgSBTokC8moAiUKhATSkqwmiIHwVSkJM0gORG4xBqkggVcl0gJiyNCmJA2HgQT2ZhgZMZWqjhsFjGgu8hJ7EINNZ1gISCpwC8NBrCOppuB9vI5rxBT3rXyLfxn6SVlMkCJ9EBHaMnc2cjoidCWpyCAxre0cpHI4RQLvxzE4MeUqbKkWjGOwmJYk3aKu0x0UhATJaOzjin0JrdHKomXwa4MBf6VaOVSOfwpjcpnWhem/sMy56pLRkxeY1k0hbp+TAa1pRqdwMagyz8UkR0gclehrFpx9y1YQCa6XdFjYy2PJbEtxGFdkT1W+WAcK/eoyctIxHVh+PFy+O4yWX05Ov76HGArx5hGqqZtBcnPgY5jLDPU2gANNhXCQQEmyi1dSfg5seM3HoClD+hPivi2rEWfbpLLCWDEbb0I/ZjXsBjHssRY8w6ze7gbBY3be7BHPV216VqrgY7gxGP5DfWTohMy3DtaZbBu7Vmp3dVFodY9I08VUr/8fVDuPzjckOv3+7fToS7Q8Ov756QPLCN1M83acYtiELCjoz4f97gLow2YBPONkQz6rNbAZNyMfYj1vTGGGIoiqWW87pZtpkm/r4tWUpToIY9Ck+VrMJ5qind0HLEUkG3IZ9ga9QWfr/Tj+fHr8OYlGwshehvNe8O6luhhfmTlnbNLvd99dvTWh/u3lp5Plx8PG+SLHlhOLwWjrClF3vMno0iKfYbwuk8M3rm9yIRXD8lQnVdOAEcyH3JzuDo6BBTHT1rFVVU2ExeeUe8+Pw13g1ZxJyztxczfOUVhL+bKDtZXrS1y072NtHEblbyL/6b36DYX2qdywGPMfkuEo8HFaaZArExx30hSNa3l1BppR1sNx/94exCBK7k1b5i9rmTc/GH31Si1a2GcVv+LOn1ywrS5VFYbI+7V9eHWhx3rMgjVXaey9/wViKypB
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"MusicProductTeam 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/music_product_team/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+MusicProductTeam 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"cursor","required":false,"in":"query","description":"The pagination cursor value.","schema":{"type":"string"}},{"name":"page_size","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","title":"영상 이름","maxLength":50},"video":{"type":"string","format":"uri","title":"영상 url","maxLength":512},"order":{"type":"integer","readOnly":true}},"required":["id","name","order","video"],"title":"MusicProductTeam"}}},"title":"PaginatedMusicProductTeamList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

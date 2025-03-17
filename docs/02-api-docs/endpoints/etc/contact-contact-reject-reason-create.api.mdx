@@ -1,0 +1,71 @@
+---
+id: contact-contact-reject-reason-create
+title: "컨택 거절 사유 생성"
+description: "컨택 거절 사유 생성"
+sidebar_label: "컨택 거절 사유 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFtrG0cU/ivLeUrC6OK6SdOlFBxFoW7S2sgOfVCFPd4dW+toL5kdyVbFglurkNp5aMFqXCMFBwrOQx4UMCVQ/yJr9B/KmV1pJUuW2uKXgF4k7c6cb87tO3N0auB6jFNhuc6iCToYriOoIdZ635xtM/VFfddZMzijggEBj3JqM8G4D3q+BpYDOnhUFIGAQ202AGSZQMA3isymoNdAVD1ctRzBthiHgABnz8sWZybogpdZUCAg6BbC9iCgEG5ivnjgmlVEwRXmCPxJPa9kGcqA1LbvOvhu5Dh3A61AvTmaKyzm42poXE7Zhs/MKdt4cHY1AwSWc0tfZzOrQGAl81X24dMnWSDw3VLu8dqjxeyTh6hWBO8LbjlbQMBkvsEtD5UBHe5o6/H2dS2hyde/yVc/a52/6rJxcdne0zqH7zqtC1lvap3DP2XrpXb5od09eSlf/apdtv+QrXOt2ziXJ0fJ75072npPDQXVupCnDdzROXstz/Y02TiQjbom37Rl820oWZcnR4PykUFK/Kze/f2XbuM4Eu0cHEVqydax1j2qd9405Wmre/Ch07qYopzCzq5mEBe37O9p8qd3snkKBHYTvseMBDo2YWF+pe/Np+/P3/38vpn+7N5dkwIBYYkSevHyfVuevhiURbFvqc1UNlyFvkkTEO6/ORQl/nc0oRAQYMKIM+9qIvV9MmR0MESX/HD+FmKpTEic3MByLiSQghikzG5iZ2cnselyO1HmJeYYronYMw7NODTj0AQO2eWSsDzKRUpxx6SCzlgzY82MNRNYM9rsEfCZUeaWqKo28gGjnHHQ84VA9Xy+5zp+SJhP0nM32PhZ5pheFE+k5pJTqva1m9F0RtOPiqYEwr9o5oIYJ4V3FRWgg0kFSwjLZiNZH0PL/Zasv0ezD5uIXPbMm0J+caxcGSJfKS2xAQTUn8chEg6qMbnuhAVnmHBoxqfp9A1WEpv5Pt1i0zc6rvPIYqXBwkM5p1W0UjDbH3VqMKYA/XvJcdkzVSyY6NEs5y7/JjIYj8DnjGuy63SPgxpvJX2XTQ6fOuz6GN7kbWAyQa3SdCOifUN62/ZUVec/DlVHXsm/33b3W9pQ1dXCoqCiKIouFmzP9ZWeOP3RIVWZS0Vzm1QtngEFqbEDpRTEHcAKuiC0stcHxInrWY+ZylxUrMioqe7raNS0UBZFl1s/KJcqQ7bjvgNHRtldanslNtp4Rxf5AFf6DsWzNl2lQ+TBHVrZcLm2sLwIBCqM+6Gb5pLpZHrkar9sNzvtpq7lqWclTVZJhtJJw7ULt4pCeL6eSo2u3f5ig6e+lCfn8vjHSPg6wQEh1BbDYFOVTJFbJsdvSN2+owXbFSmvRC1HVXyuUi0MbR4qc0D6QzkC+tCIb2x8gQDmYBFTRM9DrbZBffaUl4IAXz8vM46NX4FAhXKLbqCb8zUwLR9/m6Bv0pLPRnTtcwlu5aKcv60BGW9DL4McTJ8KLZXxCQg8Y9XhKWWAd26UWqhFuCETnpVYRZgYYPoIJSA9iAXDYJ64RlgVAOx2+3xaXlrBlnIjGnXaqr7CADIZfMBemQAtY4QG6fJM0SX6geaM9cMwc3pOwU9Uf6xIrRaSMQj6+8OlayX6dA13Y1gKQRD8A1mCpmI=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"컨택 거절 사유 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/contact_reject_reason/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+컨택 거절 사유 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"rejectReason":{"enum":["ETC","PROJECT","SCHEDULE","WORK_FIELD"],"type":"string","description":"* `WORK_FIELD` - 작업 분야가 달라서 다음 기회에 같이 해요.\n* `SCHEDULE` - 일정이 맞지 않아 조율이 필요해요.\n* `PROJECT` - 진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요\n* `ETC` - 기타 사유","x-spec-enum-id":"063083598d0765da","title":"거절 사유","x-enumNames":["기타 사유","진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요","일정이 맞지 않아 조율이 필요해요.","작업 분야가 달라서 다음 기회에 같이 해요."]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["rejectReason"],"title":"ContactRejectReasonRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"rejectReason":{"enum":["ETC","PROJECT","SCHEDULE","WORK_FIELD"],"type":"string","description":"* `WORK_FIELD` - 작업 분야가 달라서 다음 기회에 같이 해요.\n* `SCHEDULE` - 일정이 맞지 않아 조율이 필요해요.\n* `PROJECT` - 진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요\n* `ETC` - 기타 사유","x-spec-enum-id":"063083598d0765da","title":"거절 사유","x-enumNames":["기타 사유","진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요","일정이 맞지 않아 조율이 필요해요.","작업 분야가 달라서 다음 기회에 같이 해요."]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["rejectReason"],"title":"ContactRejectReasonRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"rejectReason":{"enum":["ETC","PROJECT","SCHEDULE","WORK_FIELD"],"type":"string","description":"* `WORK_FIELD` - 작업 분야가 달라서 다음 기회에 같이 해요.\n* `SCHEDULE` - 일정이 맞지 않아 조율이 필요해요.\n* `PROJECT` - 진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요\n* `ETC` - 기타 사유","x-spec-enum-id":"063083598d0765da","title":"거절 사유","x-enumNames":["기타 사유","진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요","일정이 맞지 않아 조율이 필요해요.","작업 분야가 달라서 다음 기회에 같이 해요."]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["rejectReason"],"title":"ContactRejectReasonRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"rejectReason":{"enum":["ETC","PROJECT","SCHEDULE","WORK_FIELD"],"type":"string","description":"* `WORK_FIELD` - 작업 분야가 달라서 다음 기회에 같이 해요.\n* `SCHEDULE` - 일정이 맞지 않아 조율이 필요해요.\n* `PROJECT` - 진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요\n* `ETC` - 기타 사유","x-spec-enum-id":"063083598d0765da","title":"거절 사유","x-enumNames":["기타 사유","진행하지 않는 분야의 프로젝트라 다음 기회에 같이 해요","일정이 맞지 않아 조율이 필요해요.","작업 분야가 달라서 다음 기회에 같이 해요."]},"etcReason":{"type":"string","title":"기타 사유"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["createdAt","id","rejectReason","updatedAt"],"title":"ContactRejectReason"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"rejectReason":{"type":"array","items":{"type":"string"}},"etcReason":{"type":"array","items":{"type":"string"}}},"title":"ContactRejectReasonErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ContactRejectReasonError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

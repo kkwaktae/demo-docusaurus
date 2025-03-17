@@ -1,0 +1,178 @@
+---
+id: review-list
+title: "리뷰 목록 조회"
+description: "subject=user 인 경우, 현재 로그인한 유저의 `내 프로젝트 > 작성한 리뷰`에 본인이 작성한 리뷰만 나오게 됩니다. <br/>subject=artist 인 경우, 현재 로그인한 유저의 아티스트 계정의 `내 프로젝트 > 작성한 리뷰`에 아티스트가 받은 리뷰만 나오게 됩니다. <br/>subject=all 인 경우, 아티스트 상세 조회 (/v1/artist/{artist_id}/)에서 사용됩니다. (artist_id를 같이 넣어주시기 바랍니다.)"
+sidebar_label: "리뷰 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"리뷰 목록 조회"}></Heading>
+
+<MethodEndpoint method={"get"} path={"/v1/review/"} context={"endpoint"}></MethodEndpoint>
+
+subject=user 인 경우, 현재 로그인한 유저의 `내 프로젝트 > 작성한 리뷰`에 본인이 작성한 리뷰만 나오게 됩니다. <br/>subject=artist 인 경우, 현재 로그인한 유저의 아티스트 계정의 `내 프로젝트 > 작성한 리뷰`에 아티스트가 받은 리뷰만 나오게 됩니다. <br/>subject=all 인 경우, 아티스트 상세 조회 (/v1/artist/\{artist_id\}/)에서 사용됩니다. (artist_id를 같이 넣어주시기 바랍니다.)
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    { in: "query", name: "artist_id", schema: { type: "integer" }, description: "리뷰를 조회할 아티스트의 Id" },
+    {
+      name: "cursor",
+      required: false,
+      in: "query",
+      description: "The pagination cursor value.",
+      schema: { type: "string" },
+    },
+    {
+      name: "page_size",
+      required: false,
+      in: "query",
+      description: "Number of results to return per page.",
+      schema: { type: "integer" },
+    },
+    {
+      in: "query",
+      name: "subject",
+      schema: {
+        enum: ["all", "artist", "user"],
+        type: "string",
+        "x-spec-enum-id": "3eb6010f7ff00265",
+        "x-enumNames": ["all", "artist", "user"],
+        minLength: 1,
+      },
+      description: "조회 주체\n\n* `all` - all\n* `user` - user\n* `artist` - artist",
+      required: true,
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              cursor: { type: "string", nullable: true },
+              results: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    id: { type: "integer", readOnly: true },
+                    user: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", readOnly: true },
+                            name: { type: "string", readOnly: true, title: "이름" },
+                            profile: { type: "string", readOnly: true, title: "유저 프로필" },
+                            artistId: { type: "integer", readOnly: true, title: "아티스트 id" },
+                            artistNickname: { type: "string", readOnly: true, title: "아티스트 닉네임" },
+                            isActive: { type: "boolean", readOnly: true, title: "활성화여부" },
+                            isArtist: { type: "boolean", readOnly: true, title: "아티스트 활동 여부" },
+                          },
+                          required: ["artistId", "artistNickname", "id", "isActive", "isArtist", "name", "profile"],
+                          title: "ReviewUser",
+                        },
+                      ],
+                      nullable: true,
+                      title: "유저",
+                    },
+                    artist: {
+                      allOf: [
+                        {
+                          type: "object",
+                          properties: {
+                            id: { type: "integer", title: "아티스트 id" },
+                            nickname: { type: "string", readOnly: true, title: "아티스트 닉네임" },
+                            profile: { type: "string", readOnly: true, title: "아티스트 프로필" },
+                            isActive: { type: "boolean", readOnly: true },
+                          },
+                          required: ["id", "isActive", "nickname", "profile"],
+                          title: "ReviewArtist",
+                        },
+                      ],
+                      nullable: true,
+                      title: "아티스트",
+                    },
+                    star: { type: "integer", maximum: 5, minimum: 1, title: "별점" },
+                    content: { type: "string", title: "내용" },
+                    isReviewModifiable: {
+                      type: "boolean",
+                      nullable: true,
+                      title: "리뷰 수정 가능여부 (작성한 지 7일이 지나면 수정 불가능)",
+                    },
+                    unreadNotificationExists: {
+                      type: "boolean",
+                      readOnly: true,
+                      title: "읽지 않은 알림이 있는지 여부",
+                    },
+                    createdAt: { type: "string", format: "date-time", readOnly: true, title: "생성일시" },
+                  },
+                  required: [
+                    "artist",
+                    "content",
+                    "createdAt",
+                    "id",
+                    "isReviewModifiable",
+                    "star",
+                    "unreadNotificationExists",
+                    "user",
+                  ],
+                  title: "ReviewList",
+                },
+              },
+            },
+            title: "PaginatedReviewListList",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

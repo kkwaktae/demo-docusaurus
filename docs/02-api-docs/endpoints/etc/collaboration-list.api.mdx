@@ -1,0 +1,71 @@
+---
+id: collaboration-list
+title: "Collaboration 목록 조회"
+description: "Collaboration 목록 조회"
+sidebar_label: "Collaboration 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV1tvE0cU/iujoz5Au74FAs2qqmQqVKGmBLXpSy03jHdP7IG9MTvrJlgrJZBUUQJSH4qIIhsFidIG5cGFFOUh/UPs5D9Us7ux15c4rsRLX2zv+pzvfOc6Z1rgesipYK5zywQdDNeyaM1N3ixZzBeggUc5tVEg90GvtMChNirRgPsuBw04PggYRxP0ZWr5qAFzQIcHAfJV0MBE3+DMU3igw2IDiUfrzIkNkASDNKkVYB408I0G2hT0FohVTxnxBWdOHcJQaw3CpiSYv0QNwZo4TrnmuhZSZ6J2jToO8mlBUj2P1nHJZw/xP3p/O7BryIm7TDj6gSV8IlzCUQTcIR5yFZnxYWCOwDpyCMOqBoLWVSIGcwVVDXw0As7EapylG0g5ctArVaXD0fdcx0dfgc4Ui+rLcB2BjlA/qedZzIiBCvd8xbU1SsKt3UMjrgeuikawBC2tg5GcaeAEiqCFoAseYBizUF5nZCnnVMWJCbT9i20xc0xQFC41FxxrtWdINAK75lBmjaO17HKbCtAh4Aw0EEwoiiCfHkcbr2TnZCRtH94/kS9+J/LRoewcyddbOikV52bJCrl2fQbCHsKopR70fjt6cwAa2HRlHp26aIB+tRhq4Ae1xQuVf3kyTr9UVACZHE6Ofh8venQk9w4Ub98K6tNoZqzOlmbUPBACuYrMT5UczT0s534s5uaWqp99olCZX06aabSHMiReH8rtV6fbxyTaPJbv20Q+P4zeryX6d5jjoDmlvny8Hu38ST6825f7zwZgbsStPQ2Zg99k55hE3W60sTVKKBkRC9xEPrb6bLrC7MAG/crM9WvXNbCZkzwXLzKx1ZYb7ZFyK8rOGpH763LvIPp1V/6xRuSzbbn9d7SzFe28yqcxolwwg3lJ84/zbrApMvX0TzvqnETvjqL9LVXPm7tEdo/l88OMywZHKtAsjy2sXv+YVGBOMBsnWXvckRt/yc6J3GnHyNmhVQuESNhTy1pYjufWxxkACfJiLNcCdFQ6KnB74btvy/NqVA77NJiBT8ndRPQuyRHZOYm6u6DBSs730MgpsJziATg3ZxY/n6U1Y3bu6syVmQlhiN5unG6fkNPHa/LFZoylYG5TG+NRntqoqmGCK2OjfhHy5tO0IS7J3fXo8DgeV3sHJBlel1XsLebcn2IgDls6d5AkluXz7oe3XRJwS52RmfOwks2CplKXUkidrPahvspWxcDDjaREkjNsIMlDtsYVVraQUwLDnZOZwdlj44zaeRwhDPuDH+4kGw2aAzLzanuK5QarS6XiarH0EY9gE8XYs244RqncgFO27To3OXf5+VSv/D+ojrwayAaJ3hxELztEvuye7j1RYxtFw1VtXMdkyVXnGxSapcJAKRWgv1h9r5xM/Dhbr/qbjMe+wXiVUaYbSM14MqUbYzkQDZezh2fFo8SW3Vg9de9n2qy5nJTv3AINmsj9xIdSvpgvjm4k3XbUbeukQj2WN7GZT7TzhmtXLzWE8Hy9UBj97/IXNV74Uu4dyd31VPk8xYySKgLP9YVN40ynHk0O7gDdXoxU2xc8izJHYaqJobfSwFegWYKh4wE0UAXQcH2hBFqtGvXxB26FoXqdrNjqyDCZr+ZTfwUfst4r3YuuH2Np3sfV7G0nFk5aY4zlRDh7K5lSfvgeMlntXAenvWFM8DR7uemzqKoHzpJzoKIOqrTEVQISxbJhoCcyWiNzQqH02u7rm4ugAQ1U9rNddD/uovRHZiOgzmoGe7ChzrirTxWwsSqtVtKjYdiTT/46V6PXxWmalAdhGP4L7riXlg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Collaboration 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/collaboration/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Collaboration 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"cursor","required":false,"in":"query","description":"The pagination cursor value.","schema":{"type":"string"}},{"in":"query","name":"is_active","schema":{"type":"boolean"}},{"in":"query","name":"is_banner_active","schema":{"type":"boolean"}},{"name":"page_size","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"cursor":{"type":"string","nullable":true},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"thumbnail":{"type":"string","format":"uri","title":"썸네일","description":"권장 사이즈: 1095 x 672"},"title":{"type":"string","title":"제목","maxLength":40},"subTitle":{"type":"string","title":"소제목","maxLength":100},"content":{"type":"string","nullable":true,"title":"내용"},"slug":{"type":"string","nullable":true,"maxLength":512,"pattern":"^[-a-zA-Z0-9_]+$"},"isActive":{"type":"boolean","title":"리스트 노출 여부"},"isPinned":{"type":"boolean","title":"리스트 상단 고정 여부"},"isBannerActive":{"type":"boolean","title":"메인 배너 노출 여부"},"bannerOrder":{"type":"integer","maximum":32767,"minimum":0,"title":"메인 배너 노출 순서","description":"0은 적용되지 않습니다."},"isParticipation":{"type":"boolean","readOnly":true,"title":"콜라보레이션 참여 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"collaborationbutton":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"buttonType":{"enum":["NORMAL"],"type":"string","description":"* `NORMAL` - 일반","x-spec-enum-id":"e99d085abc594232","readOnly":true,"title":"버튼 타입","x-enumNames":["일반"]},"text":{"type":"string","readOnly":true,"title":"버튼 텍스트 (영문 사용 권장)"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"버튼 연결 url"}},"required":["buttonType","id","link","text"],"title":"CollaborationCollaborationButton"}],"readOnly":true}},"required":["collaborationbutton","createdAt","id","isParticipation","subTitle","thumbnail","title"],"title":"Collaboration"}}},"title":"PaginatedCollaborationList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

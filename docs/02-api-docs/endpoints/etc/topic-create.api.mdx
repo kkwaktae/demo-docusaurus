@@ -1,0 +1,71 @@
+---
+id: topic-create
+title: "Topic 등록"
+description: "Topic 등록"
+sidebar_label: "Topic 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9PG0cQ/leseWqjNbahoMaqKjnGUVFTQBj64lphfbfgDfcre3uAa51EE7cvfSxUUWQk8tKqVSoRhVR9SP+h+Pgfqtk7n89nWzYKD0XyC9zdzsx+M/N9c+trg+0wQSW3rTUdiiBth2uPNcGoZEBA0n0XirXwMdQJCPbUY658YOstKLZBsy3JLImX1HEMrqlIuSeubeEzV2syk+KVbDkMimA3njBNAgFH4L6SM1eFadIwhmFs7EGxNs2e64mY3JJsnwnw/RAeF0xHzFxHwJJLA622MYNyk8qtMAPw6wSOBJdswzJaUJTCYz4Bg1sHVSYT4akQtAUEuGSmOz0VTxgJI1cKbu0DgT1bmJgjeIIDAZNbj5i1L5tQLBAw6XH/bmV5eWk5nQnGTKfyiFsHcSo+CTu0rXZtA7M8Ex1X16rlnWp1bWMdCFS2y0BgbbVSwn/rDzceV78qbVWAwPrG9lq5orZIwdaZqwnuYFOhCPcyu6Hpbiab+fD2XfD7yXfWvczuYBtc6P34Pjh/ETx7fX32l1oe7IXLwcVZ7+0VencvwuXVSkktnHWC86ve6Wnw65VaqGyX1Ub/XF4/PwECx1nXYVoWk8siA2BFb2if318qLBaW91bu6zoManT908X16b+ZD+9e9/7uKF90W6cmU3xOYgQC8RZJDHibwIpmKmWo+/E+o40e7mwfTnDR7f35Bwy1ejHvk6SAZovUe3YVvExFKuTz+TRn+oH7nmn+JLmTlO5x9ujoKIt0zXrCYJZm60yfa3mu5bmW74SWTc+Q3KFC5pSGdSrpXL1z9c7VewfUO+QYycBlmie4bCktPmBUMAHFWt1XZ3HXsS03ZPtivnCLB/KxssYdqX67Ip11oxnFPEW+HIk5ScNKvJ6L9f3I+TcGv0XNsSS1PMOgDQSChgmanl/1fusMp7SENHWEvcfHEz5VjImhuxfBxUnm+rTTe9W9PuvMMq53XCY2o51D6qXymw+9/8fQ+5gxN3WwobdpMkuWbW8oxJQJcQPz8MuDXhoLMCa4TiXLSm6ykRCJCjw/DzpvgvP3wc/dEYoP5UESI3qwPwmnxQB/P3Q0JNISCef3MGPBJ/BZPn+Lg9lkrkv32XRDy7YecmboM4zmqL4Iv3/8u8HQmxrVH3P0+5YaXFcVqAhhC7jRqySBd2js3MAtJZ9ZKjOimxsnrlL9JmqgT4DhfdnWxwg5zdeBKYkpkCZgVMlJLLzN44HOJOVjXshp2JFdAmnZNs246ZOgLt0NqCOPVBsyvV/e9F6dq0bJpo0vCsd2FTCKkxRyh4Wc4m0OBse7KqYTIu4f8gZEc/jXTDENN2kyqqvZGR4poOTJpi3496o8ChSWaGvwnbZyTE0npHtf3ijgfFJztejnUlyd+pC2ht/k/QLFczluVeyOWPdslUNkfEQPG7bIlDbXgMAhE25YssJCfiE/8qb/cNntXXaLmRp1+ILODhdC7wXNNuufNKV03GIuN7r26RcNkfsyeHkVvPghcp7kmHBCtNghkypiRWVN9XIIX9wZyY5lzjEot2BwRg3bXIPDAkRFBAJIrCbSoFiDdrtBXbYjDN/Hx089JvB4XydwSAUPj2w1fMtHrcbuHLCWoqQqdFZ1Bc0NLyTItO93PumHKGkac+QEZyUu7H1M3c2N6jYQaETf+001rSARmSRvQtjUwwIk6Xug6BtdJA7V1GolkAwzmUSA8S/CH+vSbofi8P3YPlya6BHLJ7TGztV93/8PXdcNqg==
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Topic 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/topic/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Topic 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"TopicChatRequest"}],"writeOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string","format":"uri","minLength":1,"maxLength":65535}},"required":["url"],"title":"TopicLinkRequest"}},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","minLength":1,"title":"제목","maxLength":20},"content":{"type":"string","minLength":1,"title":"내용","maxLength":1000}},"required":["content","title"],"title":"TopicRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"TopicChatRequest"}],"writeOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string","format":"uri","minLength":1,"maxLength":65535}},"required":["url"],"title":"TopicLinkRequest"}},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","minLength":1,"title":"제목","maxLength":20},"content":{"type":"string","minLength":1,"title":"내용","maxLength":1000}},"required":["content","title"],"title":"TopicRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"chat":{"allOf":[{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"TopicChatRequest"}],"writeOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string","format":"uri","minLength":1,"maxLength":65535}},"required":["url"],"title":"TopicLinkRequest"}},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","minLength":1,"title":"제목","maxLength":20},"content":{"type":"string","minLength":1,"title":"내용","maxLength":1000}},"required":["content","title"],"title":"TopicRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"linkSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"url":{"type":"string","format":"uri","maxLength":65535}},"required":["id","url"],"title":"TopicLink"}},"user":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"profile":{"type":"string","format":"uri","nullable":true,"title":"유저 프로필"}},"required":["id"],"title":"TopicUserProfile"}],"readOnly":true},"topicType":{"enum":["DISCUSSION","ETC","IDEA","INFO_SHARE","NOTICE"],"type":"string","description":"* `NOTICE` - 공지\n* `DISCUSSION` - 논의사항\n* `INFO_SHARE` - 정보공유\n* `IDEA` - 아이디어\n* `ETC` - 기타","x-spec-enum-id":"6dbc8931215f69dd","title":"토픽 구분","x-enumNames":["논의사항","기타","아이디어","정보공유","공지"]},"title":{"type":"string","title":"제목","maxLength":20},"content":{"type":"string","title":"내용","maxLength":1000},"commentCount":{"type":"integer","readOnly":true},"linkCount":{"type":"integer","readOnly":true},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"}},"required":["commentCount","content","createdAt","id","linkCount","title","user"],"title":"Topic"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"chat":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"TopicChatValidationError"},"linkSet":{"type":"array","items":{"type":"string"}},"topicType":{"type":"array","items":{"type":"string"}},"title":{"type":"array","items":{"type":"string"}},"content":{"type":"array","items":{"type":"string"}}},"title":"TopicErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"TopicError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: promotion-participant-create
+title: "PromotionParticipant 등록"
+description: "PromotionParticipant 등록"
+sidebar_label: "PromotionParticipant 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVsFqGzEQ/ZUwpxZkr932tJRCElIIpcQkaS/GBHl3YivZlRRJ68Q1OvQbeiklPfQPUuhXNfmIMlp7va7tOJRAKb0sWmlm9Oa90UgTUBoNd0LJ/RRi0Ebliv5ONDdOJEJz6U4Sg9whMHB8YCHurjaDHgODFwVat6PSMcQTSJR0KB0NudaZSMJO0ZlVkuZsMsSc08iNNUIMqn+GiQNGG2g0TqCl1Wq7zaYirdkI6XCABrwvkQmDKcEXKWF1wmVk1ZlF78xzqeYOy4SWQswhbYhUD1Dn4KpxeXnZOFUmbxQmQ5moFNP/kZS8yJygMooCGSl3/P+jYSGCMwV6BhaTwgg3hrg7gR3kBg3E3Z4Px8xqJW2Z1rNW+xHP2kqSaEeeHshsXKH7i7yv8mUPZ72kO0WbGKHLDAA8gxet1iPymKO1fICbDaWSrwVmdY64MXwMDITD3NbmrTNCDkL6f0r/xtD+gSK855lIAzV7xqhSz/scg9XbKSmeAdL/rkpxdX51eeemrKJ1g8YzTGuEfswDk6LjItucxdSuBnxX5fmcvjVQn/8bUJemVqmydfvp++23r0FGN1ThwaFswMndEGKIRu1o5dsignk/PKJsy4RmXXFe3lq8wVDfhGGIPA3dS/KcVrcLN1RGfOBVFyEGD+dvlr0rnusMl+4VOkItshfyVIXtprxc8lFfma3tzj4wGKGxZfLtZqvZgt8p+XlzfXtzHW91uRbNFEfN0ruZqLz3ZOictnEULa89fdk30au7Lz/uPn+cOq9zrDlR9RC5OQ8ZTBm4X5UFuBWnDq9cpDMuJMUsTCigUrAujNr11rvwHGRAFTQkgeMuTCZ9bvGdybyn6YsCDd1sPQYjbgTvE53dnmcz0ejSO8dxqL1Q/I1jgkPmWVFKvekx5dksxHaSoHZrnMMpolu1KsrOwdExMOhPX7F56FJQi8zqPyVsXhAh9UI8D4U4HVA6syU5riFZrEk2BUxfgr/SZTIpy9z7yr5cWutRHYTSmpTsee9/AbQiQkY=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PromotionParticipant 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/promotion_participant/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+PromotionParticipant 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"promotion":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"PromotionParticipantPromotionRequest"}},"required":["promotion"],"title":"PromotionParticipantRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"promotion":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"PromotionParticipantPromotionRequest"}},"required":["promotion"],"title":"PromotionParticipantRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"promotion":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"PromotionParticipantPromotionRequest"}},"required":["promotion"],"title":"PromotionParticipantRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"promotion":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"PromotionParticipantPromotion"}},"required":["id","promotion"],"title":"PromotionParticipant"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"promotion":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"PromotionParticipantPromotionValidationError"}},"title":"PromotionParticipantErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"PromotionParticipantError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: payment-confirm-create
+title: "결제 승인"
+description: "결제 승인"
+sidebar_label: "결제 승인"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWM1u20YQfhVhTgmwFq22J6Io4BgpYLRBDMc9CUKwIkfixuQuvbuUrRJ7CHLrEwSFC/TUUw5GkEP7So36DsXukiKpH0gVfEgBXwyR3G/2m5lvxrNbgshRUs0EP4shhJzOM+T6dST4hMnsdSSRagQCOZU0Q41SQTgsgXG3WCdAgNMMW1AWAwEVJZhRCEvQ89x+ZVzjFCUYAjGqSLLc7gkhnPQKzq4L7FUrejOa2qcYuWaTOePTnk6Y6v398X7x+10fCEi8LpjEGEItCzQjAppOLa2aAoz8IlT6mYjnlkUkuLZfwhJonqcsci4Hb5TlUK7TFeM3GGnrt7QB0gyVwxY6uUBVpPpUxNhar7RkfAoEbiTT+JKnc8+OQMb4j8inOoFwYEjLwgs1PcSAZvEhsChlyPXZQVghY5SHQWkmCh/2QwJ1Ka6QHwJWbMqpLuQBKTJtgQ1rB8hq6lcz2SbcinYTvDYpn0UrXKZTy+3cC/fUV92F1y5YLm213h7d3NwcTYTMjgqZIo9EjPGjfB/l++XKNytSzXIqdeBkG1NNHwX7KNgvVbBmbbogoDAqJNNzN/c8QypRQjgcGTdkqFxw5bX61fHxA04aHdXVw5PdkcbtUNYO+emox2I7YClNdaE2pWIHfPHx/ec/PvQW797+8+4OVlPjBztve2ssfRC7I57l9M2DRidDpegUdy/kgn/PMG0Hk0pJ50CAacw2BMmYNe0diO02nD2g3VazB2BDk9kDtd5e9nFrtbHsGYrVlrIHbFMz2Qkz2wT5XEohX1R6MQTQPm/+b7Iq+GYpWSpuq/DdPtvVP3hA9ceoKUt386/WtSifiiwTfAfVr/8fVNde1U3sl78Wv/3pUqYT4Q61Qjlm9rgaQjAbBNVBMSibQ6sJqjNvAE3Pf2Xd9J7Unb+RZM5+QKdJu3mCNHYdujoNnxQ6EZL97MLmyNrQXTSn0ue3NMtT3DTlNP16pZk0H1yraB6bRtC8W5Z5y1xVxN0NqhJtXrYKcJkv6+ZEOPerBN3Q2VjI3sn5GRCYoVQ+C4P+cf8Y1nJzf/f5/i7sDWnO+jHO+h7dj0Q2epJonaswCNa/Pf12LIPvFr9+Wrx/W4G3AVsgy9bmPKNOq1VGVuXRIbjMqsZbHeQpZdxaKaTTrlfOEGYDJyN/yUAg7Fx5VPIBAlbGidVcOISyHFOFP8nUGPv6ukBpJ4kRgRmVjI5tKIclxEzZ3zGEE5oqXGO3LEd4clGVzdPef7862ehkrWduxexM2PoicIXz7rWOGRlSC92S9gtOPbWjS2umMbD74GpIbeIkijDXW8Cu5dhpa1nP5y9fXQKBcXW3k/miaVkm7Qc7q3mhd4v3yhVv9cO6szEO3Tqug2L/WvobIWXpW4Mxy/X+01bEsnn41TYtI2PMv+8j4fs=
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"결제 승인"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/payment/{payment_id}/confirm/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+결제 승인
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"payment_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 결제.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"authResultCode":{"type":"string","writeOnly":true,"minLength":1},"authResultMsg":{"type":"string","writeOnly":true,"minLength":1},"tid":{"type":"string","writeOnly":true,"minLength":1},"clientId":{"type":"string","writeOnly":true,"minLength":1},"orderId":{"type":"string","writeOnly":true,"minLength":1},"amount":{"type":"string","writeOnly":true,"minLength":1},"authToken":{"type":"string","writeOnly":true,"minLength":1},"signature":{"type":"string","writeOnly":true,"minLength":1}},"required":["amount","authResultCode","authResultMsg","authToken","clientId","orderId","signature","tid"],"title":"PaymentConfirmRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"authResultCode":{"type":"string","writeOnly":true,"minLength":1},"authResultMsg":{"type":"string","writeOnly":true,"minLength":1},"tid":{"type":"string","writeOnly":true,"minLength":1},"clientId":{"type":"string","writeOnly":true,"minLength":1},"orderId":{"type":"string","writeOnly":true,"minLength":1},"amount":{"type":"string","writeOnly":true,"minLength":1},"authToken":{"type":"string","writeOnly":true,"minLength":1},"signature":{"type":"string","writeOnly":true,"minLength":1}},"required":["amount","authResultCode","authResultMsg","authToken","clientId","orderId","signature","tid"],"title":"PaymentConfirmRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"authResultCode":{"type":"string","writeOnly":true,"minLength":1},"authResultMsg":{"type":"string","writeOnly":true,"minLength":1},"tid":{"type":"string","writeOnly":true,"minLength":1},"clientId":{"type":"string","writeOnly":true,"minLength":1},"orderId":{"type":"string","writeOnly":true,"minLength":1},"amount":{"type":"string","writeOnly":true,"minLength":1},"authToken":{"type":"string","writeOnly":true,"minLength":1},"signature":{"type":"string","writeOnly":true,"minLength":1}},"required":["amount","authResultCode","authResultMsg","authToken","clientId","orderId","signature","tid"],"title":"PaymentConfirmRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true,"title":"결제 id"},"status":{"type":"string","readOnly":true,"title":"결제 처리 상태"}},"required":["id","status"],"title":"PaymentConfirm"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"authResultCode":{"type":"array","items":{"type":"string"}},"authResultMsg":{"type":"array","items":{"type":"string"}},"tid":{"type":"array","items":{"type":"string"}},"clientId":{"type":"array","items":{"type":"string"}},"orderId":{"type":"array","items":{"type":"string"}},"amount":{"type":"array","items":{"type":"string"}},"authToken":{"type":"array","items":{"type":"string"}},"signature":{"type":"array","items":{"type":"string"}}},"title":"PaymentConfirmErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"PaymentConfirmError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

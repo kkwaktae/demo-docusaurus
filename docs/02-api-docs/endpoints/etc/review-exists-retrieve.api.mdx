@@ -1,0 +1,71 @@
+---
+id: review-exists-retrieve
+title: "리뷰 작성여부 조회"
+description: "리뷰 작성여부 조회"
+sidebar_label: "리뷰 작성여부 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM9r1EAU/lfCO7UQN7vqKYiwSpGiB6n1tCxlNnndnZpk0plJbF0CiuvJXjyIUlrBg2Kh4BaKevAvatL/Qd4ku5s2rScvXnaTmffje1++741BxCiZ5iJa9cEFiSnH5xu4w5VWGxK15Jgi2BAzyULUKBW4vTHwCFzYTlDugg0RCxFc8DaeIb0qb4QhA3cMejemC6Ulj4ZgQ8ijRxgN9QjcTmaDj8qTPKbm4EJxMjnfe5NPj6xZIYnbCZfog6tlglnfBs2G1L+CCX0bFHqJ5HrXoLqHTKIEt9enYIkqFpFCRVButtv054lIY6TpkcVxwD0zurOlCMK4CV0MttDTNL8kojQvq3G1YhiqRQ6ECJBFYIPmOqCTdZmglR+dWsXhaf79l5V/Pc5/TvMvv63i07ticnL+/htkNngSmUa/q69ibFPIkGlwwWcab2geYq1B8fqwmJxYxduDs+kEsqzOWK9W117g7S+y1wyH1XmWNb4HYbvd7vxD1nzUjAfNMS8jr+JqWO+LMBTRipRCXg/11v8BtXFU6qISRfHhOP/x0io+T8/398gyqEeCnDlEg5KRecBJO07pAae0qgMLKzyhGcsxZoaYj8Fi/tB4yxh4hMxHuXBwN9EjIfkLw5lByqNNYdKr6Z6zdCCk1X28CjakKFU5QqfVbrXh8mBn04N8euBaPRbzlo9pq8xueSLsL420jpXrOM275TsD6dwt9k+Lj6+q5OsSa0mkgVgoHTLzoauJ/srtBbRzijTuaCcOGI+oZCKNCkree5B2zF4y28eGknuwgQQwEkpTyHg8YAqfyiDL6LhckrSdfK7YICDdbLJAYaP/XLqwtFZJbNlqbsUrYdLVYgOnLEjQiK1PL5JTX7MW7dk3J0BlUtfzMNa1rIZvqMpchw9W1sEGlhAfdVmVnasHqj67iuqILipshpt+M/ualPG4FG2WzePLq2sz5rIuo4mhfpZlfwDwXIOw
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"리뷰 작성여부 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/review/exists/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+리뷰 작성여부 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"c_key","schema":{"type":"string","minLength":1},"description":"채팅방 c_key","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isExists":{"type":"boolean","title":"True 면 이미 리뷰를 작성함"},"createdAt":{"type":"string","format":"date-time","title":"생성 시간"}},"required":["createdAt","isExists"],"title":"ReviewExists"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

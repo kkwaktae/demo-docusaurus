@@ -1,0 +1,71 @@
+---
+id: contact-additional-proposal-create
+title: "추가제안서 생성"
+description: "추가제안서 생성"
+sidebar_label: "추가제안서 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFFrG0cQ/ivHPCWw8smOqZujFBQnhVBKjJM+CWFWd2Nrk7vby96ebEUcuNQBk+SlEJO0yMVp6Fse3NIGP/gXWZf/UGbvJJ0syXLALw1+EXe3M7Mz832zs6MuyAgV10KG9z1wwJWh5q7e4J4n6CP3NyIlIxlzf8NVyDUCg4grHqBGFYNT74IIwYGI6xYwCHmAJTPCAwax28KAg9MF3YloVYQat1BBykDh00Qo9MDRKsG0wUDzLTI7MAGNXAhjfUd6HbJCKxhqeuRR5AvXuG8/jmVI3ya2k83H6GryW1GwWmBsdNtc+Lzp412KaiQeayXCLWCwKVXANTjg5WFroX0SyF72soN96+x4t//iTyv7/ZfszfPs8JTCcWUQ+UjufLbRf3vZH8+tT6/3+u962dHhpxcnVvbrXv/9q8L0CJFagKG3poSLU3LKIOA7IkgCcJYWl1eWv7711fIKg0CE+cdqacuPr8+Od63s/Wn/w4l1drKfHbyjnUS8xjt3ZVg235TSRx6WHD77+zg76uUuWtmbD/2Pu5COIVo/l+KJ9DRG1mrD6NYKuq3noBubZZh3Ktvb2xVKYyVRPoau9Giza9y/QNyDxNci4krbBm+Pa36N9BeI9GQjYBCjmyihO6bF3EGuUIFTb6SmH8SRDOMc5KXq4hU2BeFNzbhC7j0I/c7Qu2tqXT21GOQ3DK+m5wZf0SLACWBK7v18mO39lR2eZi97ZDmJvKuyvP82OzoYWP68cihHyMBcjkaOXVgreZF4GLtKRLQEDlBcy9XqFbI/wDjmWzhfMJThdwL9crFwpXiHotIYxJNZTi8omkuozqyNy2x7MfkvYWEaqeeqpRfheU8pqX4o0p0yQHpfld6Usj/PsZEoGwJ2IXfMXrMJdJXHp4eaC39+DIVcye1VGQQynOPqrf+HqxOf8sOSTryD/WyvZ+Wnk8FPtyTNXZGMjYs0RTlgtxftYv6xu6NZKrWnjGU2jHrlQ4o9D2/QMUd8jcT3aAhLHrWQe+bALwa2WqJbUolnJpcmAsrn+mjwurfDqQKnXKtgqbq0XKmuVJZuT55451anl2J1rMKKDivCTWncL7K+zdtNqaza2n1g0EYV56ldXKguVOF8ws+Oe/3jnmPVeSQWPGwv5NoLrgwaN1paR7Fj25NrN79pKvvb7Ld/src/FcqzFEtKxE3CL+CGgEVGZ2I+5ukQHo072o58LkLTrpRhZk6HOrQXTWbzgZiBMzZeT+EEMCDCtohUTh263SaP8Uflpyl9fpqgomtVg0GbK0FImkuWJ2J69sDZ5H6ME54OCw9urBcFctOipj4tggHrQqJcm/sJvQGDJ9gZ/38gbaRsQEfyIhdYzfeqPCIzIwPzB8GUDUzUXBcjPUPZnBZ0lxxW4NqDh4+AQbP4kyEwZzGULLPyC91EGfCE8CmX2BNTYsUDhTM1D+PVNkgK/ZL7U1W63byA03Qony/N1BiWeC5NsDTSNP0PyM6yPw==
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"추가제안서 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/additional_proposal/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+추가제안서 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"availableDate":{"type":"string","format":"date","title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","title":"최종 프로젝트 완료일"},"additionalAmendPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"추가 주문 금액"},"isPayDone":{"type":"boolean","title":"결제완료 여부"}},"required":["availableDate","completionDate"],"title":"AdditionalProposalRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"availableDate":{"type":"string","format":"date","title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","title":"최종 프로젝트 완료일"},"additionalAmendPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"추가 주문 금액"},"isPayDone":{"type":"boolean","title":"결제완료 여부"}},"required":["availableDate","completionDate"],"title":"AdditionalProposalRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"availableDate":{"type":"string","format":"date","title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","title":"최종 프로젝트 완료일"},"additionalAmendPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"추가 주문 금액"},"isPayDone":{"type":"boolean","title":"결제완료 여부"}},"required":["availableDate","completionDate"],"title":"AdditionalProposalRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"availableDate":{"type":"string","format":"date","title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","title":"최종 프로젝트 완료일"},"additionalAmendPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"추가 주문 금액"},"isPayDone":{"type":"boolean","title":"결제완료 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["availableDate","completionDate","createdAt","id","updatedAt"],"title":"AdditionalProposal"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"availableDate":{"type":"array","items":{"type":"string"}},"completionDate":{"type":"array","items":{"type":"string"}},"additionalAmendPrice":{"type":"array","items":{"type":"string"}},"isPayDone":{"type":"array","items":{"type":"string"}}},"title":"AdditionalProposalErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"AdditionalProposalError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

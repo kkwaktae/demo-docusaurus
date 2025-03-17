@@ -1,0 +1,71 @@
+---
+id: main-banner-hit-count-update
+title: "Banner 조회수 증가"
+description: "Banner 조회수 증가"
+sidebar_label: "Banner 조회수 증가"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVTFP3DAU/ivRm4pkXaDtFFWVALUqqlBRW6bTCfmSx8WQ2MF2rr1GllqpA0NHBopg6FKJ7QaG/ibu+A/Vc8IRelwZytLlzrH97O/73veeK1AFam6FkhsJRJBzIXf6XErUO6mwO7Eqpd0pi4RbBAYF1zxHi9pA1K1ASIig4DYFBpLnCBGIBBiYOMWcQ1SBHRV+VlocoAbHIEETa1HQjRDBalBKcVBi0OwIhjyjrwSlFbsjIQeBTYUJJudH07NfV9+PJucXwWQ8nnw97AADjQel0JhAZHWJrsfA8gFhaxOBHgODcamFHXnYa8g1aoi6PYrQaAolDRrC+3h5mf5iJS1KS0NeFJmIvULhniHQ1Tw/1d/D2JJAmvS0oj5NJHdoQDfy5I3MRg1q1+bRpSDiIWxGUZtcyDVP45Ww65QNcG5ORhL26YNCz9EYPsD7N0olXwrM2ky51nwEDITF3LTmjdVCDmr8i/m90FrpzeZ6xwDpe10leNdJt6W72cpmBP6qpb9rsaArDyhogpaL7H4Ozb4W7HWV50reA/XJ/wF1bqrORzD9Mb46+TY9PA6mP88ux599Am2qqCcVpYdIbSaCcLgStmo7rETiwlmnCuGm1N8R25rQdcHfOLQQr9FblDCkyBNfmE0PWy1tqrT45NXzmIXcVT684fmBD/tKB6tbG8BgiNrUZFY6y51l+JPi5fh0Mj6Ngi4vRCfBYaeO7sQq7z1KrS1MFIbza0vP+jp8Pj25mB5/aYIXBbaCyA2FMjbnPuUNo8Uq34I608fiRxsWGReSziu1N0OdgS4MVyg7rf7KIPJtf5YGYECuSJWxFFBVfW5wW2fO0fRBiZoacY/BkGvB+yRpt4JEGBonEO3yzOActpm74dHbxoVLwT8+IHfyvTaJJIf488i7DPZxVL9wrufYtWsIeb2wGsdY2FbIXA3SczOz9db2e2DASxK1bcx9b8xmQKffCee2R6+x0a9jC0Kqqra9c7P99dLCiFlhNMyJgXPuN2gZ63Y=
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Banner 조회수 증가"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/main_banner/{id}/hit_count/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Banner 조회수 증가
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 메인화면 배너.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true}},"required":["id"],"title":"MainBannerHitCount"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}}},"title":"MainBannerHitCountErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"MainBannerHitCountError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

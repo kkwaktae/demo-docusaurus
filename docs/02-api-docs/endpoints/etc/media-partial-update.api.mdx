@@ -1,0 +1,71 @@
+---
+id: media-partial-update
+title: "media_partial_update"
+description: "media_partial_update"
+sidebar_label: "media_partial_update"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEFrG0cU/ivLO5QkjCzLTnJYSkFRlNS0lo2sQMEV9mh3bE2yO7uenZWtigWXOhBc9+BDSCl264NpL4Ea7IQE8ous9X8ob3a9WkVy7UIODegidue9N/O9731PM7M98HwmqeKemLPBBJfZnK74VCpOnZXQt6liQMCnkrpMMRmAudwDLsAEn6o2EBDUZWACt4FAYLWZS8Hsger6elQots4kRARsFliS+7gSmFA2QsE3QmakHkaHOvhmM6H4WpeLdUO1eWBc7O3Fhx+mgIBkGyGXzAZTyZBFTQKKriOcBDM0ExcWqAee3UUMlicUEwofqe873NJpFp8GiKA3CtZrPWWWwmwlkqI4C9DKg0UuBC6cebY8z2FUAAHFlYMj/b3ti/0DI945jo9eGvGr1/2325i1xtbQUT1gInQRcLVRAQJztZXF+sLjenVpCQjMz323Uq49XJkvLzWqdSBQr1YW6g/nao/186NqvVqrVIHAUqM6j8mmUAIluViHj/m9Y6zm5l81Ckb8+3786nl8vP+9uGOsZjOiqX/04uKXD/0/TuLd49Sarq2tz9/Hh3v903faNIxT2/9+H+8eG18Y/b9exLvHFzsn2hFx6nWPXvZPz85P38QHR9pQbVRw/PzdycVP20BgqxD4zCogOQWOGrw7O3Oflu7T1jS912KzpRzNiRyM8zev+293dCyG1ajLtBKyObNkgcAoPhy8TAqfc+ljbA4wNFG5PPAd2q1pofdGiHe5+JaJddUGs5RDun8Q/3xgxIdn/T8RqUu3Lr3ulWaiaOC5SJXVZvY8KuWJbrh6omNAr7xytwqbm5uFNU+6hVA6TFienchyIuWJlP//UnZDR3HcWopawjZVdCLeiXg/B/GiX8CsUHLV1SegB4xKJsFcbkb64BH4nggSnc5MT3/K04c95jiFK1J7QTjd9DREJt0x6Y5/7Y6b98PgoL2M6msOYnOtAbolhquJSrr7ScXvsiCg6+x6R+GJR5w5efVTKWkXCHDF3GCUkWh8z9wgaqhZbh42vj7XBkZj6a9K6cn5lJ2IAMP3imePKf3HJR24kozf8TXWi1xd6NInLLTNFOXO9eBTvxzeiue6nrgG6uznAXVk6IrbuMtU27OTK7jV1tdz7F8odkpFHVLscTsqwmDPWsLkEvyXO9dAgj7/hmkN4pJtRm29w6T3+nKo2p7kP2iyNEQkrD64aVe3qOs7bPiEhpvSUKeku8lQE2TM4dJrnoaUUrVJOy1PGuXFOSDQYTJI+ChNTU9Nj+wi5ycH/ZMD01imPp+yWWcqiZ6yPLd5q62UH5jF4qjt9pctWfwq/u0s/vXHNPiqwFwQovW9QLlUqyZlSWdqpIUyskIN4cwIV2xLFX2HcoGThVKLKSnhMnRKkBIHBEz9VQU11PYCheZer0UD9kQ6UYTDGyGTeCBpEuhQyWkL2VvuIc/4bIO5Rp2AjSDJegFu1VPN3jb++zeZsQldykqgpvQUKG4Cz1g3+U4U4XaV6gzBJoZKAqmg9TIIvP7+G5HLKcqWxXx1RbDuczysZd2zWG5UvgYCrfR7kav/PyE3Ncm/4FmPAA2xTvnmeaabJ33AfMYSMNxHl2zgL+IfG9LrJa0ZRZl/YroyImvelGtMOIqifwAejX4R
+sidebar_class_name: "patch api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"media_partial_update"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/v1/media/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+media_partial_update
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 파일.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"PatchedMediaUpdateRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"PatchedMediaUpdateRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"PatchedMediaUpdateRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","title":"표시 이름","maxLength":512}},"required":["id"],"title":"MediaUpdate"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"isPinned":{"type":"array","items":{"type":"string"}},"mediaType":{"type":"array","items":{"type":"string"}},"displayName":{"type":"array","items":{"type":"string"}}},"title":"MediaUpdateErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"MediaUpdateError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

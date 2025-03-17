@@ -1,0 +1,71 @@
+---
+id: contact-contact-cancel-reason-create
+title: "컨택 취소 사유 생성"
+description: "컨택 취소 사유 생성"
+sidebar_label: "컨택 취소 사유 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9PG0cQ/yqneUqiNQdJU5RTVclx3QZVgQjcJ9eC9d2Al9y/7O0ZXOuktERRFPLQl6ioAikPqcQDD/SPVKT2E8HxHdrZO9t32OA+8NAovMDd7c7sb2Z+M7PjPgQhSq5E4C84YIEd+IrbanX4n/s2uqsSeRT4q7ZErhAYhFxyDxXKCKxmH4QPFoRcdYCBzz0sKBIOMIjsDnocrD6oXkirwle4gRISBhKfxUKiA5aSMSYtBopvkNqBCmhlmzBSDwOnR1poBX1FjzwMXWFrA8zNKPDp29hxQXsTbUW4JZmrBEZajTZuWdtG7+jHHh1ce1Rd/Kq++nhh8QtgUG/UgMFS41F9ebW63FhYaRCiXHOkpPA3gIGDkS1FSDjAgjvGWkHJmlExznYP01f7xtnvz9Pdo2/9O8ZaUWO24/3ZLydG+vbF+e5x+vr9+euT9KcfT397Y5wdnaQHe1qo3qjR3tOT4/Od50b6w1G6/w4YbFeiEO0KGVAROo7z8zh/7+7cA/u+86lz3wYGSiiXIKd/HqYv3xRlSWyRe6i9XgIKDC4eNQ0mtBIGqOyRWy+6agCkrDkpcaFZDk5rJFXLWFErLC9n7NAqinzYrmxtbVXWA+lVYumibwcO6b4hyMdMEC92lQi5VKYmhsMVv6HEx0yJ8R7EIEI7lkL1dHd7iFyiBKvZSnQrisLAjzI23J2du8Z+JJwJLZJO5M6S7/aG6G44+H/iIIPsWuRU1SQpqjJcgQUOV1hRwsOxkBZs3DlIX/yaHvyd7u6T5jh0rkvzq7303duB5qvypmgPA31/G8G4OqmybCpTisz4ZHb2GtPEwyjiGzh9ox/4Xwp0i1nFpeQ9MkuhF407NZmQXf9dchJ7poolV3q0LmUgH+cG0xH0XgscnIygGNTRVjZ02dXh04ddHsPrLHUOKi7c6Ubk+0q4PW8q1HsfBtSxT+lfh+c7B0ap1BlZUdBRVJ2AqmQYRBonTVwWmN05M5+VzP5o7krMiUOcCaP2tkIuyKwcNLkRcUPxNWrmErAOckc3o3y8q8aqE0jxnXapNmRz1FRpTKtvcy90cfzKdKFLFXJm6Fg6cz3QWHJPbvFuO5BG9ckCMOiijDJ3zc3MzsyONbHT4/2z433LaPJQzDjYncmkZ+zAa93qKBVGlmmOr93+rC3Nz9Of/0j3vs+FLxMsCBFaCofHNaly91wdxxLcocMVbiszdLnwdeWXmnJZiJvQnaO6nA/EDKzSeD0xzsCAuNghqlhN6PfbPMJvpJsk9PlZjJJuNy0GXS4Fb5Obm31wRETPDljr3I1wDOswp+DWcs792wawyTYMmOQTjbrcjent31b8FHvlXwgS6r05xQhFtqGWnVVpkJqRgukTXsIGKqq2jaG6RFgXArrSDfPqydJKAxi0858ZPF1noaCZFV/oQsiAxxShYto81WmTP5A5E/1QzqCBU+gvwZ8o0u9nSZkkw/3Z0qUSw7TNdlNYWkmS/AMYltmt
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"컨택 취소 사유 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/contact_cancel_reason/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+컨택 취소 사유 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"cancelReason":{"enum":["CHANGE_MIND","ETC","OTHER_ARTIST"],"type":"string","description":"* `CHANGE_MIND` - 단순 변심\n* `OTHER_ARTIST` - 다른 아티스트에게 문의\n* `ETC` - 기타 사유","x-spec-enum-id":"c77e73219c5d6d5c","title":"취소 사유","x-enumNames":["단순 변심","기타 사유","다른 아티스트에게 문의"]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["cancelReason"],"title":"ContactCancelReasonRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"cancelReason":{"enum":["CHANGE_MIND","ETC","OTHER_ARTIST"],"type":"string","description":"* `CHANGE_MIND` - 단순 변심\n* `OTHER_ARTIST` - 다른 아티스트에게 문의\n* `ETC` - 기타 사유","x-spec-enum-id":"c77e73219c5d6d5c","title":"취소 사유","x-enumNames":["단순 변심","기타 사유","다른 아티스트에게 문의"]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["cancelReason"],"title":"ContactCancelReasonRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"cancelReason":{"enum":["CHANGE_MIND","ETC","OTHER_ARTIST"],"type":"string","description":"* `CHANGE_MIND` - 단순 변심\n* `OTHER_ARTIST` - 다른 아티스트에게 문의\n* `ETC` - 기타 사유","x-spec-enum-id":"c77e73219c5d6d5c","title":"취소 사유","x-enumNames":["단순 변심","기타 사유","다른 아티스트에게 문의"]},"etcReason":{"type":"string","title":"기타 사유"}},"required":["cancelReason"],"title":"ContactCancelReasonRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"cancelReason":{"enum":["CHANGE_MIND","ETC","OTHER_ARTIST"],"type":"string","description":"* `CHANGE_MIND` - 단순 변심\n* `OTHER_ARTIST` - 다른 아티스트에게 문의\n* `ETC` - 기타 사유","x-spec-enum-id":"c77e73219c5d6d5c","title":"취소 사유","x-enumNames":["단순 변심","기타 사유","다른 아티스트에게 문의"]},"etcReason":{"type":"string","title":"기타 사유"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["cancelReason","createdAt","id","updatedAt"],"title":"ContactCancelReason"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"cancelReason":{"type":"array","items":{"type":"string"}},"etcReason":{"type":"array","items":{"type":"string"}}},"title":"ContactCancelReasonErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ContactCancelReasonError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

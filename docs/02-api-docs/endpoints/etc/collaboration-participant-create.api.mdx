@@ -1,0 +1,71 @@
+---
+id: collaboration-participant-create
+title: "CollaborationParticipant 등록"
+description: "CollaborationParticipant 등록"
+sidebar_label: "CollaborationParticipant 등록"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVsFuEzEQ/ZVqTiA52QQ4rRBSWxWpQqhVC1yiqHJ2p4nbXdu1vWlDtAe+gQtC5cAfFImvov0INPYm2dAsKaIHkHpZee2Z8Zv3ZmxPQWk03Akld1OIIVFZxgcqzBxpbpxIhObSHSUGuUNg4PjQQtxrNoU+A4NnBVq3pdIJxFNIlHQoHQ251plIvFN0YpWkOZuMMOc0chONEIManGDigIE2hM8JtCFMbcv15iKt2QjpcIgGyjKgEwZTSkOkhNcJl5HVdn2H/UVOS/MHIblboZbh3SFqPVCdl4vW+fl561iZvFWYDGWiUkwfiAqB8iJzgsot8gSl3PEHaijQUiRnCiwZWEwKI9wE4t4UtpAbNBD3+qVvUauVtCHNJ53uPfbpStJoR57uyWwyR/ePaLFGBHbHmEGCFG1ihA4ZAZQMnnU698htjtbyIa43lEq+FJjVOePG8Anl4zC3tXnrjJBDT8PfSLI2fPmHwrzjmUj9aMcYFbReF8Bbvq5IKhkg/W+rFFfnW5d9YcrmNN9B9xm2BvHvs7FSdFxk6zOp7JbA5/mCxgaoT/8PqLemmpTZuP747frrFy+nGyl64GhlPVbuRhBDNO5Gje+YCBbn5yFlHRKbnaKLstfiFfq6Jywj5Kk/7STPaXWzcCNlxPvFSUNMHizeRzsXPNcZrrybqL065CPksfJbVhyd8/FAmY3N/V1gMEZjAxHddqfdgV/p+XF1eX11GW/0uBbtFMft4N1OVN5/NHJO2ziKbq89fj4w0Yubz99vPn2onJsca05USURyzn0GFQvrFVqCPOfW4YWLdMaFpLiF8QUVxOvBuAvsN89QBlRVIxI87sF0OuAW35qsLGn6rEBDt2KfwZgbwQdEa69fspmAdGGe4sRj9w3RekOQyDwrguzrHmwlm4XYTBLUrsHZdxbdyPMi3d87fAMMBtXrOfenF9Qis/pPgM0LIqVelKe+KKsBpTNbkpMakuX6ZBVg+hL8lS7TaSj5spzbh6VGj3lTBGtSs1+W5U8c7XKG
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"CollaborationParticipant 등록"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/collaboration_participant/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+CollaborationParticipant 등록
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"collaboration":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CollaborationParticipantCollaborationRequest"}},"required":["collaboration"],"title":"CollaborationParticipantRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"collaboration":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CollaborationParticipantCollaborationRequest"}},"required":["collaboration"],"title":"CollaborationParticipantRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"collaboration":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CollaborationParticipantCollaborationRequest"}},"required":["collaboration"],"title":"CollaborationParticipantRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"collaboration":{"type":"object","properties":{"id":{"type":"integer"}},"required":["id"],"title":"CollaborationParticipantCollaboration"}},"required":["collaboration","id"],"title":"CollaborationParticipant"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"collaboration":{"type":"object","properties":{"id":{"type":"array","items":{"type":"string"}}},"title":"CollaborationParticipantCollaborationValidationError"}},"title":"CollaborationParticipantErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"CollaborationParticipantError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

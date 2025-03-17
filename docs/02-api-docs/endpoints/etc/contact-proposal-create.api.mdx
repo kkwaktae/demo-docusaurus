@@ -1,0 +1,71 @@
+---
+id: contact-proposal-create
+title: "제안서 생성"
+description: "제안서 생성"
+sidebar_label: "제안서 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWd1r21YU/1fMeWpBjuU0NJsYg7TroOyjIemejCnX0kl8W0lXvbp24hnBxlIIbV8GKcuKu6Vr9zDYQzc66GB/Uaz8D+PoSpYdybG7ZIwOv9j6uOf7nN89V6cPIkDJFBf+TQcssIWvmK3uBFIEImTuHVsiUwgGBEwyDxXKEKxGH7gPFgRMtcEAn3k4RssdMCC02+gxsPqgegG95b7CbZQQGSDxfodLdMBSsoNR0wDFtoltxgKaehGG6ppwesSF3qCv6JIFgcvtROfa3VD49KwgTrTuoq1Ib0kWKo5hQttl3GUtFz9ivbBEOwM8tsu9jgfWleXVq6sGeNzX96YBiiuXVsePBvGT/crxq6+GD3+uxD98G3/3IH72V7x/SObZwgtcJPXOJ+SPQfzTg8rJwd7w+SA+enby8E0l/n5v+OJxLmrMHIVjkkIlub8NBmwJ6TEFFjg6in7HTdZr18+06LQ55xRylkUkaksibmCXh1z4n5M7/qHrhr++Hr54XIn3D+OjJydPf0y9FUhu4zrKdcadTMzZMpbrK6sr7125ujItRoOjXFClfvL08fDRn+TF499/IYlKKOauk9jzyTl+sx8/eU4cHVSMu2VR8Lj/Kfrbqg1WfcwVBwcnDzL/so7DxSaqMXImJeuBAVyhF86uH+6UGjIZ8UzS/FrGhy+HBwfx4UuIJvChkTIySHAzX39d48R6ilLZ/xot3tDAAVEpK7LeOAUDhZIdubmYklOyaCLUY4pmmuVKGRP4tVvd2dmpUgFVO9JF3xYOOgtAWwDaAtAWgPauAJrXcRUPmFS1BMgcptgCwhYQtoCwBYS9GxBWPJMaEKLdkVz1ktPuNWQSJViNZpQcTcNA+KH2/rJZv8Dz6ZRYSmTOLd/t5bFcYOYCM/+fmFmKkjzcQOboYIxIWkK4yPzS+vjvUfXfwNGEhf4k56ypmTlcVdzDgnvGVPvmWbz3G5XhowF5uRM4F8U5yaSM8zlAPzf2zA0g+eY4liTzbAnj9pZsD3pfcDC0JQ9UUmJATloxzQsEfA/DkG3j7IW+8D/m6DpzZHQasuiMfWIO0qnw/3ZiJ6D2LcW+Le103J2DeAaqzsGhFCXnoCtg4Twenh/gRlRRMclvSCnkZ2kORgYg3V8XTsn+eLqK86XGKItLyiiRML2WLrJ5mrannNY8XTeBuZ4n/BmqXnk3VC08io+oJ4r3BhWN90m8VFvQvCcQYaIcDXIsqHXrtXQEU+vn45yolo2DapA3xptkqrYma4/zVAz4J5jkIinQRubozVMPitY6qi0k/zJxXaIwuW8jH/jc2GUEAiUfB8wiLpkFuIFlc3mlaq5Wl9+HIqBMvi1AhjkNCczJAjfzus33yLwqG7qDMEcNwijCTWpn/C3dM6RB3WHdlpCVtfWbYEAXpZYI9SVzyYTT8Tx+NRi+GliVBgv4koPdJU29ZAuveamtVBBatVrx3eUPWrL2Yfz0dXz4dUo8jXCMKOk3Rag8luR3GsGSlJrQcZQICndVLXAZ95P+QiYpr7OtAd16Eh498jPAmhggZikHBlD6tylRrQb0+y0W4hfSjSJ6fL+Dko5oTQO6THLdmTX64PCQrh2wtpgbYkG9URnDpY203C5XqD0oUztLap8yusvcDt2BAfewNzn2TGKbZjtpoRdc17Kqt4lNzmD2GCAyMhZrto2BmkKcYA+dS0dVvX5r8zYY0Epnp16C5zDG2Ri/oVMtpSkFZbyC7yUVnF6QOaV+mCzmzCn0S+qXkvT7Gh+iaLRev5pKMUIQvZrC0oyi6G8PSGqe
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"제안서 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/proposal/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+제안서 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"availableDays":{"type":"integer","maximum":32767,"minimum":0,"title":"시안 가능 작업일수"},"completionDays":{"type":"integer","maximum":32767,"minimum":0,"title":"최종 프로젝트 완료일수"},"availableDate":{"type":"string","format":"date","nullable":true,"title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","nullable":true,"title":"최종 프로젝트 완료일"},"freeRevisionNum":{"type":"integer","maximum":32767,"minimum":0,"title":"무료 수정횟수"},"pricePerPaidRevision":{"type":"integer","maximum":2147483647,"minimum":0,"title":"유료 수정 1회당 가격"},"totalPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"금액"},"detail":{"type":"string","minLength":1,"title":"디테일"},"audioSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","nullable":true},"audio":{"type":"string","minLength":1,"title":"오디오"}},"required":["audio","id"],"title":"ContactProposalProposalAudioRequest"}}},"required":["audioSet","availableDays","completionDays","detail","freeRevisionNum","pricePerPaidRevision","totalPrice"],"title":"ProposalRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"availableDays":{"type":"integer","maximum":32767,"minimum":0,"title":"시안 가능 작업일수"},"completionDays":{"type":"integer","maximum":32767,"minimum":0,"title":"최종 프로젝트 완료일수"},"availableDate":{"type":"string","format":"date","nullable":true,"title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","nullable":true,"title":"최종 프로젝트 완료일"},"freeRevisionNum":{"type":"integer","maximum":32767,"minimum":0,"title":"무료 수정횟수"},"pricePerPaidRevision":{"type":"integer","maximum":2147483647,"minimum":0,"title":"유료 수정 1회당 가격"},"totalPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"금액"},"detail":{"type":"string","minLength":1,"title":"디테일"},"audioSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","nullable":true},"audio":{"type":"string","minLength":1,"title":"오디오"}},"required":["audio","id"],"title":"ContactProposalProposalAudioRequest"}}},"required":["audioSet","availableDays","completionDays","detail","freeRevisionNum","pricePerPaidRevision","totalPrice"],"title":"ProposalRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"availableDays":{"type":"integer","maximum":32767,"minimum":0,"title":"시안 가능 작업일수"},"completionDays":{"type":"integer","maximum":32767,"minimum":0,"title":"최종 프로젝트 완료일수"},"availableDate":{"type":"string","format":"date","nullable":true,"title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","nullable":true,"title":"최종 프로젝트 완료일"},"freeRevisionNum":{"type":"integer","maximum":32767,"minimum":0,"title":"무료 수정횟수"},"pricePerPaidRevision":{"type":"integer","maximum":2147483647,"minimum":0,"title":"유료 수정 1회당 가격"},"totalPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"금액"},"detail":{"type":"string","minLength":1,"title":"디테일"},"audioSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","nullable":true},"audio":{"type":"string","minLength":1,"title":"오디오"}},"required":["audio","id"],"title":"ContactProposalProposalAudioRequest"}}},"required":["audioSet","availableDays","completionDays","detail","freeRevisionNum","pricePerPaidRevision","totalPrice"],"title":"ProposalRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"availableDays":{"type":"integer","maximum":32767,"minimum":0,"title":"시안 가능 작업일수"},"completionDays":{"type":"integer","maximum":32767,"minimum":0,"title":"최종 프로젝트 완료일수"},"availableDate":{"type":"string","format":"date","nullable":true,"title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","nullable":true,"title":"최종 프로젝트 완료일"},"freeRevisionNum":{"type":"integer","maximum":32767,"minimum":0,"title":"무료 수정횟수"},"pricePerPaidRevision":{"type":"integer","maximum":2147483647,"minimum":0,"title":"유료 수정 1회당 가격"},"totalPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"금액"},"detail":{"type":"string","title":"디테일"},"isReadable":{"type":"boolean","readOnly":true},"audioSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","nullable":true},"audio":{"type":"string","title":"오디오"}},"required":["audio","id"],"title":"ContactProposalProposalAudio"}},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["audioSet","availableDays","completionDays","createdAt","detail","freeRevisionNum","id","isReadable","pricePerPaidRevision","totalPrice","updatedAt"],"title":"Proposal"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"availableDays":{"type":"array","items":{"type":"string"}},"completionDays":{"type":"array","items":{"type":"string"}},"availableDate":{"type":"array","items":{"type":"string"}},"completionDate":{"type":"array","items":{"type":"string"}},"freeRevisionNum":{"type":"array","items":{"type":"string"}},"pricePerPaidRevision":{"type":"array","items":{"type":"string"}},"totalPrice":{"type":"array","items":{"type":"string"}},"detail":{"type":"array","items":{"type":"string"}},"audioSet":{"type":"array","items":{"type":"string"}}},"title":"ProposalErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ProposalError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

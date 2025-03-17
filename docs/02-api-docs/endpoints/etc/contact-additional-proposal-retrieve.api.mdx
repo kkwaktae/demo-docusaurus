@@ -1,0 +1,71 @@
+---
+id: contact-additional-proposal-retrieve
+title: "추가제안서 상세 조회"
+description: "추가제안서 상세 조회"
+sidebar_label: "추가제안서 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVkGL21YQ/itiTrugWnayNEWUgNuEEnro0qYnY5ZnadZ+iaSnfXpy4wrBhjiwJLkUsmQb7LKb0Nse3NIGH/YX2W//QxlJtrW2lqUhPfRiy88z87755psZJSBClExxETxwwQZHBIo5ao+5LqdD5u2FUoQiYt6eRCU59hFMCJlkPiqUEditBHgANoRM9cCEgPkINlQF4C6YEDk99BnYCahBSJY8UNhFCakJLkaO5CH5gQ1NIw74QYxGYWH0mUe/XAwU3x/woGuoHo8M/eH1bHKoT0f6+EgPR8aWPh3Oz6ezyaFx19Djk/m7iR5Pt2tggsSDmEt0wVYyxtSshL7g4Ea4a9HaJijWJUYWIaBtQoROLLkaZER9hUyiBLvVJmuJUSiCCCMKf6tepy/yxEDRIwtDjztZbaxHEVGSbMIRnUfoKCqJpEoqnkfjbgVkupG53wXeYJE/sD7jHut4eI8pLLlESvKgCybsC+kzBTa4ZGCC4sojA/2S6DZmk8P5i98N/dsv+s1zPb4gWhzhhx4S7H8d9O+RfvfcuHw9nJ+N9On48sXU0L8O5+9fFaFXqmr6GLi7kjtYmajPnnA/9sG+1di5s/PF7c937pjg8yA/rJeuzMRj6PcX8/OpMZse6eMzuolHu2xwTwTl8B0hPGRBCfDszwnpLoNo6Dfn8w+HGQMSmUK3qW5M/jPFfdwoTAnes7Ee/qHHF/rliCLHofupIh+d6NPjReQram6tyWKjpOUMTcj6ZAWsvbqjuSzXbjEDIE03+pzy2qk3PqH6XVSMe5sUradZ2JUQfy18XwT3pRTyeqi3/x9QN47WB6V+9lQPp4Y+m1y+fUVNg6onaAt0MQNKU9EGq9+winlmJavZmFoVI95Kqud+asFqEv5A1OTZL+bhMnsW8m9xQKIiwD1kbtbOxWRuxqonJP85ozpLkAf7InMvSPmJ9TtCGs3dB2BCH2WUZ96o1Wt1WOdjNhnNJyPbaLGQ11zs13LvmiP89lZPqTCyLWvzv+0vO9K6q9/+pU+eFs7XOZacSDqhiJTPMn0UGd1UkiuAlywpfKKs0GM8yGaCzPSTl6sF/UbWsPkCMsG+ss4qykM2125rElxPRIoCJ0mHRfij9NKUjg9ilLTV2ib0meQ0LbId5/KInl2w95kX4UYOy8aBre8LgW8b/8Gur+RqIbOANJbdQa1iwmMcXP/SQu8JH5XVx6EoFSxtp+aiC4jb3KDpOBiqkuvGAKK3i2U3f3P/IVU+JnmUG+1x1mjFA0WvhHW15xYY6ZNoqXRJkryN03Rpn/91rcey0XNrYqmdpuk/06z1Kw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"추가제안서 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contact/{contact_id}/additional_proposal/{additional_proposal_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+추가제안서 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"additional_proposal_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 추가제안서 (전문가 > 의뢰인).","required":true},{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"availableDate":{"type":"string","format":"date","title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","title":"최종 프로젝트 완료일"},"additionalAmendPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"추가 주문 금액"},"isPayDone":{"type":"boolean","title":"결제완료 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["availableDate","completionDate","createdAt","id","updatedAt"],"title":"AdditionalProposal"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

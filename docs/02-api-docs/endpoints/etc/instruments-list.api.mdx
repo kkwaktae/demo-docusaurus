@@ -1,0 +1,63 @@
+---
+id: instruments-list
+title: "작업분야 목록 조회"
+description: "작업분야 목록 조회"
+sidebar_label: "작업분야 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVc9r1EAU/leWd1IYNrvWUxChliJLBYXqaQkymzw30yYz6cwkdg0BC/XWi4dqKa3Qi6CnHop48C/qpv+DvGR/pNtuD4Kgl93JzHvffO9738zkoBLU3AolewG4IKSxOo1RWvM6EsYCA8uHBtx+cwk8Bgb9VAs7ArefwxPkGjW4fa/wGGg0iZIGDbg5POh06M9X0qK0NORJEgm/2tPZMkrSnPFDjDmN7ChBcIFrzUfAQFiMTWNeDbbQJ1qJJuZW1LuIoBEjpMUhaiAmPHguoxG4VqdYMJA8xnXZiDVWCzmkMoWNaKI82is/XbTK04vx131gEPPdZyiHNgR3pTNB2NB3IVwdnlz+fL8cwQ9FFGyi/fvVWj7s3Rb6TwhREOGdVGgMKnsFMGM1A5+W4M1Be3MbrpGQjW8oFkFnUrPb8W/HJZyCQYDG1yIhn4ILJNrDTvdPvLykiwFaLqKbAi4WMYlrcF1TcazkutZKw1KqK/8H1RtT5ZeP5ecP4x/75eGv1vj7t/HZaas8O786PiALoQ0VXVTDqqkJJzOBk3WdxvXkwPx62qQK6yKml9T81CViA6tjR/uGyIPqGJE3wIXV1IZKi3eVYhVPId+oKn1S21ueDZRurb7oAYMMtakL6LY77Q4slnV5fjI+P3FbfZ6IdoBZu85u+yr27oXWJsZ1nJtr9x8NtPO4PL4oj/YmycsSG0nkgEQZG/OqzZOK7lT2GtuZRBZ3rZNEXEiCTHXlgVr1PmTdSrv5uWFArQ+VsbSc5wNu8JWOioKmd1LU9Fp4DDKuBR+Qhn2vYFPl6SHZxhFJ7/uYUH8zHqV1pxa8S8/MzAtP118CA54Sq2Zzt6vmTgaEPl2Sowb29T6zCQX6LdiSlDyvrVMUs/h6aWnGzFx1NMnpFUXxG1lKrq8=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"작업분야 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/instruments/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+작업분야 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30},"childSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"tagId":{"type":"integer"},"nameEn":{"type":"string","title":"영어 이름","maxLength":30},"nameKr":{"type":"string","title":"한글 이름","maxLength":30}},"required":["id","nameEn","nameKr","tagId"],"title":"InstrumentsChildInstruments"}}},"required":["childSet","id","nameEn","nameKr"],"title":"Instruments"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

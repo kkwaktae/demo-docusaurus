@@ -1,0 +1,71 @@
+---
+id: promotion-retrieve
+title: "Promotion 상세 조회"
+description: "Promotion 상세 조회"
+sidebar_label: "Promotion 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVltPG0cU/iuroz5Au8aXQCirqpKpoipqGlBKX2q5yXh3sCfsLbOzLsRaCYKpEBCpD4lAyI6IRNMQ8eCmFPmBX8QO/6E6u4tZYzvwkJe+wHr3XL7vnO+cmQY4LuVEMMe+b4AGLncsB3895lRwRusUVHAJJxYVlHuglRrAbDQkogYq2MSioIFn+lVQwdNr1CKgNUCsuNF7wZldhUAFTp/5jFMDNMF9GpRVEKSK8a5SQlkFj+o+Z2IlSjRLCacctFIZ7Tn1XMf2qIfxC7kc/tMdW1Bb4CNxXZPpEZPsU8+x8d0AHqfylOoCKXHkLVgcjRkpG2YLWqUcMCMx5mxzJcGsgqj5VsUmzBykqMKiwy0iQAOfM1BBMGHid/myGzYPZfsMVDCop3PmRmQ1OD/dkW/+VOSLY9k+ke82NSWfm5lSlpW70wUsWRJhMFMv9EEr/HAEKlhk+QG1q6IG2mQuUMHzKws3Ov++M8w/n8MAqbpe97d90yQVDIFFuYoXvjiR+0eIOxLDLTxTWafyBZSZEJRjZX4tZUjmeTHzSy4z87j81RcYlXlFXbB6mlPFcUxK7BSp8N2x3Dq82Ooq4UZXnrYUuXscnq7G/vPMtqlxS3+5vhZuv1fO/zmQB69TYXROiaBGcWhtehIwiKAZwSw6oKJUA9bbsvm3bJ/J7VYMcJbYNuW3oXn0Sra7StjphM3NoVQJF0xnLomlNiTUKFQXr5rh21b44b3c2FNkpyt3j1ORKxHCOW7gWA6ZGIssM8u3QLtTmL47rYLF7Ph37ibwmy3ZbA2MSE62VxV5sCb3j8I/9uRfq4p8vSW3/g23N8PtwwmE1FsfFV+ImCwxzbnFaIN8nrGPIy9Edg2gNhIqwcO5Rz8WH+DSui6Dfg5fKk9i0ydKRpHts7CzByosZzyX6hkMlkEcQGdmjNzXU6SiT81MFu4UPtGj8GPzYutMuVhflW82olgY5iGxaLRQkxxlXCF0eahQb4q88TIZgzG5txYed6MltX+kxCtrHOtuMnvpFmvweqaR6yPOLHc75x87is9NCPpOjVK6Cyq2LoGQkCxfhZq/VETvYTaWRnyK9DX3Wo6r6U5SXB+lQb2ltm36gLiEMwwXBJi3XyVY0slc/jMeagYVQ0+q65wTuxTQ7xzLcux7nDt8NNQ7/w+oA696XcAVL5tdRb7tXOzv4PKioubgKFZpBBFvOBpk6/lsr+fZBh5uQRaubio/IceYxuV9pUeDuOwHuoIywsw1SoxowSSXpqIvag5nz0miCTRbdCL3hN1vpF5xuFKcvw8q1Cn3Ygr5idxEbvA60WmFnZamlIjLJgxan4i9J3THKo/VhHA9LZsd/Db+TYVnv5X7J3JvLXEe5Zhyijav4wmLRI1OGI2ubR/UXn1wcrOuSZiN8XDotUZS9xLU8+lpAxW05JaJ/a85nkCjRqNCPPozN4MAXz/zKce7Y1mFOuEsXjSlBhjMw2cDtEVienQAT0/HMPYo0du4AupwnJfNtbGzdWL6+AtUWKIrl1fhAJdv0m/MH38q6jp1RcppYGZwQ/Vk+P29BVCB+FiOtKSWIkklD6lTrh9Qv7ou0eHfQB3h0mjEgg2Cnn38aaRHT9KxNdanHATBfxh0k1s=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Promotion 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/promotion/{slug}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Promotion 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"slug","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"thumbnail":{"type":"string","format":"uri","title":"썸네일","description":"권장 사이즈: 1095 x 672"},"title":{"type":"string","title":"제목","maxLength":40},"subTitle":{"type":"string","title":"소제목","maxLength":100},"content":{"type":"string","nullable":true,"title":"내용"},"slug":{"type":"string","nullable":true,"maxLength":512,"pattern":"^[-a-zA-Z0-9_]+$"},"isActive":{"type":"boolean","title":"리스트 노출 여부"},"isPinned":{"type":"boolean","title":"리스트 상단 고정 여부"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"isBannerActive":{"type":"boolean","title":"메인 배너 노출 여부"},"isParticipation":{"type":"boolean","readOnly":true,"title":"프로모션 참여 여부"},"bannerOrder":{"type":"integer","maximum":32767,"minimum":0,"title":"메인 배너 노출 순서","description":"0은 적용되지 않습니다."},"promotionbutton":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"buttonType":{"enum":["NORMAL"],"type":"string","description":"* `NORMAL` - 일반","x-spec-enum-id":"e99d085abc594232","readOnly":true,"title":"버튼 타입","x-enumNames":["일반"]},"text":{"type":"string","readOnly":true,"title":"버튼 텍스트 (영문 사용 권장)"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"버튼 연결 url"}},"required":["buttonType","id","link","text"],"title":"PromotionPromotionButton"}],"readOnly":true}},"required":["createdAt","id","isParticipation","promotionbutton","subTitle","thumbnail","title"],"title":"Promotion"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

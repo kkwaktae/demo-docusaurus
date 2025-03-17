@@ -1,0 +1,71 @@
+---
+id: review-retrieve
+title: "리뷰 상세 조회"
+description: "리뷰 상세 조회"
+sidebar_label: "리뷰 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1r20AQ/StiTg0slt2PiyiFtIQSemhI25MxZS2N7U2klbK7UuKKPaT1Ke2hhwZKyKGBUij0YGig+U21/B/KSPJH4vhQ6KUXe62dGb335s04hzhBxY2I5XYAHijMBB6+VmiUwAyBQcIVj9Cg0uC1cxASPEi4GQADySNc5IgAGGh/gBEHLwczTOhSSIN9VGAZBKh9JRJ6F3iw6aRSHKTo1BFOxkP6FaA0ojcUsu+YgdDO5NuPya9xAxgoPEiFwgA8o1K0HQaG9wlVjQA6DDT6qRJmWGJ9jFyhAq/doWCFOomlRk3o7jab9OXH0qA0dORJEgq/VMLd0wQxX2UTd/fQN6SKIt2MqKqJ4BbG9EYePJfhsAbMgCsjtNlRcU+EuJSijRKyDyRRj6ehAQ9W0hkYYSgLitPR9P24OPk6Pblypp9Gk4vz6emIFNaGq1uRRPxIRGkE3gMGkZDVubUoOfk5Kr58pBJLitwENw9+e1mcfQdrl1vSvkFuUYlB5QzC1llU2S17tjszmrUrDiE495utf9inAA0X4Sq3m1TquCW0T+IoiuWWUrFaD/Xe/wF15VE1Yk7x7rgYXTnFxXh69oFMg2YQ01LoY4mPht4DN2u51by5+XzyrQuL2XtBFCsWswmcs+CJeIZD8gS9eIA8KP1Zb5LN1AxiJd6UkpVAhezFZXpN7pBn3Vg5mzvbwCBDpSsGrUaz0YSbvH6Pzyfjc89p80Q0AswaVXbDj6POnYExifZcd/Vu42FXuY+Ks8vi83GdvC5xKYkskMTaRLzsc81ojbTXcM7FMXhk3CTkQlKxVJXtr2RvQ9YqV0K56Bh4y0uXuj+ItaGwPO9yja9UaC09PkhR0TLsMMi4ErxLKrZzCISmcwBej4caVxDNXQx3dmu3bTh/v7JvJTazgiQflCWqfbePw2v/JrZj2cwihLm63/R9TMxS5sqU0bKfe/fp1ktgwFMScdmF+6UL6wNVvxXVdUPOINKnZWtS8rzyuLXz+OpqbcZ8CqpoEqljrf0DWSq3SA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"리뷰 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/review/{review_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+리뷰 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"review_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 리뷰.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"artistProfile":{"type":"string","default":"","readOnly":true,"title":"아티스트 프로필"},"star":{"type":"integer","maximum":5,"minimum":1,"title":"별점"},"content":{"type":"string","title":"내용"}},"required":["artistProfile","content","id","star"],"title":"ReviewRetrieve"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

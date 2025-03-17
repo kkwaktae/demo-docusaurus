@@ -1,0 +1,71 @@
+---
+id: user-retrieve
+title: "내 정보 관리 - 조회"
+description: "내 정보 관리 - 조회"
+sidebar_label: "내 정보 관리 - 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVl2L20YU/Svi0ocEVH8k6YsoBTcsYUlLStM8GbeMpWtrstKMMjNy4xrBpjGhTRbyki2b4IVdCFsCfTDEDy3kF8XSfyhXkhV5vV5SyEvB2NLM3HPPuV/jCcgIFTNcil0PHIg1qp8UGsVxhGBDxBQL0aDS4HQnwAU4EDHjgw2ChQgOcA9s0K6PIQNnAmYc0ao2iothDmAMKjL7McTPILFB4YOYK/TAMSrGpGeDYUOCz51DzwaNbqy4Gecuv0amUIHT7dFRhTqSQqMmX9daLfpxpTAoDD2yKAq4m8tp3tdS0NoGN9m/j64hborEG16gca92hguDQ1RAHpl3RwTjkm5uNeABXiTWcEMbkM5O0pN9K3sxXZ7OssMpyS7CtWkj4iBgfTIj/BrG8WJ5NgUbQvbwGxRD44NzvZXYgCHjwUVIA6lCZsApT6xDvXmRHr9bR7v2xQ2S40txqZhstlge7GfP5+vW7bYNIRfVK1FjynBdJCII7gzy/H2KoK9VTZeMeh/43dOoOoVjqpCt8TycZs/m6dPX2dO/rfTkcPl2QWnh+jbbY3JXDGRnqLAeib6UATJRD+Q/C/ocvc6enJYYVvrbUfrsxFo+f5keHxWId0P9cXhVaC8B26FkfhxcfvQSqFzpTSkMc81/FOsWVlb65zT743crffwoe/nGSg8Plmfv4Hx+yjKwq0LMZ8Sqb86l7luEhAA81K7iEbUuOECEb7Tan7C9PTQX9s158uW5GsubMgyl2FFKqu1Ur/8/qG4sLX9drCrm/WJ/efaX9bmVns6zVwfU7mh8SdfCEE0xy31woDlqN2lUNyfcS5rwYV7fJX2FhNXUriSwiN/GMdUCefWReXmjl5dIJza+VPyXPF45Sy4GMjcvlf3MRn2prM53u2DDCJUu6LcbrUYLzot6P58t5zPH6rKINzwcNQrrhivD3hXfmEg7zebm3tUv+6r5VfpqkR49Ko23GdaMKP+R1CZkeZJLRZfGdY1tFSKDD00zChgXBBmrvAKKmHdh1Aa7uCBtcPJ+orz7ksZtFyaTPtN4TwVJQssPYlR0e/ZsGDHFi3HYnYDHNT174AxYoHGDSFW/cOX7ss6uWjQSLiK4SqygrI5YENMb2LCH4+JvQdJL7FWmyXux0XFdjEzNZKNTaIpXlXdr5wewgcUUhXox7eXFVD7U7pl1Out1teJG34m9xWQyKUo1SarzxdZWi6qYS+WkIEmSfwHIXHAc
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"내 정보 관리 - 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/user/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+내 정보 관리 - 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"string","pattern":"^me$"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"profile":{"type":"string","title":"유저 프로필"},"name":{"type":"string","nullable":true,"title":"이름","maxLength":30},"email":{"type":"string","format":"email","title":"이메일","maxLength":254},"phone":{"type":"string","title":"휴대폰","maxLength":11,"minLength":10},"artist":{"allOf":[{"type":"object","properties":{"id":{"type":"integer","readOnly":true}},"required":["id"],"title":"UserArtist"}],"nullable":true,"title":"아티스트 정보"},"isKakaoInfoAgree":{"type":"boolean","title":"카카오톡 정보 수신 동의"},"isSmsInfoAgree":{"type":"boolean","title":"휴대폰 정보 수신 동의"},"isEmailInfoAgree":{"type":"boolean","title":"Email 정보 수신 동의"},"isKakaoContactAgree":{"type":"boolean","title":"카카오톡 contact 진행 상황 알림"}},"required":["artist","email","id","profile"],"title":"UserMe"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

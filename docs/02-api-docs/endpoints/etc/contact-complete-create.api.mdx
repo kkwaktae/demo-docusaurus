@@ -1,0 +1,71 @@
+---
+id: contact-complete-create
+title: "컨텍 작업 종료"
+description: "컨텍 작업 종료"
+sidebar_label: "컨텍 작업 종료"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v00AQ/SvWnFppFSfAyUJIoQKpQkBF4RRZ1caextvau+7uOhCsPSDUGxw4gVDhABeOPXDjH9HwH9D4I3FIogqJCxd7vTtv983bN+MSVI6aW6HkfgwBREpaHtmjSGV5ihaPIo3cIjDIueYZWtQGglEJQkIAObcJMJA8ww5WxMDARAlmHIIS7CynVSEtTlCDYxCjibTI6VAIYOgVUpwV6DUR3pSn9BWjtOJ4JuTEs4kw3vzHt1+vP/WAgcazQmiMIbC6QBcysHxCtFoKEDIwGBVa2FnF9i5yjRqCUUjRGk2upEFD9G70+/Ra5fRIeW2QN1bxjFjfqgPpCJSWhjzPUxFV4vknhoDlet5qfIKRJQE1SW1FfWyGxvAJXh8olbwvMI07kVxrPgMGwmJmOvPGaiEn4JxjYIVNscpE4j2tlX7YHOgYIH3vqRg3YbvyjjqhbEE53LB7feiqiLVog38oWoyWi/R61k1ch+ieyjIlr6F68/+gujZFlXH+1pt/fjd/f+7Nv5xffX1T3ZdNFBV1rkxFkKo1AH868Js68ctlzTq/rXkfltVzSOnWGbU1tLRhLh5g5UMikSCPUS+7wbCwidLiZSVfRVrIY1XBm0Sf8+lYaW94sA8MpqhNnc2g1+/14c8cf15eXF1eBN6I56IX47RXo3uRysKdxNrcBL6/vrZ7e6z9O/OP3+cfXjXgbcAOiOxAomW8uvMmoy0yr/BciGPxhfXzlAtJmxW6skJ9AyOYDoAtehWDYKVzttcADMgWCV1eMIKyHHODz3TqHE2fFaipt4UMplwLPiZJRyXEwtA4huCYpwbX6C3sDTtPGhvuen/fgjdm2fpCkimqLcivDE5xtvp7cKFjrWGIdB0wjCLMbQe6Vn/UvBeuPnh8+BQY8II07ZrytDJlM6DtN/Ja9WdLkp6ObYGUZW155xbx9dJWxKIo6miSKXTO/QYhBKHa
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"컨텍 작업 종료"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/complete/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+컨텍 작업 종료
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 컨택.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"No response body"},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}}},"title":"NoneErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"NoneError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

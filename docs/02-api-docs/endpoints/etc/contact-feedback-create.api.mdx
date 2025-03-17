@@ -1,0 +1,71 @@
+---
+id: contact-feedback-create
+title: "피드백 생성"
+description: "피드백 생성"
+sidebar_label: "피드백 생성"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk2LG0cQ/StLnWxoaaQkpyEE1osNJgk2a+ckhGlN10rtneked/doVxF9iJNDwEcnYMwacs1tDT76F2WV/xCq51OrEbrswbkMM9NV1a9everqNegcDXdSq8cCYki0cjxxL84QxYwn5y8Sg9whMMi54Rk6NBbiyRqkghhy7hbAQPEMO75SAAObLDDjEK/BrXJalcrhHA14BgZfFdKggNiZAv2UgeNzCluHgGlphNY90GJFUWgFlaNXnuepTALm6KXViv7tbKdnLzFxhNtQhk6ipVWBjsu0Y2edkWoODDKpfkA1dwuIxwycdCkt37z+tHn/N/gt1JM6zLQ1fFQRdlrCDh5doJeDi4uLwZk22aAwKapECwr1hSLPitTJnBsXBcSCO/6FYt2VEwOLSWGkWwWhPkBu0EA8mfqgKptrZUuYX43GdygtKXrUTjty8USlqwbdfnJu08Gg7D5x7PrMqTTcQQyCOxw4meHOdm3Mza8fNr993Hz4vHlzRZGLXNxV5N/fbf76s458q4RtAk3iDMIB0QLoqW9ZWIE2MTKnakAMhPqb0egOK5ahtXyOhw2VVo8kpt0Cc2P4inJxmNldDn1foQ/6+F0mHhqjzY8VUM8A6ftEC+zfs8t9a8qaVHu4DjvsJ/wuW2Sf9A83/onOMq0OQP36/wF159e/f3y+eXt1c/3xqOzSUC+30DSQc20DOJq0MUTLcVTNyGjdzlsf1fM6gvb4e0apltnUh2ArxVx+j0GLBGCBXITDqprkx4VbaCN/DtQFwETfaTuRH17yLE+xS1RDEMU802GvipELvpxpc3T89DEwWKKxZdrj4Wg4gttk/HN9dXN9FR9NeC6HApfD0nuY6Gx6b+FcbuMo2l27/+3MRN9t3n/avPulct7n2HEitMRwxoM4qvR76rGFsWHR4aWL8pRLFY5UE/RSlmoCyzGw5kLDIN66HtX1AgaknQVVOZ7Aej3jFn8yqff0+1WBhqbYlMGSG8lnROdkDUJaehcQn/HU4g68pgfg3mml1ftHNGD6YNeKUCSHJU8L+gIG57javtT5qWe1VAhFaXBS7jV4TmHaAIfvPp7VIY6TBHO3xzk0Lo3upiWePnn2HBjMqpthFg5D6ERm3Q8a/Ax4QUXpyv88yL96oXR6edjuhJoUehL8Xpf1umwu7xv7cmmvR9N+pTWVZeq9/w8tqBju
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"피드백 생성"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/contact/{contact_id}/feedback/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+피드백 생성
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string","minLength":1,"title":"내용"}},"required":["detail"],"title":"FeedbackRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"detail":{"type":"string","minLength":1,"title":"내용"}},"required":["detail"],"title":"FeedbackRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"detail":{"type":"string","minLength":1,"title":"내용"}},"required":["detail"],"title":"FeedbackRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"detail":{"type":"string","title":"내용"},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["createdAt","detail","id","updatedAt"],"title":"Feedback"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"detail":{"type":"array","items":{"type":"string"}}},"title":"FeedbackErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"FeedbackError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

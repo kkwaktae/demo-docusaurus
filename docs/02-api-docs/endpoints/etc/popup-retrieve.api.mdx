@@ -1,0 +1,71 @@
+---
+id: popup-retrieve
+title: "Popup 상세 조회"
+description: "Popup 상세 조회"
+sidebar_label: "Popup 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVlFrG0cQ/ivHPCXhLMmpQ9OjFNTUFNPihNSBgirq1d1I2vhu97y7p0Y9DuwkfopfCoW0wQ60fUgpgerBGD/0F0Wn/1Bm73Q5W7Jp2rz0RXfanfnmm5lvZy8FGaNihkuxEYAHsYyT+FuFRnEcIbgQM8UiNKg0eJ0UuCAjZobggmARggc8ABe0P8SIgZeCGcd2VRgcoILMhQC1r3hMMcCDtpMIvpugU1o4IxbSvwCF4f0xFwPHDLl2ZofH+fODBrigcDfhCgPwjEow67pg2IDoFGyh64JGP1HcjC3HT5EpVOB1umSrUMdSaNRE7marRQ9fCoPC0CuL45D7tgDNh5oYpovJyN5D9A1VQ1G5DC/QeLAkYYrIgrsiHJd8XTDchFgz1UZxMViwrAxh9mQvPz6ZPduj8sX+RsQGS/37UkXMgAeJ4lfA3btTVtPJj0+mf57lryxwJHs8xP8KPv3j9+nkx/z4r6UxQi52/gW4SMKQ9Qj/QmGKENNX+7P913P8LYudAookIlWsf721fn+z/SW4sLFZvpJoLlA4L8sbzvbceNtZcaaPT6ane9+IG872HI6W85/Ppqd74MKjFR2jv0IhV0gG8OHazVbvFrsd4Eet27fW+u+QVJGNQ01/eWCxCXaTRWhFXsUsOEE3c4Hrtm/4qN63npQhMnFVpw7O8tMjJ3/+mmAyF7RhynzGzNXtD5jBFcMj/AfQz47ylz/Q483kKUVAEbxX/F8Ppr8dVvhZfTZ0qmBuMZKqGpUqrInlvPbfHrF6SebBu7VzZMdNli3MNEp1rbX6HkdLgIbxcLFuF3Mu7Wok78gokmJdKakup/rB/4PqwpLtgJM/2c+fnjn5L5PZi0NqJpqhpEM4QEuPricPmqPVpr0gmikPsia8vSW+oswK8vO7oiLPYv4Fjkk+FG+ILLAzvbzr2okZSsW/t5Wy/LjoS+te5vQdG/Wkctr3NsCFESpdEF9ttBqthaHzZnI0nRx5TofFvBHgqFF4N3wZda8NjYm112wu7l3/uKean+QvTvKf9kvnyxxrTvYukdpEzLa3zGh5Rc/RrGpj8JFpxiHjgrASZZteVLsDo1UqvT0hLnj2BFKvh1Ib2k7THtP4QIVZRsu7CSq6rbsujJjixVjspBBwTe8BeH0WalxgUmkWrt0vtXXdefdPiqUJzRUgqP0WgkTowg6Oi8+cjEZvKQkiW2y0fR9jU3NZOEz0GVJp9PP1LXCBJVS1uup2rOrKF0JfSue8AOfc6DdzL3FJ00LTWVbZF1uXelSqLzOnDLIs+xtORasH
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Popup 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/popup/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Popup 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 팝업.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"title":{"type":"string","readOnly":true,"title":"타이틀"},"pcImage":{"type":"string","format":"uri","readOnly":true,"title":"PC 팝업 이미지"},"mobileImage":{"type":"string","format":"uri","readOnly":true,"title":"모바일 팝업 이미지"},"link":{"type":"string","format":"uri","readOnly":true,"nullable":true,"title":"팝업 링크"},"linkType":{"enum":["EXTERNAL","INTERNAL"],"type":"string","description":"* `INTERNAL` - 내부\n* `EXTERNAL` - 외부","x-spec-enum-id":"7420b5a8de90854f","readOnly":true,"nullable":true,"title":"링크 타입","x-enumNames":["외부","내부"]},"isActive":{"type":"boolean","readOnly":true,"title":"노출 여부"},"startDate":{"type":"string","format":"date-time","readOnly":true,"title":"노출 시작 시간"},"endDate":{"type":"string","format":"date-time","readOnly":true,"title":"노출 종료 시간"}},"required":["endDate","id","isActive","link","linkType","mobileImage","pcImage","startDate","title"],"title":"Popup"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

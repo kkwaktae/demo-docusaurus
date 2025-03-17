@@ -1,0 +1,63 @@
+---
+id: user-crypto-token-retrieve
+title: "본인인증 암호화 토큰 발급"
+description: "본인인증 암호화 토큰 발급"
+sidebar_label: "본인인증 암호화 토큰 발급"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVEFrE0EU/ivLOykM2UQ9LSLUWqR4EWx7CUuYbJ7JtMnMdmZ2NYYFhSDoTWmhlhR6KJ4UYtpDPfiHks1/kLe7SdPGFA9ehGV3mHnv2++973vTAxWi5lYoudkADyKDuhbobmhVzao9lDWNVguMERhY3jTgVbMg8BkYDCItbBe8ag8eI9eowav6ic9AowmVNGjA68G9cpk+gZIWpaUlD8O2CLLfurtGSdozQQs7nFa2GyJ4oOq7GFhgEGoiaUWOFun2QpCxWsgmkRO2TRvTT4P07G06/JX2B5Of/fTjmUMZCYOsnh3Upih2NQaljvrO9P3p9N3QmYz66WmfEFAGT7jlt6YeHkyPLqdfDqaHAyc9PkhH35309HByfkEAQlpsUst2eDvC23BQBrUGtzw9OXIm3y7Go2Ha/+GMh58hSai9+5HQ2CA1ZqSW0JcqZlnv/KufbBvU65nYWxQJCWE30ARahKQNeECsH5Qr/1C/Blou/iDhzbqKuAW666rTUXJDa6VXU73/f1Bd2pqcX6Yn2fP1xJm7aO7B4WB8+QEYdNC2FE1qEzO+3LbAAzeuuDSV7uLounA1oi+o4ryo2aDOi+KheIbdzD/gQQt5AzUwkLxDp2uRbSkt3mQdzHgL+VJl6UWtr3hcV9pZe74JDOLcbeBBpVQuleFmmePhYDIceE6Vh6LUwLiUZ5cC1fHvtKwNjee6y2d3H9a1+yg9vkiP3hXJqxIXksgRoTK2wzPZi4r+stPXeM+bZfG1dcM2F5LAi7soV6EKcYVmzGTtW1QCGJA5WspYCuv16tzgtm4nCW3vR6jpDvUZxFwLXqeuVv2EzbSg63UPuyRGEGBIusf5/bHsbrp85x55urEFDHhE7Bbl3svkLhaEPjuS3QXs68qzggK9E7YipdfLzZQk8/j8aGXG3G55NLXVT5LkN0NBdgE=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"본인인증 암호화 토큰 발급"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/user/crypto_token/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+본인인증 암호화 토큰 발급
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"url":{"type":"string","title":"표준창서비스 url"},"tokenVersionId":{"type":"string","title":"서버 토큰 버전"},"encData":{"type":"string","title":"암호화한 요청 정보"},"integrityValue":{"type":"string","title":"enc_data의 무결성 값"}},"required":["encData","integrityValue","tokenVersionId","url"],"title":"UserCryptoToken"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: chat-unread-retrieve
+title: "읽지않은 새 메세지 정보"
+description: "읽지않은 새 메세지 정보"
+sidebar_label: "읽지않은 새 메세지 정보"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVEFr1EAU/ivhnSyEza56CiJUKVK8iNrTEsps8rqZNsmkM5PVNQys6EGk4MVFLS3UgxTBQ8FFPNQ/5Kb/QV6S3U3drnjw4iXJ7rzvzfe++b7JQaQomeYi2QzABT9kejtLJLJgW6KWHAcINqRMshg1SgVuNweegAv7Gcoh2JCwGGdIHoANyg8xZuDmoIcpLfFEYx8lGBsCVL7kKe0HLhTHP4rTUTF+XRyPrOnnt8XL78XpaPrp3Co+nl0cHlyMT6xFX4n7GZcYgKtlhsazQbM+ESr3Bs8GhX4muR6WJO8gkyjB7XpUKlGlIlGoiNf1dptevkg0Jpo+WZpG3C91cHYVkcuX5xC9XfQ1ySFJNc2rblxtlYI1KntCRMgSsEFzHWE96vGBVbz7Mv02IiViVIr1cTO4QigbkiyKWI+QNGuzzWT65sPFeFKMzy2S52oJLR6AMU3Juguazb29Reu7IdN1hTFLR0WUb7Y7/1C2ADXjUaNOacmT/hLvuq7JVMSxSDakFHI11Rv/B9U/Z6J48apxqMXJePp1Up6fDgXFtY8lWaZDcMEZdBxKglPl14FFIB7RoNUss1jMZ2Epv48U5DLVIbKgcmAV6/VMh0LyZ6VwJV2e7IgSXo/4hA16QlrrDzbBhgFKVc3RabVbbfh9up9nR9OzI9fqspS3Ahy0KnTLF7F3LdQ6Va7jLK+t3epJ53ZxOCneP6/Bq4ANEBkhFUrHrDzteqK/EfgS6blSGp9qJ40YT6hzJktHVOJ3YdABu7qIbMhmQSMrhEJpKsjzHlO4JSNj6O/q+qSLKuCKoh6Au8MihUu7z00M1x7WZltbkftVV+eVA+zh8NK9PWBRhqUpPfoheXUBdT1jz2xBdCvYuu9jqhuopXxRl7lR7208BhtYRlo1nbdXOq/+oO6zpWTY6H3ZhDPm9DT2CkieV742Zl5fLa1EzJ1fVZNGnjHmF3AEq/4=
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"읽지않은 새 메세지 정보"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/chat/unread/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+읽지않은 새 메세지 정보
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"query","name":"chat_id","schema":{"type":"integer"},"description":"읽지않은 메세지를 조회할 chat_id","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isUnread":{"type":"boolean","title":"읽음 여부"},"messageId":{"type":"integer","nullable":true,"title":"이동해야 할 읽지않은 메세지 id"}},"required":["isUnread","messageId"],"title":"ChatUnread"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: contact-proposal-retrieve
+title: "제안서 상세 조회"
+description: "제안서 상세 조회"
+sidebar_label: "제안서 상세 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVt9rG0cQ/leOeUrgqpNsE5ejBNQ2lFBojdM+CRFWd2Nrk7vb896eGvU4aIgNJvZLwSaukVu7SR8KfXBLCi70L7JW/0OZ+yGdLMkGOy99kU66mZ35vpn5dhIQIUqmuAgeu2CDIwLFHPU0lCIUEfOeSlSSYw/BhJBJ5qNCGYHdSoAHYEPIVBdMCJiPFW/uggmR00WfgZ2A6of0lgcKN1FCaoLErZhLdMFWMsbUnHvaOIcbj3MxciQPCQXY0DTigG/FaBQWRo959MvFQPGNPg82DdXlkaFPB/pwV28PajCTUdsExTYJaAkK2iZE6MSSq36G/1NkEiXYrTZZS4xCEUQYUYZL9Tp9kScGih5ZGHrcyXi2nkWUZjKLSHSeoaOIaUlVUTw/jbtzUFNE5n4deP2SQ2A9xj3W8fBz1o/muvjsBfdjH+zlpdUHqyb4PMh/101QXHlkrfeIFePy/Ifh698M/fOP+s2OPvlX7x4R047wQw8Jxt2C/D3Qv+4Yo4Pt4dlAn56MXl8Y+qft4dv9SagKHIWVSJGSPNgEEzaE9JkCG1wyMCGIvcw+J+RGRFfh3DHIdYgo1IZEXMcej7gIviI6bknd8I/3w7f7ht490qeHo+NfCrZCyR1cQ7nGuFuGuT7GUmNldeXj5Qcri2o0OJ0EMhqj4/3h3j/E4uVfv1NEJRTz1ijs3eJcXuzqw7N8jBXj3rwqjMEfHIx2SkZ5tI7MzYsxdukI4SEL5s5H7HLxBFXFmknJ+mACV+hHt57E6Z4oI12HQx+9Gx4c6KN3kE6pYatwNSlUe2L/Wa5Ba4Uilt/NzJiOcCQyhW5T3djDHynu4ww9ldRenejtP2kM9wbEchy6H+rkrJPKk+fhpuJc1bEZzamCHffM7HxlFE41yYIhmerkKt4K/yXhkKYz1w2RtFJvfEDBXzQHVzkr7Kb6xPdF8EhKIRenuvz/SHXmr/F9behXL/X2haHPzkfH+6Q1qLqC1pfNrIGyNcIGq9ewisvbSiarSWqVi4WVVFaM1ILJBf+E4OcIy2t+ohkh/xIz0aCkusjcXATypaUZq66Q/PuMzgwEDzZyLSiAf8d6HSGN5tpjMKGHMldqaNTqtTpcxXx5PhieD2yjxUJec7FXy71rjvDb97pKhZFtWbPv7n/SkdZDffxeH70snBc5Vpyye0REymdZDxSIFtM+leqYH4UvlBV6jAeZfMisO/KStKDXyAY636hMsKc2xrIa9GJ6+aPG6YpI0RFJ0mERfiu9NKW/t2KUtJC1TegxyXMdbiXg8oieXbA3mBfhTLbjAYB760Wj3jdIDOahKEsfUN2zdZJa1ITn2J9ee2mVvVXkWy2tt8i1ymvaTs2ygYmy3KLpOBiqiu+MPtC+Ox65Lx59Q5odU32rM/I8m5HigU6fm9f0uJRJ0icxOdclSfIJTNOxff5qocd4RnNroqmdpul/9d3Czw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"제안서 상세 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/contact/{contact_id}/proposal/{proposal_id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+제안서 상세 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"contact_id","schema":{"type":"integer"},"required":true},{"in":"path","name":"proposal_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 제안서.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"availableDays":{"type":"integer","maximum":32767,"minimum":0,"title":"시안 가능 작업일수"},"completionDays":{"type":"integer","maximum":32767,"minimum":0,"title":"최종 프로젝트 완료일수"},"availableDate":{"type":"string","format":"date","nullable":true,"title":"시안 가능 작업일"},"completionDate":{"type":"string","format":"date","nullable":true,"title":"최종 프로젝트 완료일"},"freeRevisionNum":{"type":"integer","maximum":32767,"minimum":0,"title":"무료 수정횟수"},"pricePerPaidRevision":{"type":"integer","maximum":2147483647,"minimum":0,"title":"유료 수정 1회당 가격"},"totalPrice":{"type":"integer","maximum":2147483647,"minimum":0,"title":"금액"},"detail":{"type":"string","title":"디테일"},"isReadable":{"type":"boolean","readOnly":true},"audioSet":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","nullable":true},"audio":{"type":"string","title":"오디오"}},"required":["audio","id"],"title":"ContactProposalProposalAudio"}},"createdAt":{"type":"string","format":"date-time","readOnly":true,"title":"생성일시"},"updatedAt":{"type":"string","format":"date-time","readOnly":true,"title":"수정일시"}},"required":["audioSet","availableDays","completionDays","createdAt","detail","freeRevisionNum","id","isReadable","pricePerPaidRevision","totalPrice","updatedAt"],"title":"Proposal"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,94 @@
+---
+id: artist-follow-create
+title: "ArtistFollowCreate"
+description: "아티스트 팔로우"
+sidebar_label: "ArtistFollowCreate"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVU1v00AQ/SvWnKi0ihPgZCGkUIFUIaCicIqiamNP4m3tXXd3nRKsPSBxKhwBoaoXJH5ADhz6m2j6H9DYjuOQVEWIC5dkP+btvnn7ZlyAylBzK5TciyAArq0w9nCskkSdHoYauUVgkHHNU7SoDQSDAoSEADJuY2AgeYoroIiAgQljTDkEBdhZRptCWpygBscgQhNqkdGFEEDfy6U4ydGrI7wpT2gWobRiPBNy4tlYGG/x+f31h/ni7Pv12WUHGGg8yYXGCAKrc3RDBpZPiFvNA4YMDIa5FnZWMn6EXKOGYDCkYI0mU9KgIY53u136Wyf2XHnLIG+kohlRv18FhkpalJaGPMsSEZbq+UeGgMVm8mp0hKElETVpbUV1bYrG8AneHiiVfCIwiVqRXGs+AwbCYmpa68ZqISfgnGNghU2wzETiY62VflZf6BggzXdVhNuwbXUHrVDWUB5uOb26dF3ESrTePxQtQstFcjvrOq5FdFelqZK3UL33f1DdWGqXh3f98dPVt4vF+dzzvcWXy2ZaPqCNFZV5pkzJmEo4AH/a86u68Yumjp1fNQEfVqV0QLlX6S0LauXJTDzF0pTEKEYeoV61h35uY6XF21LLMgMhx6qE11mf8ulIaa+/vwcMpqhNlVqv0+104feEf84vruYXgTfgmehEOO1U6E6o0uGd2NrMBL6/ubfzYKT9h4vzH4uv72rwTcAWiLxBgqW8NECd0Z9qvka8UcviG+tnCReSTs91aZTqOQYw7QFbNjIGQbu1Vm8CDMgwMb1iMICiGHGDr3XiHC2f5Kip6w0ZTLkWfET6DgqIhKFxBMGYJwY3qDXGhzsva4PueH/bobfmubSKJJ+UB5GfGRzjbO0T4oaOLS1EzKv9fhhiZlvIjfKk3t54fP/FwSvSMSdR2zY9Lm1aD+j4rbTWHbvkSL+O3QApiqoInGviq60bEU2ZVNGk0tA59wv/HruC
+sidebar_class_name: "post api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"ArtistFollowCreate"}></Heading>
+
+<MethodEndpoint method={"post"} path={"/v1/artist/{artist_id}/follow/"} context={"endpoint"}></MethodEndpoint>
+
+아티스트 팔로우
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"}></Heading>
+
+<ParamsDetails
+  parameters={[
+    {
+      in: "path",
+      name: "artist_id",
+      schema: { type: "integer" },
+      description: "A unique integer value identifying this 아티스트.",
+      required: true,
+    },
+  ]}></ParamsDetails>
+
+<RequestSchema title={"Body"} body={undefined}></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": { description: "No response body" },
+    "400": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: {
+              message: {
+                type: "object",
+                properties: { nonField: { type: "array", items: { type: "string" } } },
+                title: "NoneErrorMessage",
+              },
+              errorCode: { type: "string" },
+            },
+            required: ["errorCode", "message"],
+            title: "NoneError",
+          },
+        },
+      },
+      description: "",
+    },
+    "401": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+    "403": {
+      content: {
+        "application/json": {
+          schema: {
+            type: "object",
+            properties: { detail: { type: "string" } },
+            required: ["detail"],
+            title: "CommonError",
+          },
+        },
+      },
+      description: "",
+    },
+  }}></StatusCodes>

@@ -1,0 +1,71 @@
+---
+id: chat-connect-update
+title: "채팅방 입장여부 수정"
+description: "채팅방 입장여부 수정"
+sidebar_label: "채팅방 입장여부 수정"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVlFr3EYQ/itinmxYn+y2T6IUHJNCKKXBTejDcYQ9aXzaRNqVd1dnX4UgBaftQ19DTHo2zkOghTy4xbT5TTndfyiz0t3Jvbsehbw0fRHS7szO930zs5oCVIaaW6HkvQgCCGNuH4VKSgztozyLuEVgkHHNU7SoDQTdAoSEADJuY2AgeYozPxEBAxPGmHIICrCjjLaEtDhADSWDCE2oRUbRIIB9L5fiOEevsfCGPKGvCKUVRyMhB56NhfGq386mPz3rAAONx7nQGEFgdY5lj4HlA8Lk4kOvtkBj76hoRBBCJS1KS688yxIROqb+Y0MAimWsqv8YQ0uMNeliBRraFeagloRCz437SiXIJTCwwia0Mj0/qy7feJNX43d/vq0u3k6fj71qfFVdPa0uzhsek+tfveryWXX5unrxZvLHU2+LuATNGvOOeGIw8KY/3FSXr7ehLNu0u7eg9BaRD2Jum43DWgLn2SZ9unNycrJzpHS6k+sEZaiims4Hr0KaJ1ZkXFvfsY+45f8D3uVSvzAwGOZa2JFr4zvINWoIur3SdY7JlDQ15Y92dz+Q9mEgzDd82Fd6ZWiNPPpKJqNaoQWU6udfqoubye9n0+9fNZG9OuA/5qQVbXV66rzcvgcJ5CfvVfAUjeED3GwolfxcYNJOC9eaj4iIxdS01o3VQg4c+9X53OhYrlTkrtZKf9kALhkgfR+oCFfHbiu/MGVzyqtld0HWa7/3HrWP0HKRbAbf2LXxqjRVcgPUj/8bUJeW1nRv9eN5dfXc5c/GiiaQLHdAaboIwB/u+fRr94tmwCj9ZjjxYXGbfU18a0qzO21RlZn4Al1ZEooYeYR6Mbbs5zZWWnzr9HOoScPDxRBx95SnWYJLt1hznwp5pFywRpcT1/ve/v17wGCI2tTk9zq7nV34uyTvrseT63HgdXkmOhEOO7V3J1Rpbyu2NjOB7y/vbX/a1/5n1cub6vy7xnmdY8uJqidTxqbclUjDf1NWbgGea2rx1PpZwoWkU3PtSqjOWBeGe8DqcYxBsBgLm7QBA6qjWBlLxkXR5wYf6qQsafk4R03/ph6DIdeC90nUbgGRMPQeQeCu9yVc836ArcOmbre9fz9erqQ3qyNJReSOoAJn8ARHrbm37JVsVl2EuN49qHHtPKAzFt6bp7KSzY7YD0PM7Bpn1/D08553z/2HD4BBvxl/U3eNQutg1v6gPz8DnlPi2g3zxDVM80JsVmpwu3dmgtCT0K90KYq6Hctybl9vrfWYN2xtTSnplWX5FwV61gE=
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"채팅방 입장여부 수정"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/chat/{chat_id}/connect/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+채팅방 입장여부 수정
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"chat_id","schema":{"type":"integer"},"description":"A unique integer value identifying this 채팅.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"isConnected":{"type":"boolean","title":"현재 로그인한 유저의 채팅방 입장여부 (true: 입장, false: 퇴장)"}},"required":["isConnected"],"title":"ChatConnectRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"isConnected":{"type":"boolean","title":"현재 로그인한 유저의 채팅방 입장여부 (true: 입장, false: 퇴장)"}},"required":["isConnected"],"title":"ChatConnectRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"isConnected":{"type":"boolean","title":"현재 로그인한 유저의 채팅방 입장여부 (true: 입장, false: 퇴장)"}},"required":["isConnected"],"title":"ChatConnectRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"isConnected":{"type":"boolean","title":"현재 로그인한 유저의 채팅방 입장여부 (true: 입장, false: 퇴장)"},"isWavbor":{"type":"boolean","readOnly":true,"title":"웨이버톡 채팅 여부"}},"required":["isConnected","isWavbor"],"title":"ChatConnect"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"isConnected":{"type":"array","items":{"type":"string"}}},"title":"ChatConnectErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"ChatConnectError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

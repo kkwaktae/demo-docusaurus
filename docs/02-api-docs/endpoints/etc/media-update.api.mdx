@@ -1,0 +1,71 @@
+---
+id: media-update
+title: "Media 수정"
+description: "Media 수정"
+sidebar_label: "Media 수정"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWM9rG0cU/leWdyhJGEmWneSwlIKiKMG0lo0sQ0EV9kg7libZnV3PzspWxYJLHTCue/DBJBS59cG0l0ANdkIC+Yus9f9Q3uzqlyXXKfiQgi9iNO+9me9973s7s9sB12OSKu6KeQtMcJjF6WrgWVQxIOBRSR2mmPTBrHSACzDBo6oJBAR1GJjALSDg15vMoWB2QLU9PSsUazAJIQGL+XXJPdwBTMgZgeAbATMSD6NFbfxnMaH4epuLhqGa3Dcu9/ejo09pICDZRsAls8BUMmBhlYCiDYQTY4Vq7MJ89cS12oih7grFhMIh9Tyb13V6mRc+IuhMgnVrL1hdYbYSyVCc+Wjl/hIXAjceeNZc12ZUAAHFlY0zvf3ty4OuEe2cRMeHRvT6be/9NmatsZV1VAeYCBwEXCjngcB8cXWptPi8VFheBgIL89+v5opPVxdyy+VCCQiUCvnF0tP54nM9flYoFYr5AhBYLhcWMNkEiq8kFw24yu8DY21k/TUjZUS/H0SvX0UnBz+IB8baYEU09Y53L3/91PvjNNo7SazJ3tr66mN0tN87+6BN4zi1/e+P0d6J8ZXR+2s32ju53DnVjohT73t82Ds7vzh7F3WPtaFQzuP8xYfTy5+3gcBWyvdYPYXkpDhq7+Hc7GOafUxrM/RRjc1lR2iO5WBcvHvbe7+jYzGsSB2mlTBYc5AsEJjEh5P9pHA8kj7GjgCGKiqX+55N20Ut9M4E8Q4X3zHRUE0wsyNID7rRL10jOjrv/YlIHbrV93qUnQ3DoecCSmRFd1opFjCgeVSyW6nNzc3UuiudVCBtJuquFevxTsN3Gv6CNewEtuIelSqjtWtRRe9Ue6faL1q16OCzeiC5auvLzhNGJZNgVqqhvmP4niv8WKCzMzO3edGwptyccEdqLQq7nVx8yF1b3LXFv7bF5zfC8E5dQfVVp7YG6JYYryYq6eGtit9hvk8b7GZH4YpnnNmj6qdS0jYQ4Io5/iQj4fSe+YyosWb5/LDp9bkxcPqTqSClKxcSdkICDP/nXWtK6a+WdOhKBvxOr7He5PpCZ2+x0BZTlNs3g0/8RvDmXcdxxQ1Q5/4fUCemdDGMaPdNdHyoy6WaLj57vEDjwndtEzKtbEZrMtPhVpiB4Um1jCnFqPvn1VB4Hv+WaeXhRk1GLX2uJC/uuUA1Xcl/1BRpYEhTafgqXdiijmez8QsZHkVj/ZGcIWPSH/CFW6+7GlJC0CZt1Vxp5JbmgUCLST9mIZueSc9MnB0Xp93eadc0KtTjaYu10nF0uu461XtNpTzfzGQmbfe/rsnMN9Fv59Gbn5Lg6wJHghCt5/rKoVorCUtXyjOGb0C0Ylsq49mUC1wkkFo6cekq0MpCQhgQMPXnElRM0/UVmjudGvXZirTDEKc3Aibx+lEl0KKS0xqyVukgvzi2wFynts8mkAyUD/dKiULvG//9Y8vUhPpyEqglvQRKmcBL1o4/AIV4OCX6QrCxIR9DSmmdDANvfr8NSX+JXL3OPHVNsO5qvJoNemZppQwEaslnIEc/K2FkYTL6B+91BGiAVRptmZe6ZZIBZjM1/fHu6XOBv4h+akinEzdkGA78Y9O1EYOWTZjGdMMw/AdGj23o
+sidebar_class_name: "put api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Media 수정"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/v1/media/{id}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Media 수정
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"id","schema":{"type":"integer"},"description":"A unique integer value identifying this 파일.","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"MediaUpdateRequest"}},"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"MediaUpdateRequest"}},"multipart/form-data":{"schema":{"type":"object","properties":{"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","minLength":1,"title":"표시 이름","maxLength":512}},"title":"MediaUpdateRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"isPinned":{"type":"boolean","title":"대표 설정 여부"},"mediaType":{"enum":["ETC","IN_PROGRESS","MIX_AND_MASTER","RECORDING","REFERENCE","STEM"],"type":"string","description":"* `IN_PROGRESS` - 작업중\n* `REFERENCE` - 레퍼런스\n* `RECORDING` - 녹음본\n* `MIX_AND_MASTER` - 믹스 & 마스터\n* `STEM` - 정보공유\n* `ETC` - 기타","x-spec-enum-id":"4326a16ab0a5be31","title":"파일 구분","x-enumNames":["기타","작업중","믹스 & 마스터","녹음본","레퍼런스","정보공유"]},"displayName":{"type":"string","title":"표시 이름","maxLength":512}},"required":["id"],"title":"MediaUpdate"}}},"description":""},"400":{"content":{"application/json":{"schema":{"type":"object","properties":{"message":{"type":"object","properties":{"nonField":{"type":"array","items":{"type":"string"}},"isPinned":{"type":"array","items":{"type":"string"}},"mediaType":{"type":"array","items":{"type":"string"}},"displayName":{"type":"array","items":{"type":"string"}}},"title":"MediaUpdateErrorMessage"},"errorCode":{"type":"string"}},"required":["errorCode","message"],"title":"MediaUpdateError"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

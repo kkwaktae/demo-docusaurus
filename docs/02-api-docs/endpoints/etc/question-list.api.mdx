@@ -1,0 +1,63 @@
+---
+id: question-list
+title: "아티스트 질문 목록 조회"
+description: "아티스트 질문 목록 조회"
+sidebar_label: "아티스트 질문 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVM9rE0EU/lfCOymM2aSNtiwiVClSFFTUU1hksjtmp93d2c7MxsYwoNJDqfVWsZYULAiieMihh/5NZvM/yNsfyaYhKN68JLPv13zvfd+bAYiYSaq5iLY8sGE3YQo/XgRcaSCgaVeB3Z7awSGgmJtIrvtgtwdwl1HJJNhtxzgEJFOxiBRTYA9gpdHAP1dEmkUajzSOA+5mt1nbSkRoU67PQoon3Y8Z2EClpH0gwDULVcUuOtvMRUyxRMya57dwrxLDI826TAIiod6jKOiDrWXCDMEOZL8SqrTkURdb5DpAQ/rtYPzzEgiEdO8hi7raB7vZaBgCcUBd5ovAw0b/VKB2ozY5Php/OUjPLtLDr5PPb8Yfjuer3syqCjlfb4Y9pHs8TEKwV5qttdb66q3WGoGQR7nxxtS6vnD3+N1J+umilh4M0/0hGINz2E24ZB6SyD2Yb6acijMr9KQk2hhM95hyJY8ziw1gCLQazX9hdQl7HtOUB4tTvQq9iKsAvSfCUESbUgoJS6Gu/h9QF0zpx/3J+xHK5/CyVnL74/v4/KyWno8mp0eoEqZ9gTvbZRlYitICq9e0ymW1YLasT7HLvJFyZWcbF/MHLFs5vNtnNNdGREP0biTaF5K/poUsMOylyNKL/l7RXkfI2sbjLSDQY1LlTTTrjXoDrrb2azQcj4Z2rU1jXvdYr55n110ROtd8rWNlW9ai7/rtjrTupKcX6cnbInlZYiUJVRALpUOaUV109DfTnQM9nZRme9qKA8ojrJzITA755NvQa+YLle8PAZSAL5RG32DQoYo9l4ExaC4eo7ZDoEclpx2cY9sxpJw+Pq07rI/jd10WI8E9GiQ5W1c0jA/vVAz3N58BAZogpCrBOxnBxQGrl66oX6k9zzUpIOCvIUtSBoNcPsZM43PX0oypwPJonKVjjPkN9kdddw==
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"아티스트 질문 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/question/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+아티스트 질문 목록 조회
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"query":{"type":"string","title":"질문","maxLength":100},"placeholder":{"type":"string","title":"질문 - 플레이스홀더","maxLength":500},"order":{"type":"integer","maximum":2147483647,"minimum":-2147483648,"title":"질문 나열 순서"}},"required":["id","placeholder","query"],"title":"Question"}}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      

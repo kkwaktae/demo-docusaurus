@@ -1,0 +1,71 @@
+---
+id: partner-company-list
+title: "협력사 아이콘 목록 조회"
+description: "협력사 아이콘 목록 조회"
+sidebar_label: "협력사 아이콘 목록 조회"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVUuLG0cQ/itDnRIY9LCdGAZj2BhjjM3GEOckhGnNlDRtT3ePq3tkKWIgMXvIwRcfjJdlF+xDEhIC2cMecskfisb/wdQ8pNFjYzvkkos0M9VV/dVXX1UtwKRIwkmj70YQQCrIaaRHoVGp0PNHibQOfP4sFDokC8FgAVoohAASqSRbCZ9mkjCCYCwSiz5IDQE8zZDm4EOENiSZ8hUQwGGmRkieGXuENkuc9ZzxCF1G2kuRvFRMsAM+2DBGJSBYgJunfJnUDidIkOf+CoAZjy1+KoKHMXpSSydF4kkd4cwbk1Hes1iGcQuMi7GB+AE8Qx+cmDAz2/TB0AeLYUbSzUvivkJBSBAMhuxFaFOjLVoOe6XX47/QaIfa8aNI00SGZW26jy1jX+zCMKPHGJYlIq6kk1W00GRVkG20Pkh7iLO2bWRMgkKzrU64ZRREgjmUDpX98L0y2nMpxxXR1zqZQ+Aow9yHmqDDso4rB+tI6gn44KRL+MO7kxfF89+94uxi+fMR+KDE7D7qiYsh6H/BuSgx2RtgbEgJBwFkJNvxjl8u3/zUhPzjz+KX7zltQxFXZQ9wJWZSZQqCq1euf3ndByV19d5bB10+Py5eX3jFj6fF0SnrsyXHwUamPvPToG6uHa4jPajkc6tWT86x1raJ1MJhtHnoPjdoeXBT5ZzWtV7/P5RUhE7IZJfs7YTrc620bhmljL5NZOhyqFf/H1B3PrUk9eqoOLso/jr2lr/9unx75hVvz9+dvGAVoYsNj9cJVtOUBQzdab+7NTC6sB4Y33CyVT7N2Fh3ZSrvYdmWDCFGEZVqrcfiQeZiQ/K7krwSstRjU7rXaT4T05Eh7+DBXfBhimSrXPqdXqe3MzD/Pj9dnp8G3kCkshPhtFN5d0Kjhp/FzqU26HZ3bZ/fGFH3ZnFyURz/UDtf5thyYjGkxjolyorXGX0MyRugV0w5nLlumghZzreMSlVUBRjAtF/tto2Z7QMLIjbW8ZHFYiQsfktJnvPnaqXwKI+kFaOktXK27l9J+aNX3l7ET3De2rRTkWRYtcynIPh3K+8f8KwW7xrQkF9IMqJyv/mNLJmsyusgDDFte+30OEdZNcud2w/BB5FxrdrKf1Iqv37g6I2pLF4Te7MJGuD8y9ztdVksqr7K89X5ynSpx6rzqtNM0TDP8/ep0lhe
+sidebar_class_name: "get api-method"
+info_path: docs/api/wavbor-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"협력사 아이콘 목록 조회"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/partner_company/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+협력사 아이콘 목록 조회
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"limit","required":false,"in":"query","description":"Number of results to return per page.","schema":{"type":"integer"}},{"name":"offset","required":false,"in":"query","description":"The initial index from which to return the results.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/json":{"schema":{"type":"object","properties":{"count":{"type":"integer"},"isNext":{"type":"boolean"},"results":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","readOnly":true},"companyName":{"type":"string","title":"회사 이름","maxLength":15},"image":{"type":"string","format":"uri","title":"협력사 이미지"},"order":{"type":"integer","maximum":32767,"minimum":0,"title":"나열 순서"}},"required":["companyName","id","image","order"],"title":"PartnerCompany"}}},"title":"PaginatedPartnerCompanyList"}}},"description":""},"401":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""},"403":{"content":{"application/json":{"schema":{"type":"object","properties":{"detail":{"type":"string"}},"required":["detail"],"title":"CommonError"}}},"description":""}}}
+>
+  
+</StatusCodes>
+
+
+      
